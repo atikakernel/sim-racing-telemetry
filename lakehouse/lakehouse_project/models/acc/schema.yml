@@ -1,0 +1,44 @@
+version: 2
+
+sources:
+  - name: bronze
+    description: "Bronze layer - raw data from ACC telemetry"
+    schema: main
+    tables:
+      - name: bronze_acc_telemetry
+        description: "Raw telemetry samples from MoTeC files"
+      - name: bronze_acc_sessions
+        description: "Session metadata and ingestion tracking"
+
+models:
+  - name: stg_acc_telemetry
+    description: "Silver layer - cleaned and typed telemetry data"
+    columns:
+      - name: source_file
+        description: "Original MoTeC filename"
+      - name: speed_kmh
+        description: "Vehicle speed in km/h"
+      - name: throttle_pct
+        description: "Throttle position 0-100%"
+      - name: brake_pct
+        description: "Brake pressure 0-100%"
+
+  - name: fct_acc_laps
+    description: "Gold layer - metrics aggregated per lap"
+    columns:
+      - name: lap_number
+        description: "Lap number within session"
+      - name: top_speed_kmh
+        description: "Maximum speed during lap"
+      - name: full_throttle_pct
+        description: "Percentage of lap at full throttle"
+
+  - name: fct_acc_sessions
+    description: "Gold layer - session summary metrics"
+    columns:
+      - name: total_laps
+        description: "Number of laps completed"
+      - name: session_top_speed_kmh
+        description: "Maximum speed during session"
+      - name: consistency_index
+        description: "Lower is better - measures speed consistency"

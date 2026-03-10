@@ -1,0 +1,45 @@
+# ===== Secrets & Credentials =====
+.streamlit/secrets.toml
+profiles.yml
+.user.yml
+.env
+.env.*
+*.key
+*.pem
+
+# ===== Large Data Files =====
+*.duckdb
+*.duckdb.wal
+lakehouse/telemetry_sessions/
+*.csv
+*.parquet
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+venv/
+.venv/
+
+# ===== dbt =====
+target/
+dbt_packages/
+logs/
+
+# ===== IDE & OS =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ===== Media (large assets) =====
+data/media/
+
+# ===== Profile README (separate repo) =====
+profile-readme/

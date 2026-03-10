@@ -1,0 +1,19 @@
+CIRCUITO: SPA-FRANCORCHAMPS (BÉLGICA)
+TIPO: Circuito de Carga Aerodinámica Media-Baja.
+
+1. AERODINÁMICA:
+   - Requiere eficiencia máxima. Sector 1 y 3 son a fondo. Sector 2 es técnico.
+   - Setup recomendado: Alerón Delantero 18 / Trasero 12.
+   - Si la velocidad punta es < 330 km/h, hay demasiado Drag (bajar alerón).
+
+2. SUSPENSIÓN:
+   - El coche necesita ser estable en Eau Rouge (compresión máxima).
+   - Altura del chasis: No muy baja para no tocar fondo en el raidillon.
+   - Barras estabilizadoras: Rígidas para cambios de dirección rápidos en Les Combes.
+
+3. FRENOS:
+   - La frenada de Les Combes y Bus Stop es crítica.
+   - Presión de freno: Alta. Refrigeración: Media.
+
+4. CAJA DE CAMBIOS:
+   - 8va marcha debe ser larga para aprovechar la recta de Kemmel.
