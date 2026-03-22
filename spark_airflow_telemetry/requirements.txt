@@ -1,0 +1,4 @@
+pyspark==3.5.1
+apache-airflow==2.9.2
+kaggle==1.6.14
+pandas==2.2.2
