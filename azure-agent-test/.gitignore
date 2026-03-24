@@ -1,0 +1,17 @@
+# Secretos y Configuración
+.env
+
+# Dependencias
+node_modules/
+package-lock.json
+
+# Archivos Temporales y Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+*.tar.gz
+*.zip
+
+# Archivos de diagnóstico
+diagnose.js

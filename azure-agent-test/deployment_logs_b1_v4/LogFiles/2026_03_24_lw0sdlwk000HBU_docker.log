@@ -1,0 +1,337 @@
+2026-03-24T02:31:52.5208611Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T02:31:56.1690251Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T02:32:20.4760880Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T02:32:20.4875898Z Container start method called.
+2026-03-24T02:32:20.4883398Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.4:13209/appsvc/node:20-lts_20260115.4.tuxprod for azure-agent-test-papales., DetailsLevel: INFO
+2026-03-24T02:32:20.5180526Z Establishing network.
+2026-03-24T02:32:20.5277669Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T02:32:21.2111450Z Container is starting.
+2026-03-24T02:32:21.2112955Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for azure-agent-test-papales., DetailsLevel: INFO
+2026-03-24T02:32:21.2127724Z Establishing user namespace if not established already.
+2026-03-24T02:32:21.2129622Z Establishing network if not established already.
+2026-03-24T02:32:21.2527084Z Mounting volumes.
+2026-03-24T02:32:21.2725926Z Nested mountpoint 
+2026-03-24T02:32:21.3614267Z Nested mountpoint volatile/logs
+2026-03-24T02:32:21.4321782Z Nested mountpoint 
+2026-03-24T02:32:21.8257330Z Nested mountpoint 
+2026-03-24T02:32:22.0145968Z Nested mountpoint 
+2026-03-24T02:32:23.1122337Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for azure-agent-test-papales. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T02:32:23.1124156Z Creating container.
+2026-03-24T02:32:23.1136266Z Creating pipes for streaming container io.
+2026-03-24T02:32:23.1137728Z Creating stdout named pipe at /podr/container/pipe/6516e64fa994_azure-agent-test-papales/stdout_7309d01f32ae46b99c859d0423317e57.
+2026-03-24T02:32:23.1616008Z Successfully created stdout named pipe at: /podr/container/pipe/6516e64fa994_azure-agent-test-papales/stdout_7309d01f32ae46b99c859d0423317e57.
+2026-03-24T02:32:23.1626265Z Opening named pipe /podr/container/pipe/6516e64fa994_azure-agent-test-papales/stdout_7309d01f32ae46b99c859d0423317e57 for reading in non-blocking mode.
+2026-03-24T02:32:23.1628135Z Successfully opened named pipe: /podr/container/pipe/6516e64fa994_azure-agent-test-papales/stdout_7309d01f32ae46b99c859d0423317e57.
+2026-03-24T02:32:23.1629258Z Successfully removed non-blocking flag from /podr/container/pipe/6516e64fa994_azure-agent-test-papales/stdout_7309d01f32ae46b99c859d0423317e57.
+2026-03-24T02:32:23.1738090Z Creating stderr named pipe at /podr/container/pipe/6516e64fa994_azure-agent-test-papales/stderr_f551107a93dd4dce95f1efdc4881093b.
+2026-03-24T02:32:23.1926808Z Successfully created stderr named pipe at: /podr/container/pipe/6516e64fa994_azure-agent-test-papales/stderr_f551107a93dd4dce95f1efdc4881093b.
+2026-03-24T02:32:23.1930281Z Opening named pipe /podr/container/pipe/6516e64fa994_azure-agent-test-papales/stderr_f551107a93dd4dce95f1efdc4881093b for reading in non-blocking mode.
+2026-03-24T02:32:23.1932794Z Successfully opened named pipe: /podr/container/pipe/6516e64fa994_azure-agent-test-papales/stderr_f551107a93dd4dce95f1efdc4881093b.
+2026-03-24T02:32:23.1934021Z Successfully removed non-blocking flag from /podr/container/pipe/6516e64fa994_azure-agent-test-papales/stderr_f551107a93dd4dce95f1efdc4881093b.
+2026-03-24T02:32:23.1946267Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T02:32:28.3439932Z Starting container: 6516e64fa994_azure-agent-test-papales.
+2026-03-24T02:32:28.5553847Z Starting watchers and probes.
+2026-03-24T02:32:28.7892649Z Starting metrics collection.
+2026-03-24T02:32:28.8281976Z Container is running.
+2026-03-24T02:32:28.8283344Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container azure-agent-test-papales successfully created and is running., DetailsLevel: INFO
+2026-03-24T02:32:29.2694155Z Container start method finished after 8781 ms.
+2026-03-24T02:32:29.2702769Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container azure-agent-test-papales successfully created and is running., DetailsLevel: INFO
+2026-03-24T02:32:29.2889148Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T02:33:23.8809418Z Container has finished running with exit code: 1.
+2026-03-24T02:33:23.9094219Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T02:33:23.9894099Z Stop and delete container. Retry count = 0
+2026-03-24T02:33:23.9912767Z Stopping container: 6516e64fa994_azure-agent-test-papales.
+2026-03-24T02:33:24.1226387Z Deleting container: 6516e64fa994_azure-agent-test-papales. Retry count = 0
+2026-03-24T02:33:24.4124954Z Container spec TerminationMessagePolicy  path 
+2026-03-24T02:33:24.4324452Z Container is terminated. Total time elapsed: 513 ms.
+2026-03-24T02:33:24.4344817Z Site container: azure-agent-test-papales terminated during site startup.
+2026-03-24T02:33:24.4518643Z State: Stopping, Action: CancellingStartup, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:33:24.5733332Z Site startup probe failed after 55.1252929 seconds.
+2026-03-24T02:33:24.8261092Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:33:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:33:24.8653923Z Failed to start site. Revert by stopping site.
+2026-03-24T02:33:24.8944413Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:33:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:33:24.9163441Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:33:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:33:24.9245043Z Site: azure-agent-test-papales stopped.
+2026-03-24T02:33:48.1244375Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:33:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 02:33:26 (UTC), DetailsLevel: ERR
+2026-03-24T02:33:50.8617947Z State: Starting, Action: StartingMsiContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:33:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 02:33:26 (UTC), DetailsLevel: ERR
+2026-03-24T02:34:02.0983061Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:33:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 02:33:26 (UTC), DetailsLevel: ERR
+2026-03-24T02:34:02.1274397Z Container start method called.
+2026-03-24T02:34:02.1279076Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:33:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.4:13209/appsvc/node:20-lts_20260115.4.tuxprod for azure-agent-test-papales., DetailsLevel: INFO
+2026-03-24T02:34:02.1281443Z Establishing network.
+2026-03-24T02:34:02.1283126Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T02:34:02.5070702Z Container is starting.
+2026-03-24T02:34:02.5160369Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:33:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for azure-agent-test-papales., DetailsLevel: INFO
+2026-03-24T02:34:02.5163358Z Establishing user namespace if not established already.
+2026-03-24T02:34:02.5164439Z Establishing network if not established already.
+2026-03-24T02:34:02.5165446Z Mounting volumes.
+2026-03-24T02:34:02.5167006Z Nested mountpoint 
+2026-03-24T02:34:02.5855653Z Nested mountpoint volatile/logs
+2026-03-24T02:34:02.6469771Z Nested mountpoint 
+2026-03-24T02:34:02.6573239Z Nested mountpoint 
+2026-03-24T02:34:02.6782301Z Nested mountpoint 
+2026-03-24T02:34:03.3635212Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:33:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for azure-agent-test-papales. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T02:34:03.3640649Z Creating container.
+2026-03-24T02:34:03.3641878Z Creating pipes for streaming container io.
+2026-03-24T02:34:03.3642718Z Creating stdout named pipe at /podr/container/pipe/7b51d48f291d_azure-agent-test-papales/stdout_f972addd5c894b03988ebd062d5df919.
+2026-03-24T02:34:03.3644545Z Successfully created stdout named pipe at: /podr/container/pipe/7b51d48f291d_azure-agent-test-papales/stdout_f972addd5c894b03988ebd062d5df919.
+2026-03-24T02:34:03.3645270Z Opening named pipe /podr/container/pipe/7b51d48f291d_azure-agent-test-papales/stdout_f972addd5c894b03988ebd062d5df919 for reading in non-blocking mode.
+2026-03-24T02:34:03.3646166Z Successfully opened named pipe: /podr/container/pipe/7b51d48f291d_azure-agent-test-papales/stdout_f972addd5c894b03988ebd062d5df919.
+2026-03-24T02:34:03.3646875Z Successfully removed non-blocking flag from /podr/container/pipe/7b51d48f291d_azure-agent-test-papales/stdout_f972addd5c894b03988ebd062d5df919.
+2026-03-24T02:34:03.3741785Z Creating stderr named pipe at /podr/container/pipe/7b51d48f291d_azure-agent-test-papales/stderr_46aec3f2223a445bb3c7640d4dad7bef.
+2026-03-24T02:34:03.3743479Z Successfully created stderr named pipe at: /podr/container/pipe/7b51d48f291d_azure-agent-test-papales/stderr_46aec3f2223a445bb3c7640d4dad7bef.
+2026-03-24T02:34:03.3744325Z Opening named pipe /podr/container/pipe/7b51d48f291d_azure-agent-test-papales/stderr_46aec3f2223a445bb3c7640d4dad7bef for reading in non-blocking mode.
+2026-03-24T02:34:03.3745248Z Successfully opened named pipe: /podr/container/pipe/7b51d48f291d_azure-agent-test-papales/stderr_46aec3f2223a445bb3c7640d4dad7bef.
+2026-03-24T02:34:03.3745972Z Successfully removed non-blocking flag from /podr/container/pipe/7b51d48f291d_azure-agent-test-papales/stderr_46aec3f2223a445bb3c7640d4dad7bef.
+2026-03-24T02:34:03.3923950Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T02:34:04.4753842Z Starting container: 7b51d48f291d_azure-agent-test-papales.
+2026-03-24T02:34:04.6757506Z Starting watchers and probes.
+2026-03-24T02:34:04.6844567Z Starting metrics collection.
+2026-03-24T02:34:04.6847655Z Container is running.
+2026-03-24T02:34:04.6858293Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:33:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container azure-agent-test-papales successfully created and is running., DetailsLevel: INFO
+2026-03-24T02:34:05.0669118Z Container start method finished after 2939 ms.
+2026-03-24T02:34:05.0672302Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:33:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container azure-agent-test-papales successfully created and is running., DetailsLevel: INFO
+2026-03-24T02:34:05.0672572Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:33:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T02:34:41.5589392Z Container has finished running with exit code: 1.
+2026-03-24T02:34:41.5595774Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T02:34:41.5601095Z Stop and delete container. Retry count = 0
+2026-03-24T02:34:41.5602423Z Stopping container: 7b51d48f291d_azure-agent-test-papales.
+2026-03-24T02:34:41.6891511Z Deleting container: 7b51d48f291d_azure-agent-test-papales. Retry count = 0
+2026-03-24T02:34:41.9399580Z Container spec TerminationMessagePolicy  path 
+2026-03-24T02:34:41.9401523Z Container is terminated. Total time elapsed: 380 ms.
+2026-03-24T02:34:41.9402469Z Site container: azure-agent-test-papales terminated during site startup.
+2026-03-24T02:34:41.9702083Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:33:24, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:34:41.9717281Z Site startup probe failed after 36.902931 seconds.
+2026-03-24T02:34:42.2326523Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:34:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:34:42.2342821Z Failed to start site. Revert by stopping site.
+2026-03-24T02:34:42.2345017Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:34:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:34:42.2545313Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:34:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:34:42.2545661Z Site: azure-agent-test-papales stopped.
+2026-03-24T02:34:42.2820046Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:34:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:34:43.2216710Z Site container: azure-agent-test-papales_managedIdentity terminated during site startup.
+2026-03-24T02:34:43.2218574Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:34:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:34:43.3540346Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:34:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:34:43.7454682Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:34:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 02:34:43 (UTC), DetailsLevel: ERR
+2026-03-24T02:34:43.9884407Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:34:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 02:34:43 (UTC), DetailsLevel: ERR
+2026-03-24T02:35:10.5920545Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:34:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 02:34:43 (UTC), DetailsLevel: ERR
+2026-03-24T02:35:15.1509671Z State: Starting, Action: StartingMsiContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:34:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 02:34:43 (UTC), DetailsLevel: ERR
+2026-03-24T02:35:32.5040009Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:34:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 02:34:43 (UTC), DetailsLevel: ERR
+2026-03-24T02:35:32.5043455Z Container start method called.
+2026-03-24T02:35:32.5044345Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:34:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.4:13209/appsvc/node:20-lts_20260115.4.tuxprod for azure-agent-test-papales., DetailsLevel: INFO
+2026-03-24T02:35:32.5045251Z Establishing network.
+2026-03-24T02:35:32.5046302Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T02:35:32.7360048Z Container is starting.
+2026-03-24T02:35:32.7361682Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:34:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for azure-agent-test-papales., DetailsLevel: INFO
+2026-03-24T02:35:32.7363390Z Establishing user namespace if not established already.
+2026-03-24T02:35:32.7365849Z Establishing network if not established already.
+2026-03-24T02:35:32.7367263Z Mounting volumes.
+2026-03-24T02:35:32.7371278Z Nested mountpoint 
+2026-03-24T02:35:32.7984436Z Nested mountpoint volatile/logs
+2026-03-24T02:35:32.8278196Z Nested mountpoint 
+2026-03-24T02:35:32.8698577Z Nested mountpoint 
+2026-03-24T02:35:32.9581277Z Nested mountpoint 
+2026-03-24T02:35:33.3616021Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:34:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for azure-agent-test-papales. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T02:35:33.3617079Z Creating container.
+2026-03-24T02:35:33.3617827Z Creating pipes for streaming container io.
+2026-03-24T02:35:33.3618775Z Creating stdout named pipe at /podr/container/pipe/fbf1448c33c6_azure-agent-test-papales/stdout_e9253c254c194cd58b990c3fc68be283.
+2026-03-24T02:35:33.3620681Z Successfully created stdout named pipe at: /podr/container/pipe/fbf1448c33c6_azure-agent-test-papales/stdout_e9253c254c194cd58b990c3fc68be283.
+2026-03-24T02:35:33.3621394Z Opening named pipe /podr/container/pipe/fbf1448c33c6_azure-agent-test-papales/stdout_e9253c254c194cd58b990c3fc68be283 for reading in non-blocking mode.
+2026-03-24T02:35:33.3622320Z Successfully opened named pipe: /podr/container/pipe/fbf1448c33c6_azure-agent-test-papales/stdout_e9253c254c194cd58b990c3fc68be283.
+2026-03-24T02:35:33.3623072Z Successfully removed non-blocking flag from /podr/container/pipe/fbf1448c33c6_azure-agent-test-papales/stdout_e9253c254c194cd58b990c3fc68be283.
+2026-03-24T02:35:33.3629522Z Creating stderr named pipe at /podr/container/pipe/fbf1448c33c6_azure-agent-test-papales/stderr_53645c37a0b4461b895722d1f371fd44.
+2026-03-24T02:35:33.3808171Z Successfully created stderr named pipe at: /podr/container/pipe/fbf1448c33c6_azure-agent-test-papales/stderr_53645c37a0b4461b895722d1f371fd44.
+2026-03-24T02:35:33.3813664Z Opening named pipe /podr/container/pipe/fbf1448c33c6_azure-agent-test-papales/stderr_53645c37a0b4461b895722d1f371fd44 for reading in non-blocking mode.
+2026-03-24T02:35:33.3815651Z Successfully opened named pipe: /podr/container/pipe/fbf1448c33c6_azure-agent-test-papales/stderr_53645c37a0b4461b895722d1f371fd44.
+2026-03-24T02:35:33.3816778Z Successfully removed non-blocking flag from /podr/container/pipe/fbf1448c33c6_azure-agent-test-papales/stderr_53645c37a0b4461b895722d1f371fd44.
+2026-03-24T02:35:33.3822976Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T02:35:34.6523711Z Starting container: fbf1448c33c6_azure-agent-test-papales.
+2026-03-24T02:35:34.8149620Z Starting watchers and probes.
+2026-03-24T02:35:34.8248570Z Starting metrics collection.
+2026-03-24T02:35:34.8250202Z Container is running.
+2026-03-24T02:35:34.8251440Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:34:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container azure-agent-test-papales successfully created and is running., DetailsLevel: INFO
+2026-03-24T02:35:35.0957773Z Container start method finished after 2591 ms.
+2026-03-24T02:35:35.0960295Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:34:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container azure-agent-test-papales successfully created and is running., DetailsLevel: INFO
+2026-03-24T02:35:35.0960490Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:34:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T02:36:18.3951707Z Container has finished running with exit code: 1.
+2026-03-24T02:36:18.3957769Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T02:36:18.4049645Z Stop and delete container. Retry count = 0
+2026-03-24T02:36:18.4050768Z Stopping container: fbf1448c33c6_azure-agent-test-papales.
+2026-03-24T02:36:18.4853076Z Deleting container: fbf1448c33c6_azure-agent-test-papales. Retry count = 0
+2026-03-24T02:36:18.7567796Z Container spec TerminationMessagePolicy  path 
+2026-03-24T02:36:18.7681593Z Container is terminated. Total time elapsed: 370 ms.
+2026-03-24T02:36:18.7686352Z Site container: azure-agent-test-papales terminated during site startup.
+2026-03-24T02:36:18.7759661Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:34:42, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:36:18.7874132Z Site startup probe failed after 43.6902425 seconds.
+2026-03-24T02:36:18.9780799Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:36:18, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:36:19.0183281Z Failed to start site. Revert by stopping site.
+2026-03-24T02:36:19.0195442Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:36:18, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:36:19.0208878Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:36:18, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:36:19.0209172Z Site: azure-agent-test-papales stopped.
+2026-03-24T02:36:46.6501279Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:36:18, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 02:36:20 (UTC), DetailsLevel: WARN
+2026-03-24T02:36:55.4319664Z State: Starting, Action: StartingMsiContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:36:18, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 02:36:20 (UTC), DetailsLevel: WARN
+2026-03-24T02:37:17.5795326Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:36:18, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 02:36:20 (UTC), DetailsLevel: WARN
+2026-03-24T02:37:17.5969941Z Container start method called.
+2026-03-24T02:37:17.5975065Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:36:18, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.4:13209/appsvc/node:20-lts_20260115.4.tuxprod for azure-agent-test-papales., DetailsLevel: INFO
+2026-03-24T02:37:17.5978020Z Establishing network.
+2026-03-24T02:37:17.5979500Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T02:37:18.6334720Z Container is starting.
+2026-03-24T02:37:18.6337095Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:36:18, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for azure-agent-test-papales., DetailsLevel: INFO
+2026-03-24T02:37:18.6338595Z Establishing user namespace if not established already.
+2026-03-24T02:37:18.6339492Z Establishing network if not established already.
+2026-03-24T02:37:18.6351014Z Mounting volumes.
+2026-03-24T02:37:18.6353559Z Nested mountpoint 
+2026-03-24T02:37:18.7159960Z Nested mountpoint volatile/logs
+2026-03-24T02:37:18.8259944Z Nested mountpoint 
+2026-03-24T02:37:18.8758986Z Nested mountpoint 
+2026-03-24T02:37:18.9756650Z Nested mountpoint 
+2026-03-24T02:37:20.4437247Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:36:18, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for azure-agent-test-papales. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T02:37:20.4438684Z Creating container.
+2026-03-24T02:37:20.4439477Z Creating pipes for streaming container io.
+2026-03-24T02:37:20.4440303Z Creating stdout named pipe at /podr/container/pipe/d26222118db3_azure-agent-test-papales/stdout_1772a8dbc5d44fc6b2547c612c0cb693.
+2026-03-24T02:37:20.4442409Z Successfully created stdout named pipe at: /podr/container/pipe/d26222118db3_azure-agent-test-papales/stdout_1772a8dbc5d44fc6b2547c612c0cb693.
+2026-03-24T02:37:20.4443208Z Opening named pipe /podr/container/pipe/d26222118db3_azure-agent-test-papales/stdout_1772a8dbc5d44fc6b2547c612c0cb693 for reading in non-blocking mode.
+2026-03-24T02:37:20.4444124Z Successfully opened named pipe: /podr/container/pipe/d26222118db3_azure-agent-test-papales/stdout_1772a8dbc5d44fc6b2547c612c0cb693.
+2026-03-24T02:37:20.4444806Z Successfully removed non-blocking flag from /podr/container/pipe/d26222118db3_azure-agent-test-papales/stdout_1772a8dbc5d44fc6b2547c612c0cb693.
+2026-03-24T02:37:20.4559268Z Creating stderr named pipe at /podr/container/pipe/d26222118db3_azure-agent-test-papales/stderr_27619a60a4d84e4c8ad9995aa95fd76a.
+2026-03-24T02:37:20.5253685Z Successfully created stderr named pipe at: /podr/container/pipe/d26222118db3_azure-agent-test-papales/stderr_27619a60a4d84e4c8ad9995aa95fd76a.
+2026-03-24T02:37:20.5448419Z Opening named pipe /podr/container/pipe/d26222118db3_azure-agent-test-papales/stderr_27619a60a4d84e4c8ad9995aa95fd76a for reading in non-blocking mode.
+2026-03-24T02:37:20.5464186Z Successfully opened named pipe: /podr/container/pipe/d26222118db3_azure-agent-test-papales/stderr_27619a60a4d84e4c8ad9995aa95fd76a.
+2026-03-24T02:37:20.5556842Z Successfully removed non-blocking flag from /podr/container/pipe/d26222118db3_azure-agent-test-papales/stderr_27619a60a4d84e4c8ad9995aa95fd76a.
+2026-03-24T02:37:20.5665747Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T02:37:23.1979668Z Starting container: d26222118db3_azure-agent-test-papales.
+2026-03-24T02:37:23.9320378Z Starting watchers and probes.
+2026-03-24T02:37:24.0223913Z Starting metrics collection.
+2026-03-24T02:37:24.0230751Z Container is running.
+2026-03-24T02:37:24.0430045Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:36:18, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container azure-agent-test-papales successfully created and is running., DetailsLevel: INFO
+2026-03-24T02:37:24.8071650Z Container start method finished after 7209 ms.
+2026-03-24T02:37:24.8158550Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:36:18, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container azure-agent-test-papales successfully created and is running., DetailsLevel: INFO
+2026-03-24T02:37:24.8160153Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:36:18, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T02:39:18.2811583Z Container has finished running with exit code: 1.
+2026-03-24T02:39:18.2814326Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T02:39:18.3220950Z Stop and delete container. Retry count = 0
+2026-03-24T02:39:18.3329175Z Stopping container: d26222118db3_azure-agent-test-papales.
+2026-03-24T02:39:18.4410110Z Deleting container: d26222118db3_azure-agent-test-papales. Retry count = 0
+2026-03-24T02:39:18.9830607Z Container spec TerminationMessagePolicy  path 
+2026-03-24T02:39:18.9843550Z Container is terminated. Total time elapsed: 702 ms.
+2026-03-24T02:39:18.9919272Z Site container: azure-agent-test-papales terminated during site startup.
+2026-03-24T02:39:19.0434174Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:36:18, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:39:19.1234793Z Site startup probe failed after 114.2968135 seconds.
+2026-03-24T02:39:19.3452214Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:39:19, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:39:19.3930900Z Failed to start site. Revert by stopping site.
+2026-03-24T02:39:19.3953096Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:39:19, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:39:19.4036819Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:39:19, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:39:19.4037254Z Site: azure-agent-test-papales stopped.
+2026-03-24T02:39:48.7336202Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:39:19, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 02:39:21 (UTC), DetailsLevel: ERR
+2026-03-24T02:39:52.6579747Z State: Starting, Action: StartingMsiContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:39:19, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 02:39:21 (UTC), DetailsLevel: ERR
+2026-03-24T02:40:12.7309432Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:39:19, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 02:39:21 (UTC), DetailsLevel: ERR
+2026-03-24T02:40:12.7310565Z Container start method called.
+2026-03-24T02:40:12.7311170Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:39:19, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/appsvc/node:20-lts_20260115.4.tuxprod for azure-agent-test-papales., DetailsLevel: INFO
+2026-03-24T02:40:12.7311990Z Establishing network.
+2026-03-24T02:40:12.7312905Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T02:40:13.9093241Z Image appsvc/node:20-lts_20260115.4.tuxprod is pulled from registry 10.1.0.5:13209
+2026-03-24T02:40:13.9094819Z Container is starting.
+2026-03-24T02:40:13.9192691Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:39:19, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for azure-agent-test-papales., DetailsLevel: INFO
+2026-03-24T02:40:13.9195442Z Establishing user namespace if not established already.
+2026-03-24T02:40:13.9196651Z Establishing network if not established already.
+2026-03-24T02:40:13.9198238Z Mounting volumes.
+2026-03-24T02:40:13.9293972Z Nested mountpoint 
+2026-03-24T02:40:14.0297731Z Nested mountpoint volatile/logs
+2026-03-24T02:40:14.0486112Z Nested mountpoint 
+2026-03-24T02:40:14.0794013Z Nested mountpoint 
+2026-03-24T02:40:14.3009872Z Nested mountpoint 
+2026-03-24T02:40:15.4670392Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:39:19, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for azure-agent-test-papales. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T02:40:15.4673551Z Creating container.
+2026-03-24T02:40:15.4674527Z Creating pipes for streaming container io.
+2026-03-24T02:40:15.4675261Z Creating stdout named pipe at /podr/container/pipe/2ffb5f5a8ecd_azure-agent-test-papales/stdout_4417059742534af9b9e69c932da431fe.
+2026-03-24T02:40:15.4677407Z Successfully created stdout named pipe at: /podr/container/pipe/2ffb5f5a8ecd_azure-agent-test-papales/stdout_4417059742534af9b9e69c932da431fe.
+2026-03-24T02:40:15.4678152Z Opening named pipe /podr/container/pipe/2ffb5f5a8ecd_azure-agent-test-papales/stdout_4417059742534af9b9e69c932da431fe for reading in non-blocking mode.
+2026-03-24T02:40:15.4679064Z Successfully opened named pipe: /podr/container/pipe/2ffb5f5a8ecd_azure-agent-test-papales/stdout_4417059742534af9b9e69c932da431fe.
+2026-03-24T02:40:15.4679943Z Successfully removed non-blocking flag from /podr/container/pipe/2ffb5f5a8ecd_azure-agent-test-papales/stdout_4417059742534af9b9e69c932da431fe.
+2026-03-24T02:40:15.4773817Z Creating stderr named pipe at /podr/container/pipe/2ffb5f5a8ecd_azure-agent-test-papales/stderr_45a12e14ab1d460491ab674e0f2b67f2.
+2026-03-24T02:40:15.4775760Z Successfully created stderr named pipe at: /podr/container/pipe/2ffb5f5a8ecd_azure-agent-test-papales/stderr_45a12e14ab1d460491ab674e0f2b67f2.
+2026-03-24T02:40:15.4776543Z Opening named pipe /podr/container/pipe/2ffb5f5a8ecd_azure-agent-test-papales/stderr_45a12e14ab1d460491ab674e0f2b67f2 for reading in non-blocking mode.
+2026-03-24T02:40:15.4777436Z Successfully opened named pipe: /podr/container/pipe/2ffb5f5a8ecd_azure-agent-test-papales/stderr_45a12e14ab1d460491ab674e0f2b67f2.
+2026-03-24T02:40:15.4778196Z Successfully removed non-blocking flag from /podr/container/pipe/2ffb5f5a8ecd_azure-agent-test-papales/stderr_45a12e14ab1d460491ab674e0f2b67f2.
+2026-03-24T02:40:15.4784766Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T02:40:17.1369013Z Starting container: 2ffb5f5a8ecd_azure-agent-test-papales.
+2026-03-24T02:40:17.3875513Z Starting watchers and probes.
+2026-03-24T02:40:17.3884641Z Starting metrics collection.
+2026-03-24T02:40:17.3886777Z Container is running.
+2026-03-24T02:40:17.3974709Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:39:19, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container azure-agent-test-papales successfully created and is running., DetailsLevel: INFO
+2026-03-24T02:40:17.7413337Z Container start method finished after 5009 ms.
+2026-03-24T02:40:17.7420801Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:39:19, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container azure-agent-test-papales successfully created and is running., DetailsLevel: INFO
+2026-03-24T02:40:17.7421083Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:39:19, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T02:40:58.0147163Z Container has finished running with exit code: 1.
+2026-03-24T02:40:58.0330369Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T02:40:58.0342363Z Stop and delete container. Retry count = 0
+2026-03-24T02:40:58.0343385Z Stopping container: 2ffb5f5a8ecd_azure-agent-test-papales.
+2026-03-24T02:40:58.1653845Z Deleting container: 2ffb5f5a8ecd_azure-agent-test-papales. Retry count = 0
+2026-03-24T02:40:58.4046902Z Container spec TerminationMessagePolicy  path 
+2026-03-24T02:40:58.4057941Z Container is terminated. Total time elapsed: 371 ms.
+2026-03-24T02:40:58.4059691Z Site container: azure-agent-test-papales terminated during site startup.
+2026-03-24T02:40:58.4148790Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:39:19, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:40:58.4363819Z Site startup probe failed after 40.6140478 seconds.
+2026-03-24T02:40:58.6570787Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:40:58, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:40:58.6673881Z Failed to start site. Revert by stopping site.
+2026-03-24T02:40:58.6676203Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:40:58, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:40:58.6679508Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:40:58, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:40:58.6679758Z Site: azure-agent-test-papales stopped.
+2026-03-24T02:40:58.6783606Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:40:58, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:40:59.8437220Z Site container: azure-agent-test-papales_managedIdentity terminated during site startup.
+2026-03-24T02:40:59.8444431Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:40:58, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:40:59.9741604Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:40:58, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:41:00.2772722Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:40:58, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 02:41:00 (UTC), DetailsLevel: ERR
+2026-03-24T02:41:00.5799240Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:40:58, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 02:41:00 (UTC), DetailsLevel: ERR
+2026-03-24T02:41:06.1384534Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:40:58, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 02:41:00 (UTC), DetailsLevel: ERR
+2026-03-24T02:41:09.6503211Z State: Starting, Action: StartingMsiContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:40:58, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 02:41:00 (UTC), DetailsLevel: ERR
+2026-03-24T02:41:21.2457632Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:40:58, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 02:41:00 (UTC), DetailsLevel: ERR
+2026-03-24T02:41:21.2461888Z Container start method called.
+2026-03-24T02:41:21.2463031Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:40:58, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.5:13209/appsvc/node:20-lts_20260115.4.tuxprod for azure-agent-test-papales., DetailsLevel: INFO
+2026-03-24T02:41:21.2644235Z Establishing network.
+2026-03-24T02:41:21.2649818Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T02:41:21.5476507Z Container is starting.
+2026-03-24T02:41:21.5477728Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:40:58, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for azure-agent-test-papales., DetailsLevel: INFO
+2026-03-24T02:41:21.5551397Z Establishing user namespace if not established already.
+2026-03-24T02:41:21.5552991Z Establishing network if not established already.
+2026-03-24T02:41:21.5554365Z Mounting volumes.
+2026-03-24T02:41:21.5576971Z Nested mountpoint 
+2026-03-24T02:41:21.6163011Z Nested mountpoint volatile/logs
+2026-03-24T02:41:21.6383364Z Nested mountpoint 
+2026-03-24T02:41:21.6768584Z Nested mountpoint 
+2026-03-24T02:41:21.6983688Z Nested mountpoint 
+2026-03-24T02:41:22.3989631Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:40:58, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for azure-agent-test-papales. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T02:41:22.3990900Z Creating container.
+2026-03-24T02:41:22.3991694Z Creating pipes for streaming container io.
+2026-03-24T02:41:22.3992502Z Creating stdout named pipe at /podr/container/pipe/219f01fadc50_azure-agent-test-papales/stdout_82be49e0aa65497ba109a79c292855d8.
+2026-03-24T02:41:22.3994762Z Successfully created stdout named pipe at: /podr/container/pipe/219f01fadc50_azure-agent-test-papales/stdout_82be49e0aa65497ba109a79c292855d8.
+2026-03-24T02:41:22.3995491Z Opening named pipe /podr/container/pipe/219f01fadc50_azure-agent-test-papales/stdout_82be49e0aa65497ba109a79c292855d8 for reading in non-blocking mode.
+2026-03-24T02:41:22.3996563Z Successfully opened named pipe: /podr/container/pipe/219f01fadc50_azure-agent-test-papales/stdout_82be49e0aa65497ba109a79c292855d8.
+2026-03-24T02:41:22.3997300Z Successfully removed non-blocking flag from /podr/container/pipe/219f01fadc50_azure-agent-test-papales/stdout_82be49e0aa65497ba109a79c292855d8.
+2026-03-24T02:41:22.4105604Z Creating stderr named pipe at /podr/container/pipe/219f01fadc50_azure-agent-test-papales/stderr_71eb8f96bcdf4cdca27efd106bcdfccc.
+2026-03-24T02:41:22.4107611Z Successfully created stderr named pipe at: /podr/container/pipe/219f01fadc50_azure-agent-test-papales/stderr_71eb8f96bcdf4cdca27efd106bcdfccc.
+2026-03-24T02:41:22.4108337Z Opening named pipe /podr/container/pipe/219f01fadc50_azure-agent-test-papales/stderr_71eb8f96bcdf4cdca27efd106bcdfccc for reading in non-blocking mode.
+2026-03-24T02:41:22.4109246Z Successfully opened named pipe: /podr/container/pipe/219f01fadc50_azure-agent-test-papales/stderr_71eb8f96bcdf4cdca27efd106bcdfccc.
+2026-03-24T02:41:22.4109981Z Successfully removed non-blocking flag from /podr/container/pipe/219f01fadc50_azure-agent-test-papales/stderr_71eb8f96bcdf4cdca27efd106bcdfccc.
+2026-03-24T02:41:22.4189645Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T02:41:23.0733992Z Starting container: 219f01fadc50_azure-agent-test-papales.
+2026-03-24T02:41:23.1659761Z Starting watchers and probes.
+2026-03-24T02:41:23.1839947Z Starting metrics collection.
+2026-03-24T02:41:23.1847739Z Container is running.
+2026-03-24T02:41:23.2060502Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:40:58, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container azure-agent-test-papales successfully created and is running., DetailsLevel: INFO
+2026-03-24T02:41:23.4872982Z Container start method finished after 2240 ms.
+2026-03-24T02:41:23.4874910Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:40:58, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container azure-agent-test-papales successfully created and is running., DetailsLevel: INFO
+2026-03-24T02:41:23.4875113Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:40:58, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T02:41:53.7487489Z Container has finished running with exit code: 1.
+2026-03-24T02:41:53.7492126Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T02:41:53.7585770Z Stop and delete container. Retry count = 0
+2026-03-24T02:41:53.7594051Z Stopping container: 219f01fadc50_azure-agent-test-papales.
+2026-03-24T02:41:53.8695950Z Deleting container: 219f01fadc50_azure-agent-test-papales. Retry count = 0
+2026-03-24T02:41:54.1407998Z Container spec TerminationMessagePolicy  path 
+2026-03-24T02:41:54.1414533Z Container is terminated. Total time elapsed: 391 ms.
+2026-03-24T02:41:54.1493064Z Site container: azure-agent-test-papales terminated during site startup.
+2026-03-24T02:41:54.1503347Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:40:58, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:41:54.1607807Z Site startup probe failed after 30.6726971 seconds.
+2026-03-24T02:41:54.3411607Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:41:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:41:54.3425577Z Failed to start site. Revert by stopping site.
+2026-03-24T02:41:54.3523528Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:41:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:41:54.3798421Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:41:54, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-papales terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:41:54.3798994Z Site: azure-agent-test-papales stopped.

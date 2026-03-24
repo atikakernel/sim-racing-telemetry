@@ -1,0 +1,303 @@
+2026-03-24T02:54:09.3366709Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T02:54:16.0964937Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T02:54:46.2894897Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T02:54:46.2897607Z Container start method called.
+2026-03-24T02:54:46.2898565Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.6:13209/appsvc/node:20-lts_20260115.4.tuxprod for azure-agent-test-eastus., DetailsLevel: INFO
+2026-03-24T02:54:46.2900289Z Establishing network.
+2026-03-24T02:54:46.2902252Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T02:54:47.0465490Z Container is starting.
+2026-03-24T02:54:47.0467573Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for azure-agent-test-eastus., DetailsLevel: INFO
+2026-03-24T02:54:47.0469400Z Establishing user namespace if not established already.
+2026-03-24T02:54:47.0564402Z Establishing network if not established already.
+2026-03-24T02:54:47.0572006Z Mounting volumes.
+2026-03-24T02:54:47.0883114Z Nested mountpoint 
+2026-03-24T02:54:47.3141634Z Nested mountpoint volatile/logs
+2026-03-24T02:54:47.3437579Z Nested mountpoint 
+2026-03-24T02:54:47.8742774Z Nested mountpoint 
+2026-03-24T02:54:48.0461262Z Nested mountpoint 
+2026-03-24T02:54:49.7807175Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for azure-agent-test-eastus. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T02:54:49.7893955Z Creating container.
+2026-03-24T02:54:49.7898693Z Creating pipes for streaming container io.
+2026-03-24T02:54:49.8004106Z Creating stdout named pipe at /podr/container/pipe/8e80720b00b8_azure-agent-test-eastus/stdout_7cbf5059ed7a47f2930ecac5643eebc4.
+2026-03-24T02:54:49.8078062Z Successfully created stdout named pipe at: /podr/container/pipe/8e80720b00b8_azure-agent-test-eastus/stdout_7cbf5059ed7a47f2930ecac5643eebc4.
+2026-03-24T02:54:49.8081731Z Opening named pipe /podr/container/pipe/8e80720b00b8_azure-agent-test-eastus/stdout_7cbf5059ed7a47f2930ecac5643eebc4 for reading in non-blocking mode.
+2026-03-24T02:54:49.8084111Z Successfully opened named pipe: /podr/container/pipe/8e80720b00b8_azure-agent-test-eastus/stdout_7cbf5059ed7a47f2930ecac5643eebc4.
+2026-03-24T02:54:49.8085751Z Successfully removed non-blocking flag from /podr/container/pipe/8e80720b00b8_azure-agent-test-eastus/stdout_7cbf5059ed7a47f2930ecac5643eebc4.
+2026-03-24T02:54:49.8583016Z Creating stderr named pipe at /podr/container/pipe/8e80720b00b8_azure-agent-test-eastus/stderr_48aa33820c8b420c883c9c17d033769f.
+2026-03-24T02:54:49.8588853Z Successfully created stderr named pipe at: /podr/container/pipe/8e80720b00b8_azure-agent-test-eastus/stderr_48aa33820c8b420c883c9c17d033769f.
+2026-03-24T02:54:49.8599885Z Opening named pipe /podr/container/pipe/8e80720b00b8_azure-agent-test-eastus/stderr_48aa33820c8b420c883c9c17d033769f for reading in non-blocking mode.
+2026-03-24T02:54:49.8700322Z Successfully opened named pipe: /podr/container/pipe/8e80720b00b8_azure-agent-test-eastus/stderr_48aa33820c8b420c883c9c17d033769f.
+2026-03-24T02:54:49.8709919Z Successfully removed non-blocking flag from /podr/container/pipe/8e80720b00b8_azure-agent-test-eastus/stderr_48aa33820c8b420c883c9c17d033769f.
+2026-03-24T02:54:49.8719170Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T02:54:52.0142741Z Starting container: 8e80720b00b8_azure-agent-test-eastus.
+2026-03-24T02:54:52.5316510Z Starting watchers and probes.
+2026-03-24T02:54:52.5637251Z Starting metrics collection.
+2026-03-24T02:54:52.5989756Z Container is running.
+2026-03-24T02:54:52.5998637Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container azure-agent-test-eastus successfully created and is running., DetailsLevel: INFO
+2026-03-24T02:54:53.1090045Z Container start method finished after 6818 ms.
+2026-03-24T02:54:53.1095715Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container azure-agent-test-eastus successfully created and is running., DetailsLevel: INFO
+2026-03-24T02:54:53.1097129Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T02:56:37.2183232Z Container has finished running with exit code: 1.
+2026-03-24T02:56:37.3198769Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T02:56:37.7041320Z Stop and delete container. Retry count = 0
+2026-03-24T02:56:37.7310748Z Stopping container: 8e80720b00b8_azure-agent-test-eastus.
+2026-03-24T02:56:38.2172506Z Container get mounts received unexpected exception.
+2026-03-24T02:56:38.2362490Z Deleting container: 8e80720b00b8_azure-agent-test-eastus. Retry count = 0
+2026-03-24T02:56:38.3171863Z Container get mounts received unexpected exception.
+2026-03-24T02:56:38.9381813Z Container get mounts received unexpected exception.
+2026-03-24T02:56:39.6677574Z Container get mounts received unexpected exception.
+2026-03-24T02:56:41.2659838Z Container get processes received unexpected exception.
+2026-03-24T02:56:41.4110743Z Container get processes received unexpected exception.
+2026-03-24T02:56:41.5605149Z Container get processes received unexpected exception.
+2026-03-24T02:56:42.5334514Z Container spec TerminationMessagePolicy  path 
+2026-03-24T02:56:42.6214386Z Container is terminated. Total time elapsed: 5281 ms.
+2026-03-24T02:56:42.6228009Z Site container: azure-agent-test-eastus terminated during site startup.
+2026-03-24T02:56:42.6717533Z State: Stopping, Action: CancellingStartup, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:56:42.8831895Z Site startup probe failed after 109.6180359 seconds.
+2026-03-24T02:56:44.4636711Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:56:44, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:56:44.5926819Z Failed to start site. Revert by stopping site.
+2026-03-24T02:56:44.9424219Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:56:44, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:56:45.1615038Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:56:44, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:56:45.2091022Z Site: azure-agent-test-eastus stopped.
+2026-03-24T02:56:45.5297469Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:56:44, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:56:50.6327437Z Site container: azure-agent-test-eastus_managedIdentity terminated during site startup.
+2026-03-24T02:56:50.6338349Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:56:44, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:56:50.9329782Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:56:44, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T02:56:52.4977180Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:56:44, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 02:56:52 (UTC), DetailsLevel: ERR
+2026-03-24T02:56:52.9088978Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:56:44, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 02:56:52 (UTC), DetailsLevel: ERR
+2026-03-24T02:56:59.1975653Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:56:44, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 02:56:52 (UTC), DetailsLevel: ERR
+2026-03-24T02:57:07.8632070Z State: Starting, Action: StartingMsiContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:56:44, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 02:56:52 (UTC), DetailsLevel: ERR
+2026-03-24T02:57:40.2221178Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:56:44, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 02:56:52 (UTC), DetailsLevel: ERR
+2026-03-24T02:57:40.2225467Z Container start method called.
+2026-03-24T02:57:40.2226498Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:56:44, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/appsvc/node:20-lts_20260115.4.tuxprod for azure-agent-test-eastus., DetailsLevel: INFO
+2026-03-24T02:57:40.2228388Z Establishing network.
+2026-03-24T02:57:40.5234513Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T02:57:42.3140500Z Container is starting.
+2026-03-24T02:57:42.4312441Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:56:44, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for azure-agent-test-eastus., DetailsLevel: INFO
+2026-03-24T02:57:42.4492746Z Establishing user namespace if not established already.
+2026-03-24T02:57:42.4681571Z Establishing network if not established already.
+2026-03-24T02:57:42.4891218Z Mounting volumes.
+2026-03-24T02:57:42.4908529Z Nested mountpoint 
+2026-03-24T02:57:42.6848560Z Nested mountpoint volatile/logs
+2026-03-24T02:57:42.8621929Z Nested mountpoint 
+2026-03-24T02:57:42.8643204Z Nested mountpoint 
+2026-03-24T02:57:43.3237033Z Nested mountpoint 
+2026-03-24T02:57:46.3544321Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:56:44, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for azure-agent-test-eastus. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T02:57:46.3656129Z Creating container.
+2026-03-24T02:57:46.3660553Z Creating pipes for streaming container io.
+2026-03-24T02:57:46.4062725Z Creating stdout named pipe at /podr/container/pipe/af29d02214c1_azure-agent-test-eastus/stdout_c02ac167f7114a289d30094062b6dc23.
+2026-03-24T02:57:46.4238141Z Successfully created stdout named pipe at: /podr/container/pipe/af29d02214c1_azure-agent-test-eastus/stdout_c02ac167f7114a289d30094062b6dc23.
+2026-03-24T02:57:46.4273833Z Opening named pipe /podr/container/pipe/af29d02214c1_azure-agent-test-eastus/stdout_c02ac167f7114a289d30094062b6dc23 for reading in non-blocking mode.
+2026-03-24T02:57:46.4646193Z Successfully opened named pipe: /podr/container/pipe/af29d02214c1_azure-agent-test-eastus/stdout_c02ac167f7114a289d30094062b6dc23.
+2026-03-24T02:57:46.4730434Z Successfully removed non-blocking flag from /podr/container/pipe/af29d02214c1_azure-agent-test-eastus/stdout_c02ac167f7114a289d30094062b6dc23.
+2026-03-24T02:57:46.4833827Z Creating stderr named pipe at /podr/container/pipe/af29d02214c1_azure-agent-test-eastus/stderr_8d0421354cf24cec90166def62822ddc.
+2026-03-24T02:57:46.5760885Z Successfully created stderr named pipe at: /podr/container/pipe/af29d02214c1_azure-agent-test-eastus/stderr_8d0421354cf24cec90166def62822ddc.
+2026-03-24T02:57:46.5786167Z Opening named pipe /podr/container/pipe/af29d02214c1_azure-agent-test-eastus/stderr_8d0421354cf24cec90166def62822ddc for reading in non-blocking mode.
+2026-03-24T02:57:46.6162365Z Successfully opened named pipe: /podr/container/pipe/af29d02214c1_azure-agent-test-eastus/stderr_8d0421354cf24cec90166def62822ddc.
+2026-03-24T02:57:46.7378290Z Successfully removed non-blocking flag from /podr/container/pipe/af29d02214c1_azure-agent-test-eastus/stderr_8d0421354cf24cec90166def62822ddc.
+2026-03-24T02:57:46.8217647Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T02:57:52.9993827Z Starting container: af29d02214c1_azure-agent-test-eastus.
+2026-03-24T02:57:53.7197011Z Starting watchers and probes.
+2026-03-24T02:57:53.7361029Z Starting metrics collection.
+2026-03-24T02:57:53.7769682Z Container is running.
+2026-03-24T02:57:53.8787867Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:56:44, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container azure-agent-test-eastus successfully created and is running., DetailsLevel: INFO
+2026-03-24T02:57:54.9242551Z Container start method finished after 14701 ms.
+2026-03-24T02:57:54.9253136Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:56:44, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container azure-agent-test-eastus successfully created and is running., DetailsLevel: INFO
+2026-03-24T02:57:54.9254041Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:56:44, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T03:00:46.4768150Z Container has finished running with exit code: 1.
+2026-03-24T03:00:46.5161501Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T03:00:46.5845621Z Stop and delete container. Retry count = 0
+2026-03-24T03:00:46.5847792Z Stopping container: af29d02214c1_azure-agent-test-eastus.
+2026-03-24T03:00:47.5438708Z Deleting container: af29d02214c1_azure-agent-test-eastus. Retry count = 0
+2026-03-24T03:00:49.4547481Z Container spec TerminationMessagePolicy  path 
+2026-03-24T03:00:49.4851116Z Container is terminated. Total time elapsed: 2926 ms.
+2026-03-24T03:00:49.4861273Z Site container: azure-agent-test-eastus terminated during site startup.
+2026-03-24T03:00:49.5055040Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 02:56:44, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T03:00:49.5920091Z Site startup probe failed after 174.6567063 seconds.
+2026-03-24T03:00:51.0440066Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T03:00:51.2526381Z Failed to start site. Revert by stopping site.
+2026-03-24T03:00:51.4679115Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T03:00:51.5167078Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T03:00:51.5194370Z Site: azure-agent-test-eastus stopped.
+2026-03-24T03:00:51.5892999Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T03:00:55.5245676Z Site container: azure-agent-test-eastus_managedIdentity terminated during site startup.
+2026-03-24T03:00:55.5262937Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T03:00:55.9409787Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T03:00:57.4278608Z Site: azure-agent-test-eastus will be blocked for 1 minutes till 03/24/2026 03:01:57
+2026-03-24T03:00:57.4354198Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site: azure-agent-test-eastus will be blocked for 1 minutes till 03/24/2026 03:01:57, DetailsLevel: WARN
+2026-03-24T03:00:57.8760558Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 03:00:57 (UTC), DetailsLevel: WARN
+2026-03-24T03:00:58.6650458Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 03:00:57 (UTC), DetailsLevel: WARN
+2026-03-24T03:01:05.2077043Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 03/24/2026 03:01:57, DetailsLevel: WARN
+2026-03-24T03:01:05.2077838Z Start site prohibitted because the site is being blocked.
+2026-03-24T03:01:11.0383883Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 03/24/2026 03:01:57, DetailsLevel: WARN
+2026-03-24T03:01:11.0904602Z Start site prohibitted because the site is being blocked.
+2026-03-24T03:01:16.7497679Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 03/24/2026 03:01:57, DetailsLevel: WARN
+2026-03-24T03:01:16.7498202Z Start site prohibitted because the site is being blocked.
+2026-03-24T03:01:22.4948768Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 03/24/2026 03:01:57, DetailsLevel: WARN
+2026-03-24T03:01:22.5027040Z Start site prohibitted because the site is being blocked.
+2026-03-24T03:01:28.0564548Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 03/24/2026 03:01:57, DetailsLevel: WARN
+2026-03-24T03:01:28.0567656Z Start site prohibitted because the site is being blocked.
+2026-03-24T03:01:33.6755535Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 03/24/2026 03:01:57, DetailsLevel: WARN
+2026-03-24T03:01:33.6767774Z Start site prohibitted because the site is being blocked.
+2026-03-24T03:01:39.2336460Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 03/24/2026 03:01:57, DetailsLevel: WARN
+2026-03-24T03:01:39.2343805Z Start site prohibitted because the site is being blocked.
+2026-03-24T03:01:44.9720826Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 03/24/2026 03:01:57, DetailsLevel: WARN
+2026-03-24T03:01:44.9721332Z Start site prohibitted because the site is being blocked.
+2026-03-24T03:01:50.4224123Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 03/24/2026 03:01:57, DetailsLevel: WARN
+2026-03-24T03:01:50.4224603Z Start site prohibitted because the site is being blocked.
+2026-03-24T03:01:55.7033069Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 03/24/2026 03:01:57, DetailsLevel: WARN
+2026-03-24T03:01:55.7037783Z Start site prohibitted because the site is being blocked.
+2026-03-24T03:01:57.4222430Z Site: azure-agent-test-eastus is unblocked.
+2026-03-24T03:02:01.0584541Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 03/24/2026 03:01:57, DetailsLevel: WARN
+2026-03-24T03:02:10.6855468Z State: Starting, Action: StartingMsiContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 03/24/2026 03:01:57, DetailsLevel: WARN
+2026-03-24T03:02:47.1373317Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 03/24/2026 03:01:57, DetailsLevel: WARN
+2026-03-24T03:02:47.1455420Z Container start method called.
+2026-03-24T03:02:47.1466767Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/appsvc/node:20-lts_20260115.4.tuxprod for azure-agent-test-eastus., DetailsLevel: INFO
+2026-03-24T03:02:47.1542062Z Establishing network.
+2026-03-24T03:02:47.1572821Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T03:02:48.1811293Z Container is starting.
+2026-03-24T03:02:48.1814865Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for azure-agent-test-eastus., DetailsLevel: INFO
+2026-03-24T03:02:48.1817406Z Establishing user namespace if not established already.
+2026-03-24T03:02:48.2879783Z Establishing network if not established already.
+2026-03-24T03:02:48.2888358Z Mounting volumes.
+2026-03-24T03:02:48.3275327Z Nested mountpoint 
+2026-03-24T03:02:48.4391747Z Nested mountpoint volatile/logs
+2026-03-24T03:02:48.6685931Z Nested mountpoint 
+2026-03-24T03:02:48.8200298Z Nested mountpoint 
+2026-03-24T03:02:49.3820292Z Nested mountpoint 
+2026-03-24T03:02:51.5304990Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for azure-agent-test-eastus. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T03:02:51.5309794Z Creating container.
+2026-03-24T03:02:51.5324679Z Creating pipes for streaming container io.
+2026-03-24T03:02:51.5326994Z Creating stdout named pipe at /podr/container/pipe/7692422d422e_azure-agent-test-eastus/stdout_70130f04de3a467db627f98f72e2f375.
+2026-03-24T03:02:51.5330676Z Successfully created stdout named pipe at: /podr/container/pipe/7692422d422e_azure-agent-test-eastus/stdout_70130f04de3a467db627f98f72e2f375.
+2026-03-24T03:02:51.5332381Z Opening named pipe /podr/container/pipe/7692422d422e_azure-agent-test-eastus/stdout_70130f04de3a467db627f98f72e2f375 for reading in non-blocking mode.
+2026-03-24T03:02:51.5334298Z Successfully opened named pipe: /podr/container/pipe/7692422d422e_azure-agent-test-eastus/stdout_70130f04de3a467db627f98f72e2f375.
+2026-03-24T03:02:51.5335983Z Successfully removed non-blocking flag from /podr/container/pipe/7692422d422e_azure-agent-test-eastus/stdout_70130f04de3a467db627f98f72e2f375.
+2026-03-24T03:02:51.5518946Z Creating stderr named pipe at /podr/container/pipe/7692422d422e_azure-agent-test-eastus/stderr_81577b7ddd9845b0905552bcfdaa8a9a.
+2026-03-24T03:02:51.5529824Z Successfully created stderr named pipe at: /podr/container/pipe/7692422d422e_azure-agent-test-eastus/stderr_81577b7ddd9845b0905552bcfdaa8a9a.
+2026-03-24T03:02:51.5532200Z Opening named pipe /podr/container/pipe/7692422d422e_azure-agent-test-eastus/stderr_81577b7ddd9845b0905552bcfdaa8a9a for reading in non-blocking mode.
+2026-03-24T03:02:51.5534327Z Successfully opened named pipe: /podr/container/pipe/7692422d422e_azure-agent-test-eastus/stderr_81577b7ddd9845b0905552bcfdaa8a9a.
+2026-03-24T03:02:51.5536016Z Successfully removed non-blocking flag from /podr/container/pipe/7692422d422e_azure-agent-test-eastus/stderr_81577b7ddd9845b0905552bcfdaa8a9a.
+2026-03-24T03:02:51.6428906Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T03:02:54.8043364Z Starting container: 7692422d422e_azure-agent-test-eastus.
+2026-03-24T03:02:55.1232850Z Starting watchers and probes.
+2026-03-24T03:02:55.1345839Z Starting metrics collection.
+2026-03-24T03:02:55.1349171Z Container is running.
+2026-03-24T03:02:55.2133194Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container azure-agent-test-eastus successfully created and is running., DetailsLevel: INFO
+2026-03-24T03:02:55.9991639Z Container start method finished after 8845 ms.
+2026-03-24T03:02:55.9999856Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container azure-agent-test-eastus successfully created and is running., DetailsLevel: INFO
+2026-03-24T03:02:56.0000360Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T03:04:39.1201115Z Container has finished running with exit code: 1.
+2026-03-24T03:04:39.1402532Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T03:04:39.1415253Z Stop and delete container. Retry count = 0
+2026-03-24T03:04:39.1417295Z Stopping container: 7692422d422e_azure-agent-test-eastus.
+2026-03-24T03:04:39.3319421Z Deleting container: 7692422d422e_azure-agent-test-eastus. Retry count = 0
+2026-03-24T03:04:39.8678371Z Container spec TerminationMessagePolicy  path 
+2026-03-24T03:04:39.8690074Z Container is terminated. Total time elapsed: 728 ms.
+2026-03-24T03:04:39.8707547Z Site container: azure-agent-test-eastus terminated during site startup.
+2026-03-24T03:04:39.8882597Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:00:51, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T03:04:39.9970287Z Site startup probe failed after 103.9205185 seconds.
+2026-03-24T03:04:40.4564563Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:04:40, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T03:04:40.5260158Z Failed to start site. Revert by stopping site.
+2026-03-24T03:04:40.5452283Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:04:40, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T03:04:40.5536822Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:04:40, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T03:04:40.5537347Z Site: azure-agent-test-eastus stopped.
+2026-03-24T03:06:27.8334539Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:04:40, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 03:04:44 (UTC), DetailsLevel: WARN
+2026-03-24T03:06:46.7152880Z State: Starting, Action: StartingMsiContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:04:40, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 03:04:44 (UTC), DetailsLevel: WARN
+2026-03-24T03:07:17.6759049Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:04:40, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 03:04:44 (UTC), DetailsLevel: WARN
+2026-03-24T03:07:17.6769036Z Container start method called.
+2026-03-24T03:07:17.6776162Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:04:40, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/appsvc/node:20-lts_20260115.4.tuxprod for azure-agent-test-eastus., DetailsLevel: INFO
+2026-03-24T03:07:17.6788224Z Establishing network.
+2026-03-24T03:07:17.6869765Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T03:07:17.9854281Z Container is starting.
+2026-03-24T03:07:17.9856531Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:04:40, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for azure-agent-test-eastus., DetailsLevel: INFO
+2026-03-24T03:07:17.9859063Z Establishing user namespace if not established already.
+2026-03-24T03:07:17.9861560Z Establishing network if not established already.
+2026-03-24T03:07:17.9935123Z Mounting volumes.
+2026-03-24T03:07:17.9939327Z Nested mountpoint 
+2026-03-24T03:07:18.1118109Z Nested mountpoint volatile/logs
+2026-03-24T03:07:18.1712219Z Nested mountpoint 
+2026-03-24T03:07:18.2703771Z Nested mountpoint 
+2026-03-24T03:07:18.3195184Z Nested mountpoint 
+2026-03-24T03:07:19.3898504Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:04:40, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for azure-agent-test-eastus. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T03:07:19.3902322Z Creating container.
+2026-03-24T03:07:19.3904399Z Creating pipes for streaming container io.
+2026-03-24T03:07:19.3906055Z Creating stdout named pipe at /podr/container/pipe/f5a5804bea33_azure-agent-test-eastus/stdout_a2cad28f6df24e4a9351c756696d4013.
+2026-03-24T03:07:19.5130182Z Successfully created stdout named pipe at: /podr/container/pipe/f5a5804bea33_azure-agent-test-eastus/stdout_a2cad28f6df24e4a9351c756696d4013.
+2026-03-24T03:07:19.5135922Z Opening named pipe /podr/container/pipe/f5a5804bea33_azure-agent-test-eastus/stdout_a2cad28f6df24e4a9351c756696d4013 for reading in non-blocking mode.
+2026-03-24T03:07:19.5154633Z Successfully opened named pipe: /podr/container/pipe/f5a5804bea33_azure-agent-test-eastus/stdout_a2cad28f6df24e4a9351c756696d4013.
+2026-03-24T03:07:19.5740865Z Successfully removed non-blocking flag from /podr/container/pipe/f5a5804bea33_azure-agent-test-eastus/stdout_a2cad28f6df24e4a9351c756696d4013.
+2026-03-24T03:07:19.5845840Z Creating stderr named pipe at /podr/container/pipe/f5a5804bea33_azure-agent-test-eastus/stderr_d1117fae7cda4906a9caec6f2ffe5ee1.
+2026-03-24T03:07:19.6149383Z Successfully created stderr named pipe at: /podr/container/pipe/f5a5804bea33_azure-agent-test-eastus/stderr_d1117fae7cda4906a9caec6f2ffe5ee1.
+2026-03-24T03:07:19.6357945Z Opening named pipe /podr/container/pipe/f5a5804bea33_azure-agent-test-eastus/stderr_d1117fae7cda4906a9caec6f2ffe5ee1 for reading in non-blocking mode.
+2026-03-24T03:07:19.6749953Z Successfully opened named pipe: /podr/container/pipe/f5a5804bea33_azure-agent-test-eastus/stderr_d1117fae7cda4906a9caec6f2ffe5ee1.
+2026-03-24T03:07:19.6826807Z Successfully removed non-blocking flag from /podr/container/pipe/f5a5804bea33_azure-agent-test-eastus/stderr_d1117fae7cda4906a9caec6f2ffe5ee1.
+2026-03-24T03:07:19.6954415Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T03:07:20.9519562Z Starting container: f5a5804bea33_azure-agent-test-eastus.
+2026-03-24T03:07:21.3616803Z Starting watchers and probes.
+2026-03-24T03:07:21.4005530Z Starting metrics collection.
+2026-03-24T03:07:21.4114395Z Container is running.
+2026-03-24T03:07:21.4116151Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:04:40, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container azure-agent-test-eastus successfully created and is running., DetailsLevel: INFO
+2026-03-24T03:07:22.2199067Z Container start method finished after 4542 ms.
+2026-03-24T03:07:22.2202456Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:04:40, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container azure-agent-test-eastus successfully created and is running., DetailsLevel: INFO
+2026-03-24T03:07:22.2202884Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:04:40, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T03:09:04.5597437Z Container has finished running with exit code: 1.
+2026-03-24T03:09:04.5599678Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T03:09:04.5700448Z Stop and delete container. Retry count = 0
+2026-03-24T03:09:04.5702299Z Stopping container: f5a5804bea33_azure-agent-test-eastus.
+2026-03-24T03:09:04.7625205Z Deleting container: f5a5804bea33_azure-agent-test-eastus. Retry count = 0
+2026-03-24T03:09:05.3383408Z Container spec TerminationMessagePolicy  path 
+2026-03-24T03:09:05.3457842Z Container is terminated. Total time elapsed: 785 ms.
+2026-03-24T03:09:05.3476710Z Site container: azure-agent-test-eastus terminated during site startup.
+2026-03-24T03:09:05.3685399Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:04:40, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T03:09:05.4073306Z Site startup probe failed after 102.9556973 seconds.
+2026-03-24T03:09:06.2251812Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:09:06, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T03:09:06.2676111Z Failed to start site. Revert by stopping site.
+2026-03-24T03:09:06.2686033Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:09:06, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T03:09:06.3067605Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:09:06, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T03:09:06.3068065Z Site: azure-agent-test-eastus stopped.
+2026-03-24T03:09:06.3284519Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:09:06, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T03:09:08.6697157Z Site container: azure-agent-test-eastus_managedIdentity terminated during site startup.
+2026-03-24T03:09:08.6699013Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:09:06, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T03:09:08.8770792Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:09:06, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: azure-agent-test-eastus terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T03:09:09.7689145Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:09:06, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 03:09:09 (UTC), DetailsLevel: ERR
+2026-03-24T03:09:10.5125098Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:09:06, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 03:09:09 (UTC), DetailsLevel: ERR
+2026-03-24T03:13:16.5537378Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:09:06, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 03:09:09 (UTC), DetailsLevel: ERR
+2026-03-24T03:13:22.3123400Z State: Starting, Action: StartingMsiContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:09:06, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 03:09:09 (UTC), DetailsLevel: ERR
+2026-03-24T03:13:47.3902383Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:09:06, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 03:09:09 (UTC), DetailsLevel: ERR
+2026-03-24T03:13:47.3906973Z Container start method called.
+2026-03-24T03:13:47.3908046Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:09:06, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/appsvc/node:20-lts_20260115.4.tuxprod for azure-agent-test-eastus., DetailsLevel: INFO
+2026-03-24T03:13:47.3910043Z Establishing network.
+2026-03-24T03:13:47.3923784Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T03:13:47.6997770Z Container is starting.
+2026-03-24T03:13:47.7073412Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:09:06, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for azure-agent-test-eastus., DetailsLevel: INFO
+2026-03-24T03:13:47.7083367Z Establishing user namespace if not established already.
+2026-03-24T03:13:47.7090546Z Establishing network if not established already.
+2026-03-24T03:13:47.7200265Z Mounting volumes.
+2026-03-24T03:13:47.7360826Z Nested mountpoint 
+2026-03-24T03:13:47.8660337Z Nested mountpoint volatile/logs
+2026-03-24T03:13:47.9084485Z Nested mountpoint 
+2026-03-24T03:13:47.9172600Z Nested mountpoint 
+2026-03-24T03:13:48.0161288Z Nested mountpoint 
+2026-03-24T03:13:49.4863279Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:09:06, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for azure-agent-test-eastus. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T03:13:49.5248868Z Creating container.
+2026-03-24T03:13:49.5255161Z Creating pipes for streaming container io.
+2026-03-24T03:13:49.5362802Z Creating stdout named pipe at /podr/container/pipe/16651c8a2091_azure-agent-test-eastus/stdout_7faa6cc3fd3d461691c9514b2ccf80dd.
+2026-03-24T03:13:49.5374688Z Successfully created stdout named pipe at: /podr/container/pipe/16651c8a2091_azure-agent-test-eastus/stdout_7faa6cc3fd3d461691c9514b2ccf80dd.
+2026-03-24T03:13:49.5384398Z Opening named pipe /podr/container/pipe/16651c8a2091_azure-agent-test-eastus/stdout_7faa6cc3fd3d461691c9514b2ccf80dd for reading in non-blocking mode.
+2026-03-24T03:13:49.5467103Z Successfully opened named pipe: /podr/container/pipe/16651c8a2091_azure-agent-test-eastus/stdout_7faa6cc3fd3d461691c9514b2ccf80dd.
+2026-03-24T03:13:49.5557944Z Successfully removed non-blocking flag from /podr/container/pipe/16651c8a2091_azure-agent-test-eastus/stdout_7faa6cc3fd3d461691c9514b2ccf80dd.
+2026-03-24T03:13:49.5675173Z Creating stderr named pipe at /podr/container/pipe/16651c8a2091_azure-agent-test-eastus/stderr_c0149d3a0f474ebc94735f238a95dd6e.
+2026-03-24T03:13:49.5973854Z Successfully created stderr named pipe at: /podr/container/pipe/16651c8a2091_azure-agent-test-eastus/stderr_c0149d3a0f474ebc94735f238a95dd6e.
+2026-03-24T03:13:49.5983035Z Opening named pipe /podr/container/pipe/16651c8a2091_azure-agent-test-eastus/stderr_c0149d3a0f474ebc94735f238a95dd6e for reading in non-blocking mode.
+2026-03-24T03:13:49.5986610Z Successfully opened named pipe: /podr/container/pipe/16651c8a2091_azure-agent-test-eastus/stderr_c0149d3a0f474ebc94735f238a95dd6e.
+2026-03-24T03:13:49.5988376Z Successfully removed non-blocking flag from /podr/container/pipe/16651c8a2091_azure-agent-test-eastus/stderr_c0149d3a0f474ebc94735f238a95dd6e.
+2026-03-24T03:13:49.6173076Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T03:13:51.0302595Z Starting container: 16651c8a2091_azure-agent-test-eastus.
+2026-03-24T03:13:51.3364597Z Starting watchers and probes.
+2026-03-24T03:13:51.3635812Z Starting metrics collection.
+2026-03-24T03:13:51.3910523Z Container is running.
+2026-03-24T03:13:51.3934424Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:09:06, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container azure-agent-test-eastus successfully created and is running., DetailsLevel: INFO
+2026-03-24T03:13:51.7270894Z Container start method finished after 4334 ms.
+2026-03-24T03:13:51.7281066Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:09:06, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container azure-agent-test-eastus successfully created and is running., DetailsLevel: INFO
+2026-03-24T03:13:51.7282852Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 03:09:06, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
