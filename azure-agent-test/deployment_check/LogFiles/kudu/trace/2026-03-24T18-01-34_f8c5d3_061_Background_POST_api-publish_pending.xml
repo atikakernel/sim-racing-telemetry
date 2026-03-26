@@ -1,0 +1,37 @@
+<step title="BackgroundTrace" date="2026-03-24T18:01:34.847" instance="f8c5d3" url="/api/publish" method="POST" >
+  <step title="Creating temporary deployment - FetchDeploymentManager" date="2026-03-24T18:01:34.953" /><!-- duration: 3ms -->
+  <step title="Creating temporary deployment" date="2026-03-24T18:01:34.962" /><!-- duration: 82ms -->
+  <step title="Performing fetch based deployment" date="2026-03-24T18:01:35.082" >
+    <step title="Cleaning up temp folders from previous zip deployments and extracting pushed zip file /tmp/zipdeploy/8ccf17d3-d76d-49e8-b319-13dd1467c226.zip (0.45 MB) to /tmp/zipdeploy/extracted" date="2026-03-24T18:01:36.322" >
+      <step title="ChmodRecursive Process exited with total time taken in ms: 118" date="2026-03-24T18:01:36.998" /><!-- duration: 29ms -->
+    </step><!-- duration: 731ms -->
+    <step title="Deployment timer started" date="2026-03-24T18:01:39.172" >
+      <step title="DeploymentManager.Deploy(id:26108334-812c-4567-9055-6b79b5ffef99)" date="2026-03-24T18:01:39.191" >
+        <step title="Collecting changeset information" date="2026-03-24T18:01:39.275" /><!-- duration: 176ms -->
+        <step title="Updating submodules" date="2026-03-24T18:01:39.478" /><!-- duration: 1238ms -->
+        <step title="Determining deployment builder" date="2026-03-24T18:01:41.228" >
+          <step title="Builder is OryxBuilder" date="2026-03-24T18:01:41.288" /><!-- duration: 20ms -->
+        </step><!-- duration: 92ms -->
+        <step title="PreDeployment: context.CleanOutputPath False" date="2026-03-24T18:01:41.449" >
+          <step title="PreDeployment: context.OutputPath /home/site/wwwroot" date="2026-03-24T18:01:41.700" >
+            <step title="Building" date="2026-03-24T18:01:42.048" >
+              <step title="Executing external process" date="2026-03-24T18:01:42.709" type="process" path="bash" arguments="-c &quot;oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform nodejs --platform-version 20 -p virtualenv_name= --log-file /tmp/build-debug.log  -i /tmp/8de89cf670f2b09 -p compress_node_modules=tar-gz | tee /tmp/oryx-build.log ; exit $PIPESTATUS &quot;" >
+                <step title="Cpu: npm install(1844,21.890s)+build.sh(1761,0.070s)+oryx(1739,8.520s)+tee(1740,0.000s)+bash(1738,0.010s)=total(30.490s)" date="2026-03-24T18:02:55.689" /><!-- duration: 21ms -->
+                <step title="bash: no io activity for 61s, prev-cpu=-1.000s, current-cpu=30.490s" date="2026-03-24T18:02:55.834" /><!-- duration: 61ms -->
+              </step><!-- duration: 107067ms -->
+              <step title="Using GenericDeploymentLogParser" date="2026-03-24T18:03:30.282" /><!-- duration: 4ms -->
+              <step title="Modified file to trigger a restart of the app container." date="2026-03-24T18:03:31.795" /><!-- duration: 6ms -->
+              <step title="Skip function trigger and logicapp sync because function is not enabled." date="2026-03-24T18:03:31.806" /><!-- duration: 11ms -->
+              <step title="Purge deployment items" date="2026-03-24T18:03:33.157" >
+                <step title="Remove d02098d0-, Success, received at 03/24/2026 00:27:02" date="2026-03-24T18:03:33.242" /><!-- duration: 4ms -->
+              </step><!-- duration: 94ms -->
+            </step><!-- duration: 111309ms -->
+          </step><!-- duration: 111679ms -->
+          <step title="Cleaning up temp files" date="2026-03-24T18:03:33.417" /><!-- duration: 1922ms -->
+          <step title="Cleaning up temp files" date="2026-03-24T18:03:35.348" /><!-- duration: 513ms -->
+          <step title="Reloading status file with latest updates" date="2026-03-24T18:03:35.914" >
+            <step title="WebHooksManager.PublishEventAsync: PostDeployment" date="2026-03-24T18:03:35.922" /><!-- duration: 44ms -->
+          </step><!-- duration: 56ms -->
+          <step title="Cleaning up temporary deployment - fetch deployment was successful" date="2026-03-24T18:03:35.979" /><!-- duration: 5ms -->
+        </step><!-- duration: 114591ms -->
+      </step><!-- duration: 116868ms -->

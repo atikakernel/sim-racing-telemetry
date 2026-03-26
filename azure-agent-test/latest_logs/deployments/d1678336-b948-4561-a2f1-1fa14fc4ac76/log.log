@@ -1,0 +1,86 @@
+2026-03-24T18:23:39.3262184Z,Updating submodules.,f54e1789-ab71-4609-b120-dc4810cedc7c,0
+2026-03-24T18:23:40.4688373Z,Preparing deployment for commit id 'd1678336-b'.,e20c5e16-2410-4ab8-8e79-e0043175eafc,0
+2026-03-24T18:23:40.8719202Z,PreDeployment: context.CleanOutputPath False,0c0b2e8e-4be7-4285-9c88-f3194aaa9717,0
+2026-03-24T18:23:41.0581713Z,PreDeployment: context.OutputPath /home/site/wwwroot,6ae0cd5a-dfb0-4830-8bd9-9db278117cc0,0
+2026-03-24T18:23:41.2922682Z,Repository path is /tmp/zipdeploy/extracted,6ec7e2ba-dc0c-4a67-8602-1c169cb4904d,0
+2026-03-24T18:23:42.3706024Z,Running oryx build...,6c7805f9-e3a9-4ed2-8acc-92555fd606b4,0
+	2026-03-24T18:23:42.3805941Z,Command: oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform nodejs --platform-version 20 -p virtualenv_name= --log-file /tmp/build-debug.log  -i /tmp/8de89d27970b579 -p compress_node_modules=tar-gz | tee /tmp/oryx-build.log,,0
+	2026-03-24T18:23:48.7324587Z,Operation performed by Microsoft Oryx&comma; https://github.com/Microsoft/Oryx,,0
+	2026-03-24T18:23:48.8128131Z,You can report issues at https://github.com/Microsoft/Oryx/issues,,0
+	2026-03-24T18:23:48.8931474Z,,,0
+	2026-03-24T18:23:49.0032603Z,Oryx Version: 0.2.20260204.1+0fdbe200b286be083841ff7fa201c6c2316dc6b9&comma; Commit: 0fdbe200b286be083841ff7fa201c6c2316dc6b9&comma; ReleaseTagName: 20260204.1,,0
+	2026-03-24T18:23:49.0759972Z,,,0
+	2026-03-24T18:23:49.1272547Z,Build Operation ID: aeffcebe8dfd705c,,0
+	2026-03-24T18:23:49.1550902Z,Repository Commit : d1678336-b948-4561-a2f1-1fa14fc4ac76,,0
+	2026-03-24T18:23:49.2225964Z,OS Type           : bookworm,,0
+	2026-03-24T18:23:49.2615996Z,Image Type        : githubactions,,0
+	2026-03-24T18:23:49.3108922Z,,,0
+	2026-03-24T18:23:49.3900426Z,Primary SDK Storage URL: https://oryx-cdn.microsoft.io,,0
+	2026-03-24T18:23:49.4308436Z,Backup SDK Storage URL: ,,0
+	2026-03-24T18:23:49.4985048Z,Detecting platforms...,,0
+	2026-03-24T18:23:49.5571224Z,External SDK provider is enabled.,,0
+	2026-03-24T18:23:50.0070345Z,Requesting metadata for platform nodejs from external SDK provider,,0
+	2026-03-24T18:23:50.8460762Z,Requesting metadata for platform nodejs from external SDK provider,,0
+	2026-03-24T18:23:51.7808834Z,Detected following platforms:,,0
+	2026-03-24T18:23:51.8571528Z,  nodejs: 20.20.0,,0
+	2026-03-24T18:23:52.3529804Z,Detected the following frameworks: Express,,0
+	2026-03-24T18:23:53.1830198Z,,,0
+	2026-03-24T18:23:53.3401804Z,Using intermediate directory '/tmp/8de89d27970b579'.,,0
+	2026-03-24T18:23:53.3901860Z,,,0
+	2026-03-24T18:23:53.4481929Z,Copying files to the intermediate directory...,,0
+	2026-03-24T18:23:53.9071598Z,Copying files to intermediate directory done in 0 sec(s).,,0
+	2026-03-24T18:23:53.9432329Z,,,0
+	2026-03-24T18:23:53.9975736Z,Source directory     : /tmp/8de89d27970b579,,0
+	2026-03-24T18:23:54.0380822Z,Destination directory: /home/site/wwwroot,,0
+	2026-03-24T18:23:54.0937279Z,,,0
+	2026-03-24T18:23:54.4635150Z,Running build script snippets...,,0
+	2026-03-24T18:23:54.5302801Z,Removing existing manifest file,,0
+	2026-03-24T18:23:54.5605286Z,Creating directory for command manifest file if it does not exist,,0
+	2026-03-24T18:23:54.6175174Z,Creating a manifest file...,,0
+	2026-03-24T18:23:54.6864472Z,Node Build Command Manifest file created.,,0
+	2026-03-24T18:23:54.7436134Z,,,0
+	2026-03-24T18:23:54.7985426Z,Using Node version:,,0
+	2026-03-24T18:23:54.8871848Z,v20.20.0,,0
+	2026-03-24T18:23:54.9563331Z,,,0
+	2026-03-24T18:23:55.0234316Z,Using Npm version:,,0
+	2026-03-24T18:23:56.0537408Z,10.8.2,,0
+	2026-03-24T18:23:56.1119259Z,,,0
+	2026-03-24T18:23:56.2052453Z,Running 'npm install'...,,0
+	2026-03-24T18:23:56.2454070Z,,,0
+	2026-03-24T18:24:37.5192375Z,,,0
+	2026-03-24T18:24:37.5775537Z,added 125 packages&comma; and audited 126 packages in 41s,,0
+	2026-03-24T18:24:37.6131156Z,,,0
+	2026-03-24T18:24:37.6726144Z,39 packages are looking for funding,,0
+	2026-03-24T18:24:37.7114072Z,  run `npm fund` for details,,0
+	2026-03-24T18:24:37.7603604Z,,,0
+	2026-03-24T18:24:37.7916660Z,found 0 vulnerabilities,,0
+	2026-03-24T18:24:37.8382556Z,,,0
+	2026-03-24T18:24:37.8914145Z,Zipping existing node_modules folder...,,0
+	2026-03-24T18:24:50.4260362Z,Done in 13 sec(s).,,0
+	2026-03-24T18:24:50.5065682Z,Build script snippets done in 56 sec(s).,,0
+	2026-03-24T18:24:50.5338439Z,Preparing output...,,0
+	2026-03-24T18:24:50.5741728Z,Using standard output preparation...,,0
+	2026-03-24T18:24:50.6043525Z,,,0
+	2026-03-24T18:24:50.6617113Z,Copying files to destination directory '/home/site/wwwroot'...,,0
+	2026-03-24T18:24:52.7747572Z,Copying to destination directory done in 2 sec(s).,,0
+	2026-03-24T18:24:52.8331234Z,Total time for destination directory preparation done in 2 sec(s).,,0
+	2026-03-24T18:24:52.8565848Z,,,0
+	2026-03-24T18:24:52.8816119Z,Removing existing manifest file,,0
+	2026-03-24T18:24:52.9060874Z,Creating a manifest file...,,0
+	2026-03-24T18:24:52.9444292Z,Manifest file created.,,0
+	2026-03-24T18:24:52.9750658Z,Copying .ostype to manifest output directory.,,0
+	2026-03-24T18:24:53.0042379Z,,,0
+	2026-03-24T18:24:53.0345783Z,Total execution done in 59 sec(s).,,0
+2026-03-24T18:24:53.3650736Z,Running post deployment command(s)...,3ad06582-9d98-43cc-b607-3ae048bfad15,0
+2026-03-24T18:24:53.5371562Z,,3f2b2dcb-6d31-48ea-97c3-039c708cb9e6,0
+2026-03-24T18:24:53.7148166Z,Generating summary of Oryx build,7b1c80f2-f148-4b92-b741-61064c8c47b4,0
+2026-03-24T18:24:53.8837761Z,Parsing the build logs,9c26ebf2-c19c-4d09-9a48-9f51d027b4f5,0
+2026-03-24T18:24:54.0416045Z,Found 0 issue(s),6680ca2c-afba-4c03-8829-6d8570d6e555,0
+2026-03-24T18:24:54.2142905Z,,8e57709d-7fd8-4f5a-9247-a8bf9bd456e1,0
+2026-03-24T18:24:54.3613055Z,Build Summary :,d52c4f2e-6fdb-4172-a5ed-3a67afe0caa4,0
+2026-03-24T18:24:54.5108266Z,===============,3122416e-6e09-4c14-9e5c-3fece2cc9074,0
+2026-03-24T18:24:54.7119837Z,Errors (0),587adcc3-8c77-4caf-a1a7-9c3a580e835d,0
+2026-03-24T18:24:54.8726304Z,Warnings (0),4ecd499c-6685-4501-9218-c2c56c7baece,0
+2026-03-24T18:24:55.0114371Z,,8a7dc82b-6a23-4329-b12a-a4d719b1d639,0
+2026-03-24T18:24:55.1703930Z,Triggering container recycle for OneDeploy by adding/updating restartTrigger.txt to the site root path,e5da125d-289a-43fb-a468-41b9390f2e9d,0
+2026-03-24T18:24:55.4528939Z,Deployment successful. deployer = OneDeploy deploymentPath = OneDeploy,f8d42675-3fe0-4426-bbb3-bec4cf01d832,0

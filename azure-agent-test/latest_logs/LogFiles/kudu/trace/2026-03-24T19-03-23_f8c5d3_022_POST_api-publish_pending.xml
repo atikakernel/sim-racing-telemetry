@@ -1,0 +1,15 @@
+<step title="Incoming Request" date="2026-03-24T19:03:23.416" instance="f8c5d3" url="/api/publish?async=true&amp;deployer=GITHUB_ONE_DEPLOY&amp;type=zip&amp;message=%7B%22type%22%3A%22deployment%22%2C%22sha%22%3A%22addb46d1c74a099511679036d2fbf02a122064e6%22%2C%22repoName%22%3A%22atikakernel%2Fazure-agent-test%22%2C%22actor%22%3A%22atikakernel%22%2C%22slotName%22%3A%22production%22%2C%22commitMessage%22%3A%22Fix%3A%20Final%20attempt%20with%20direct%20AzureOpenAI%20Key%20auth%20and%20v2024-12-01-preview%22%7D" method="POST" type="request" pid="833,1,31" Host="papales-ai-agent.scm.azurewebsites.net" User-Agent="GITHUBACTIONS_DeployWebAppToAzure_34087b6a34d78f175d16b41cf6da910f9054f2cc4998df1182f51d42fc30e3fe_v3.0.7" Authorization="Bas..." Content-Type="application/octet-stream" Cookie="ARRAffinity=f8c5d35a462fcd87923beccccb19f9d3c0e35bc47dd6274950bc1dd66bc38d1e;Path=/;HttpOnly;Secure;Domain=papales-ai-agent.scm.azurewebsites.net; ARRAffinitySameSite=f8c5d35a462fcd87923beccccb19f9d3c0e35bc47dd6274950bc1dd66bc38d1e;Path=/;HttpOnly;SameSite=None;Secure;Domain=papales-ai-agent.scm.azurewebsites.net" Transfer-Encoding="chunked" X-ARR-LOG-ID="c7aa999a-6221-40f0-a79f-4471a6b8a6af" CLIENT-IP="20.83.174.55:32824" X-SITE-DEPLOYMENT-ID="papales-ai-agent" WAS-DEFAULT-HOSTNAME="papales-ai-agent.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/publish?async=true&amp;deployer=GITHUB_ONE_DEPLOY&amp;type=zip&amp;message=%7B%22type%22%3A%22deployment%22%2C%22sha%22%3A%22addb46d1c74a099511679036d2fbf02a122064e6%22%2C%22repoName%22%3A%22atikakernel%2Fazure-agent-test%22%2C%22actor%22%3A%22atikakernel%22%2C%22slotName%22%3A%22production%22%2C%22commitMessage%22%3A%22Fix%3A%20Final%20attempt%20with%20direct%20AzureOpenAI%20Key%20auth%20and%20v2024-12-01-preview%22%7D" X-Client-IP="20.83.174.55" X-Client-Port="32824" >
+  <step title="OneDeploy" date="2026-03-24T19:03:23.508" >
+    <step title="Starting PushDeployAsync" date="2026-03-24T19:03:23.579" /><!-- duration: 25ms -->
+    <step title="Removing _del_node_modules symlink" date="2026-03-24T19:03:23.622" >
+      <step title="Writing artifact to /tmp/zipdeploy/6b7fa1e3-c1cd-4070-a399-5be2497a85d1.zip" date="2026-03-24T19:03:23.706" >
+        <step title="Writing multipart request body to /tmp/zipdeploy/6b7fa1e3-c1cd-4070-a399-5be2497a85d1.zip" date="2026-03-24T19:03:23.711" /><!-- duration: 14ms -->
+      </step><!-- duration: 48ms -->
+      <step title="Removing previous build artifact&apos;s manifest file" date="2026-03-24T19:03:23.780" >
+        <step title="Start deployment in the background" date="2026-03-24T19:03:23.823" >
+          <step title="Acquiring Deployment Lock" date="2026-03-24T19:03:23.878" /><!-- duration: 24ms -->
+          <step title="Acquired Deployment Lock" date="2026-03-24T19:03:24.001" /><!-- duration: 19ms -->
+        </step><!-- duration: 315ms -->
+      </step><!-- duration: 365ms -->
+      <step title="Outgoing response" date="2026-03-24T19:03:24.150" type="response" statusCode="202" statusText="Accepted" /><!-- duration: 3ms -->
+    </step><!-- duration: 535ms -->

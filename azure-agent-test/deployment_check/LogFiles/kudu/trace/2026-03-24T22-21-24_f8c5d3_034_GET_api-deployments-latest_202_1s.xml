@@ -1,0 +1,11 @@
+<step title="Incoming Request" date="2026-03-24T22:21:24.105" instance="f8c5d3" url="/api/deployments/latest?deployer=OneDeploy&amp;time=2026-03-24_22-21-11Z" method="GET" type="request" pid="835,1,40" Host="papales-ai-agent.scm.azurewebsites.net" User-Agent="GITHUBACTIONS_DeployWebAppToAzure_34087b6a34d78f175d16b41cf6da910f9054f2cc4998df1182f51d42fc30e3fe_v3.0.7" Authorization="Bas..." Content-Type="application/json; charset=utf-8" Cookie="ARRAffinity=f8c5d35a462fcd87923beccccb19f9d3c0e35bc47dd6274950bc1dd66bc38d1e;Path=/;HttpOnly;Secure;Domain=papales-ai-agent.scm.azurewebsites.net; ARRAffinitySameSite=f8c5d35a462fcd87923beccccb19f9d3c0e35bc47dd6274950bc1dd66bc38d1e;Path=/;HttpOnly;SameSite=None;Secure;Domain=papales-ai-agent.scm.azurewebsites.net" Content-Length="0" X-ARR-LOG-ID="e3b4efdf-f6d6-40e6-a15a-3fda0c51926e" CLIENT-IP="135.232.232.52:19520" X-SITE-DEPLOYMENT-ID="papales-ai-agent" WAS-DEFAULT-HOSTNAME="papales-ai-agent.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/deployments/latest?deployer=OneDeploy&amp;time=2026-03-24_22-21-11Z" X-Client-IP="135.232.232.52" X-Client-Port="19520" >
+  <step title="Cleanup Xml Logs" date="2026-03-24T22:21:24.115" >
+    <step title="Cleanup Infos" date="2026-03-24T22:21:24.170" totalFiles="508" totalCleanup="348" /><!-- duration: 21ms -->
+  </step><!-- duration: 95ms -->
+  <step title="DeploymentService.GetResult" date="2026-03-24T22:21:24.263" >
+    <step title="DeploymentService.GetLatestDeployment" date="2026-03-24T22:21:24.281" >
+      <step title="DeploymentManager.GetResults" date="2026-03-24T22:21:24.302" /><!-- duration: 1224ms -->
+    </step><!-- duration: 1258ms -->
+  </step><!-- duration: 1285ms -->
+  <step title="Outgoing response" date="2026-03-24T22:21:25.576" type="response" statusCode="202" statusText="Accepted" /><!-- duration: 9ms -->
+</step><!-- duration: 1484ms -->

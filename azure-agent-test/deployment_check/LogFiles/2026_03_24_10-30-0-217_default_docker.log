@@ -1,0 +1,839 @@
+2026-03-24T00:16:40.9790355Z    _____                               
+2026-03-24T00:16:40.9811554Z   /  _  \ __________ _________   ____  
+2026-03-24T00:16:40.9811840Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-03-24T00:16:40.9811889Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-03-24T00:16:40.9811932Z \____|__  /_____ \____/ |__|    \___  >
+2026-03-24T00:16:40.9811972Z         \/      \/                  \/ 
+2026-03-24T00:16:40.9812034Z A P P   S E R V I C E   O N   L I N U X
+2026-03-24T00:16:40.9812073Z 
+2026-03-24T00:16:40.9812130Z Documentation    : http://aka.ms/webapp-linux
+2026-03-24T00:16:40.9812175Z NodeJS quickstart: https://aka.ms/node-qs
+2026-03-24T00:16:40.9812220Z NodeJS Version   : v20.20.0
+2026-03-24T00:16:40.9812263Z Instance Name    : 10-30-0-217
+2026-03-24T00:16:40.9812371Z Instance Id      : 0061b616d320ed37e71e1e49dec1721b2227976d47125ac0763ebf8a4ea0edff
+2026-03-24T00:16:40.9812415Z 
+2026-03-24T00:16:40.9812515Z Note: Any data outside '/home' is not persisted
+2026-03-24T00:16:42.3863398Z Starting OpenBSD Secure Shell server: sshd.
+2026-03-24T00:16:42.4071726Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-03-24T00:16:42.4455871Z Updating certificates in /etc/ssl/certs...
+2026-03-24T00:16:48.9426154Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-03-24T00:16:48.9426694Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-03-24T00:16:48.9955151Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-03-24T00:16:49.0147820Z 4 added, 0 removed; done.
+2026-03-24T00:16:49.0174763Z Running hooks in /etc/ca-certificates/update.d...
+2026-03-24T00:16:49.0180364Z done.
+2026-03-24T00:16:49.0323126Z CA certificates copied and updated successfully.
+2026-03-24T00:16:49.1481243Z Starting periodic command scheduler: cron.
+2026-03-24T00:16:49.2333218Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-03-24T00:16:49.2391194Z Build Operation ID: 4cf5400affe5dd84
+2026-03-24T00:16:49.3418938Z Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2026-03-24T00:16:49.3455154Z Writing output script to '/opt/startup/startup.sh'
+2026-03-24T00:16:49.3721036Z Running #!/bin/sh
+2026-03-24T00:16:49.3721587Z 
+2026-03-24T00:16:49.3721640Z # Enter the source directory to make sure the script runs where the user expects
+2026-03-24T00:16:49.3721759Z cd "/home/site/wwwroot"
+2026-03-24T00:16:49.3721797Z 
+2026-03-24T00:16:49.3721835Z export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2026-03-24T00:16:49.3721873Z if [ -z "$PORT" ]; then
+2026-03-24T00:16:49.3721909Z 		export PORT=8080
+2026-03-24T00:16:49.3721944Z fi
+2026-03-24T00:16:49.3721978Z 
+2026-03-24T00:16:49.3722011Z echo Found tar.gz based node_modules.
+2026-03-24T00:16:49.3722053Z extractionCommand="tar -xzf node_modules.tar.gz -C /node_modules"
+2026-03-24T00:16:49.3722091Z echo "Removing existing modules directory from root..."
+2026-03-24T00:16:49.3722126Z rm -fr /node_modules
+2026-03-24T00:16:49.3722159Z mkdir -p /node_modules
+2026-03-24T00:16:49.3722297Z echo Extracting modules...
+2026-03-24T00:16:49.3722332Z $extractionCommand
+2026-03-24T00:16:49.3722420Z export NODE_PATH="/node_modules":$NODE_PATH
+2026-03-24T00:16:49.3722455Z export PATH=/node_modules/.bin:$PATH
+2026-03-24T00:16:49.3722488Z if [ -d node_modules ]; then
+2026-03-24T00:16:49.3722521Z     mv -f node_modules _del_node_modules || true
+2026-03-24T00:16:49.3722552Z fi
+2026-03-24T00:16:49.3722585Z 
+2026-03-24T00:16:49.3722618Z if [ -d /node_modules ]; then
+2026-03-24T00:16:49.3722664Z     ln -sfn /node_modules ./node_modules 
+2026-03-24T00:16:49.3722697Z fi
+2026-03-24T00:16:49.3722730Z 
+2026-03-24T00:16:49.3722762Z echo "Done."
+2026-03-24T00:16:49.3755397Z npm start
+2026-03-24T00:16:49.3846400Z Found tar.gz based node_modules.
+2026-03-24T00:16:49.3846849Z Removing existing modules directory from root...
+2026-03-24T00:16:49.4010782Z Extracting modules...
+2026-03-24T00:16:53.4135158Z Done.
+2026-03-24T00:16:54.4140262Z npm info using npm@10.9.2
+2026-03-24T00:16:54.4146176Z npm info using node@v20.20.0
+2026-03-24T00:16:55.5479041Z 
+2026-03-24T00:16:55.5479649Z > azure-agent-test@1.0.0 start
+2026-03-24T00:16:55.5479714Z > node server.js
+2026-03-24T00:16:55.5479762Z 
+2026-03-24T00:16:57.6828923Z 
+2026-03-24T00:16:57.6829538Z ================================
+2026-03-24T00:16:57.6834783Z Papales listo en el puerto 8080
+2026-03-24T00:16:57.6834878Z ================================
+2026-03-24T00:16:57.6834919Z 
+2026-03-24T00:17:42.0260508Z 
+2026-03-24T00:17:42.0260788Z 💬 Usuario: que es Refinitiv
+2026-03-24T00:17:42.1382128Z ➡️ Creando conversación...
+2026-03-24T00:17:46.5985433Z ❌ Error: OpenAIError: Failed to get token from 'apiKey' function: ChainedTokenCredential authentication failed.
+2026-03-24T00:17:46.5985757Z CredentialUnavailableError: EnvironmentCredential is unavailable. No underlying credential could be used. To troubleshoot, visit https://aka.ms/azsdk/js/identity/environmentcredential/troubleshoot.
+2026-03-24T00:17:46.5985800Z CredentialUnavailableError: ManagedIdentityCredential: Authentication failed. Message Attempted to use the IMDS endpoint, but it is not available.
+2026-03-24T00:17:46.5985837Z CredentialUnavailableError: Visual Studio Code Authentication is not available. Ensure you have have Azure Resources Extension installed in VS Code, signed into Azure via VS Code, installed the @azure/identity-vscode package, and properly configured the extension.
+2026-03-24T00:17:46.5985880Z CredentialUnavailableError: Azure CLI could not be found. Please visit https://aka.ms/azure-cli for installation instructions and then, once installed, authenticate to your Azure account using 'az login'.
+2026-03-24T00:17:46.5985913Z CredentialUnavailableError: Error: Unable to execute PowerShell. Ensure that it is installed in your system. To troubleshoot, visit https://aka.ms/azsdk/js/identity/powershellcredential/troubleshoot.
+2026-03-24T00:17:46.5985944Z CredentialUnavailableError: Azure Developer CLI couldn't be found. To mitigate this issue, see the troubleshooting guidelines at https://aka.ms/azsdk/js/identity/azdevclicredential/troubleshoot.
+2026-03-24T00:17:46.5985971Z     at OpenAI._callApiKey (file:///node_modules/openai/client.mjs:207:19)
+2026-03-24T00:17:46.5986015Z     at async OpenAI.prepareOptions (file:///node_modules/openai/client.mjs:236:9)
+2026-03-24T00:17:46.5986044Z     at async OpenAI.makeRequest (file:///node_modules/openai/client.mjs:274:9)
+2026-03-24T00:17:46.5986071Z     at async file:///home/site/wwwroot/server.js:58:30 {
+2026-03-24T00:17:46.5986100Z   [cause]: AggregateAuthenticationError: ChainedTokenCredential authentication failed.
+2026-03-24T00:17:46.5986136Z   CredentialUnavailableError: EnvironmentCredential is unavailable. No underlying credential could be used. To troubleshoot, visit https://aka.ms/azsdk/js/identity/environmentcredential/troubleshoot.
+2026-03-24T00:17:46.5986168Z   CredentialUnavailableError: ManagedIdentityCredential: Authentication failed. Message Attempted to use the IMDS endpoint, but it is not available.
+2026-03-24T00:17:46.5986206Z   CredentialUnavailableError: Visual Studio Code Authentication is not available. Ensure you have have Azure Resources Extension installed in VS Code, signed into Azure via VS Code, installed the @azure/identity-vscode package, and properly configured the extension.
+2026-03-24T00:17:46.5986292Z   CredentialUnavailableError: Azure CLI could not be found. Please visit https://aka.ms/azure-cli for installation instructions and then, once installed, authenticate to your Azure account using 'az login'.
+2026-03-24T00:17:46.5986341Z   CredentialUnavailableError: Error: Unable to execute PowerShell. Ensure that it is installed in your system. To troubleshoot, visit https://aka.ms/azsdk/js/identity/powershellcredential/troubleshoot.
+2026-03-24T00:17:46.5986381Z   CredentialUnavailableError: Azure Developer CLI couldn't be found. To mitigate this issue, see the troubleshooting guidelines at https://aka.ms/azsdk/js/identity/azdevclicredential/troubleshoot.
+2026-03-24T00:17:46.5986415Z       at file:///node_modules/@azure/identity/dist/esm/credentials/chainedTokenCredential.js:80:29
+2026-03-24T00:17:46.5986449Z       at async Object.withSpan (file:///node_modules/@azure/core-tracing/dist/esm/tracingClient.js:37:28)
+2026-03-24T00:17:46.5986482Z       at async DefaultAzureCredential.getToken (file:///node_modules/@azure/identity/dist/esm/credentials/chainedTokenCredential.js:55:27)
+2026-03-24T00:17:46.5986514Z       at async tryGetAccessToken (file:///node_modules/@azure/core-rest-pipeline/dist/esm/util/tokenCycler.js:33:32)
+2026-03-24T00:17:46.5986544Z       at async beginRefresh (file:///node_modules/@azure/core-rest-pipeline/dist/esm/util/tokenCycler.js:41:17)
+2026-03-24T00:17:46.5986578Z       at async Object.defaultAuthorizeRequest [as authorizeRequest] (file:///node_modules/@azure/core-rest-pipeline/dist/esm/policies/bearerTokenAuthenticationPolicy.js:43:25)
+2026-03-24T00:17:46.5986614Z       at async Object.sendRequest (file:///node_modules/@azure/core-rest-pipeline/dist/esm/policies/bearerTokenAuthenticationPolicy.js:109:13)
+2026-03-24T00:17:46.5986657Z       at async getRefreshedToken (file:///node_modules/@azure/identity/dist/esm/tokenProvider.js:33:21)
+2026-03-24T00:17:46.5986689Z       at async OpenAI._callApiKey (file:///node_modules/openai/client.mjs:202:21)
+2026-03-24T00:17:46.5986721Z       at async OpenAI.prepareOptions (file:///node_modules/openai/client.mjs:236:9) {
+2026-03-24T00:17:46.6315351Z     errors: [
+2026-03-24T00:17:46.6315592Z       CredentialUnavailableError: EnvironmentCredential is unavailable. No underlying credential could be used. To troubleshoot, visit https://aka.ms/azsdk/js/identity/environmentcredential/troubleshoot.
+2026-03-24T00:17:46.6315628Z           at file:///node_modules/@azure/identity/dist/esm/credentials/environmentCredential.js:124:19
+2026-03-24T00:17:46.6315657Z           at file:///node_modules/@azure/core-tracing/dist/esm/tracingClient.js:37:114
+2026-03-24T00:17:46.6315688Z           at Object.withContext (file:///node_modules/@azure/core-tracing/dist/esm/instrumenter.js:40:20)
+2026-03-24T00:17:46.6315719Z           at withContext (file:///node_modules/@azure/core-tracing/dist/esm/tracingClient.js:50:34)
+2026-03-24T00:17:46.6315749Z           at Object.withSpan (file:///node_modules/@azure/core-tracing/dist/esm/tracingClient.js:37:34)
+2026-03-24T00:17:46.6315861Z           at EnvironmentCredential.getToken (file:///node_modules/@azure/identity/dist/esm/credentials/environmentCredential.js:108:30)
+2026-03-24T00:17:46.6315894Z           at file:///node_modules/@azure/identity/dist/esm/credentials/chainedTokenCredential.js:65:52
+2026-03-24T00:17:46.6315922Z           at file:///node_modules/@azure/core-tracing/dist/esm/tracingClient.js:37:114
+2026-03-24T00:17:46.6315948Z           at Object.withContext (file:///node_modules/@azure/core-tracing/dist/esm/instrumenter.js:40:20)
+2026-03-24T00:17:46.6315975Z           at withContext (file:///node_modules/@azure/core-tracing/dist/esm/tracingClient.js:50:34),
+2026-03-24T00:17:46.6316001Z       [CredentialUnavailableError],
+2026-03-24T00:17:46.6316035Z       CredentialUnavailableError: Visual Studio Code Authentication is not available. Ensure you have have Azure Resources Extension installed in VS Code, signed into Azure via VS Code, installed the @azure/identity-vscode package, and properly configured the extension.
+2026-03-24T00:17:46.6316063Z           at VisualStudioCodeCredential.prepare (file:///node_modules/@azure/identity/dist/esm/credentials/visualStudioCodeCredential.js:66:19)
+2026-03-24T00:17:46.6339035Z           at VisualStudioCodeCredential.prepareOnce (file:///node_modules/@azure/identity/dist/esm/credentials/visualStudioCodeCredential.js:93:40)
+2026-03-24T00:17:46.6339203Z           at VisualStudioCodeCredential.getToken (file:///node_modules/@azure/identity/dist/esm/credentials/visualStudioCodeCredential.js:108:20)
+2026-03-24T00:17:46.6339234Z           at file:///node_modules/@azure/identity/dist/esm/credentials/chainedTokenCredential.js:65:52
+2026-03-24T00:17:46.6339261Z           at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-03-24T00:17:46.6339287Z           at async Object.withSpan (file:///node_modules/@azure/core-tracing/dist/esm/tracingClient.js:37:28)
+2026-03-24T00:17:46.6339315Z           at async DefaultAzureCredential.getToken (file:///node_modules/@azure/identity/dist/esm/credentials/chainedTokenCredential.js:55:27)
+2026-03-24T00:17:46.6339343Z           at async tryGetAccessToken (file:///node_modules/@azure/core-rest-pipeline/dist/esm/util/tokenCycler.js:33:32)
+2026-03-24T00:17:46.6339380Z           at async beginRefresh (file:///node_modules/@azure/core-rest-pipeline/dist/esm/util/tokenCycler.js:41:17)
+2026-03-24T00:17:46.6339423Z           at async Object.defaultAuthorizeRequest [as authorizeRequest] (file:///node_modules/@azure/core-rest-pipeline/dist/esm/policies/bearerTokenAuthenticationPolicy.js:43:25),
+2026-03-24T00:17:46.6339513Z       CredentialUnavailableError: Azure CLI could not be found. Please visit https://aka.ms/azure-cli for installation instructions and then, once installed, authenticate to your Azure account using 'az login'.
+2026-03-24T00:17:46.6339547Z           at file:///node_modules/@azure/identity/dist/esm/credentials/azureCliCredential.js:151:35
+2026-03-24T00:17:46.6339574Z           at async Object.withSpan (file:///node_modules/@azure/core-tracing/dist/esm/tracingClient.js:37:28)
+2026-03-24T00:17:46.6339602Z           at async file:///node_modules/@azure/identity/dist/esm/credentials/chainedTokenCredential.js:65:29
+2026-03-24T00:17:46.6339628Z           at async Object.withSpan (file:///node_modules/@azure/core-tracing/dist/esm/tracingClient.js:37:28)
+2026-03-24T00:17:46.6339657Z           at async DefaultAzureCredential.getToken (file:///node_modules/@azure/identity/dist/esm/credentials/chainedTokenCredential.js:55:27)
+2026-03-24T00:17:46.7060061Z           at async tryGetAccessToken (file:///node_modules/@azure/core-rest-pipeline/dist/esm/util/tokenCycler.js:33:32)
+2026-03-24T00:17:46.7060129Z           at async beginRefresh (file:///node_modules/@azure/core-rest-pipeline/dist/esm/util/tokenCycler.js:41:17)
+2026-03-24T00:17:46.7060221Z           at async Object.defaultAuthorizeRequest [as authorizeRequest] (file:///node_modules/@azure/core-rest-pipeline/dist/esm/policies/bearerTokenAuthenticationPolicy.js:43:25)
+2026-03-24T00:17:46.7060788Z           at async Object.sendRequest (file:///node_modules/@azure/core-rest-pipeline/dist/esm/policies/bearerTokenAuthenticationPolicy.js:109:13)
+2026-03-24T00:17:46.7060833Z           at async getRefreshedToken (file:///node_modules/@azure/identity/dist/esm/tokenProvider.js:33:21),
+2026-03-24T00:17:46.7060869Z       CredentialUnavailableError: Error: Unable to execute PowerShell. Ensure that it is installed in your system. To troubleshoot, visit https://aka.ms/azsdk/js/identity/powershellcredential/troubleshoot.
+2026-03-24T00:17:46.7060901Z           at file:///node_modules/@azure/identity/dist/esm/credentials/azurePowerShellCredential.js:219:31
+2026-03-24T00:17:46.7060932Z           at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-03-24T00:17:46.7060964Z           at async Object.withSpan (file:///node_modules/@azure/core-tracing/dist/esm/tracingClient.js:37:28)
+2026-03-24T00:17:46.7060993Z           at async file:///node_modules/@azure/identity/dist/esm/credentials/chainedTokenCredential.js:65:29
+2026-03-24T00:17:46.7061024Z           at async Object.withSpan (file:///node_modules/@azure/core-tracing/dist/esm/tracingClient.js:37:28)
+2026-03-24T00:17:46.7061102Z           at async DefaultAzureCredential.getToken (file:///node_modules/@azure/identity/dist/esm/credentials/chainedTokenCredential.js:55:27)
+2026-03-24T00:17:46.7061133Z           at async tryGetAccessToken (file:///node_modules/@azure/core-rest-pipeline/dist/esm/util/tokenCycler.js:33:32)
+2026-03-24T00:17:46.7061162Z           at async beginRefresh (file:///node_modules/@azure/core-rest-pipeline/dist/esm/util/tokenCycler.js:41:17)
+2026-03-24T00:17:46.7061194Z           at async Object.defaultAuthorizeRequest [as authorizeRequest] (file:///node_modules/@azure/core-rest-pipeline/dist/esm/policies/bearerTokenAuthenticationPolicy.js:43:25)
+2026-03-24T00:17:46.7061224Z           at async Object.sendRequest (file:///node_modules/@azure/core-rest-pipeline/dist/esm/policies/bearerTokenAuthenticationPolicy.js:109:13),
+2026-03-24T00:17:46.7061255Z       CredentialUnavailableError: Azure Developer CLI couldn't be found. To mitigate this issue, see the troubleshooting guidelines at https://aka.ms/azsdk/js/identity/azdevclicredential/troubleshoot.
+2026-03-24T00:17:46.7061283Z           at file:///node_modules/@azure/identity/dist/esm/credentials/azureDeveloperCliCredential.js:161:35
+2026-03-24T00:17:46.7061315Z           at async Object.withSpan (file:///node_modules/@azure/core-tracing/dist/esm/tracingClient.js:37:28)
+2026-03-24T00:17:46.7061364Z           at async file:///node_modules/@azure/identity/dist/esm/credentials/chainedTokenCredential.js:65:29
+2026-03-24T00:17:46.7061395Z           at async Object.withSpan (file:///node_modules/@azure/core-tracing/dist/esm/tracingClient.js:37:28)
+2026-03-24T00:17:46.7061427Z           at async DefaultAzureCredential.getToken (file:///node_modules/@azure/identity/dist/esm/credentials/chainedTokenCredential.js:55:27)
+2026-03-24T00:17:46.7061460Z           at async tryGetAccessToken (file:///node_modules/@azure/core-rest-pipeline/dist/esm/util/tokenCycler.js:33:32)
+2026-03-24T00:17:46.7061492Z           at async beginRefresh (file:///node_modules/@azure/core-rest-pipeline/dist/esm/util/tokenCycler.js:41:17)
+2026-03-24T00:17:46.7061526Z           at async Object.defaultAuthorizeRequest [as authorizeRequest] (file:///node_modules/@azure/core-rest-pipeline/dist/esm/policies/bearerTokenAuthenticationPolicy.js:43:25)
+2026-03-24T00:17:46.7061558Z           at async Object.sendRequest (file:///node_modules/@azure/core-rest-pipeline/dist/esm/policies/bearerTokenAuthenticationPolicy.js:109:13)
+2026-03-24T00:17:46.7061587Z           at async getRefreshedToken (file:///node_modules/@azure/identity/dist/esm/tokenProvider.js:33:21)
+2026-03-24T00:17:46.7061612Z     ]
+2026-03-24T00:17:46.7061647Z   }
+2026-03-24T00:17:46.7061673Z }
+2026-03-24T00:18:23.8066907Z    _____                               
+2026-03-24T00:18:24.0846567Z   /  _  \ __________ _________   ____  
+2026-03-24T00:18:24.0846840Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-03-24T00:18:24.0846886Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-03-24T00:18:24.0846921Z \____|__  /_____ \____/ |__|    \___  >
+2026-03-24T00:18:24.0846998Z         \/      \/                  \/ 
+2026-03-24T00:18:24.0847055Z A P P   S E R V I C E   O N   L I N U X
+2026-03-24T00:18:24.0847086Z 
+2026-03-24T00:18:24.0848818Z Documentation    : http://aka.ms/webapp-linux
+2026-03-24T00:18:24.0848917Z NodeJS quickstart: https://aka.ms/node-qs
+2026-03-24T00:18:24.0848965Z NodeJS Version   : v20.20.0
+2026-03-24T00:18:24.0849024Z Instance Name    : 10-30-0-217
+2026-03-24T00:18:24.0849075Z Instance Id      : 0061b616d320ed37e71e1e49dec1721b2227976d47125ac0763ebf8a4ea0edff
+2026-03-24T00:18:24.0849108Z 
+2026-03-24T00:18:24.0849145Z Note: Any data outside '/home' is not persisted
+2026-03-24T00:18:25.7178277Z Starting OpenBSD Secure Shell server: sshd.
+2026-03-24T00:18:25.7525186Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-03-24T00:18:25.8959027Z Updating certificates in /etc/ssl/certs...
+2026-03-24T00:18:42.5979179Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-03-24T00:18:42.5993641Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-03-24T00:18:42.7201656Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-03-24T00:18:42.7834250Z 4 added, 0 removed; done.
+2026-03-24T00:18:42.7892621Z Running hooks in /etc/ca-certificates/update.d...
+2026-03-24T00:18:42.7975506Z done.
+2026-03-24T00:18:42.8117557Z CA certificates copied and updated successfully.
+2026-03-24T00:18:43.0193207Z Starting periodic command scheduler: cron.
+2026-03-24T00:18:43.1896810Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-03-24T00:18:43.1933922Z Build Operation ID: 4cf5400affe5dd84
+2026-03-24T00:18:43.4619360Z Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2026-03-24T00:18:43.4799324Z Writing output script to '/opt/startup/startup.sh'
+2026-03-24T00:18:43.5089089Z Running #!/bin/sh
+2026-03-24T00:18:43.5089631Z 
+2026-03-24T00:18:43.5089692Z # Enter the source directory to make sure the script runs where the user expects
+2026-03-24T00:18:43.5089826Z cd "/home/site/wwwroot"
+2026-03-24T00:18:43.5089862Z 
+2026-03-24T00:18:43.5089895Z export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2026-03-24T00:18:43.5089926Z if [ -z "$PORT" ]; then
+2026-03-24T00:18:43.5089957Z 		export PORT=8080
+2026-03-24T00:18:43.5089988Z fi
+2026-03-24T00:18:43.5090017Z 
+2026-03-24T00:18:43.5090048Z echo Found tar.gz based node_modules.
+2026-03-24T00:18:43.5090089Z extractionCommand="tar -xzf node_modules.tar.gz -C /node_modules"
+2026-03-24T00:18:43.5090124Z echo "Removing existing modules directory from root..."
+2026-03-24T00:18:43.5090154Z rm -fr /node_modules
+2026-03-24T00:18:43.5090187Z mkdir -p /node_modules
+2026-03-24T00:18:43.5090221Z echo Extracting modules...
+2026-03-24T00:18:43.5090254Z $extractionCommand
+2026-03-24T00:18:43.5090332Z export NODE_PATH="/node_modules":$NODE_PATH
+2026-03-24T00:18:43.5090376Z export PATH=/node_modules/.bin:$PATH
+2026-03-24T00:18:43.5090413Z if [ -d node_modules ]; then
+2026-03-24T00:18:43.5090452Z     mv -f node_modules _del_node_modules || true
+2026-03-24T00:18:43.5090488Z fi
+2026-03-24T00:18:43.5090524Z 
+2026-03-24T00:18:43.5090562Z if [ -d /node_modules ]; then
+2026-03-24T00:18:43.5090601Z     ln -sfn /node_modules ./node_modules 
+2026-03-24T00:18:43.5090625Z fi
+2026-03-24T00:18:43.5090649Z 
+2026-03-24T00:18:43.5090671Z echo "Done."
+2026-03-24T00:18:43.5222265Z npm start
+2026-03-24T00:18:43.5283889Z Found tar.gz based node_modules.
+2026-03-24T00:18:43.5284360Z Removing existing modules directory from root...
+2026-03-24T00:18:43.5428372Z Extracting modules...
+2026-03-24T00:18:48.6193984Z Done.
+2026-03-24T00:18:49.4782641Z npm info using npm@10.9.2
+2026-03-24T00:18:49.4788099Z npm info using node@v20.20.0
+2026-03-24T00:18:50.6995185Z 
+2026-03-24T00:18:50.6995698Z > azure-agent-test@1.0.0 start
+2026-03-24T00:18:50.6995762Z > node server.js
+2026-03-24T00:18:50.6995803Z 
+2026-03-24T00:18:52.3808570Z 
+2026-03-24T00:18:52.3808996Z ================================
+2026-03-24T00:18:52.3812046Z Papales listo en el puerto 8080
+2026-03-24T00:18:52.3812180Z ================================
+2026-03-24T00:18:52.3812234Z 
+2026-03-24T00:24:30.7800211Z    _____                               
+2026-03-24T00:24:30.7801918Z   /  _  \ __________ _________   ____  
+2026-03-24T00:24:30.7802004Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-03-24T00:24:30.7802042Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-03-24T00:24:30.7802081Z \____|__  /_____ \____/ |__|    \___  >
+2026-03-24T00:24:30.7802121Z         \/      \/                  \/ 
+2026-03-24T00:24:30.7802203Z A P P   S E R V I C E   O N   L I N U X
+2026-03-24T00:24:30.7802234Z 
+2026-03-24T00:24:30.7802273Z Documentation    : http://aka.ms/webapp-linux
+2026-03-24T00:24:30.7802335Z NodeJS quickstart: https://aka.ms/node-qs
+2026-03-24T00:24:30.7802370Z NodeJS Version   : v20.20.0
+2026-03-24T00:24:30.7802406Z Instance Name    : 10-30-0-217
+2026-03-24T00:24:30.7802456Z Instance Id      : 0061b616d320ed37e71e1e49dec1721b2227976d47125ac0763ebf8a4ea0edff
+2026-03-24T00:24:30.7802490Z 
+2026-03-24T00:24:30.7802523Z Note: Any data outside '/home' is not persisted
+2026-03-24T00:24:33.4444316Z Starting OpenBSD Secure Shell server: sshd.
+2026-03-24T00:24:33.5328063Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-03-24T00:24:33.8458136Z Updating certificates in /etc/ssl/certs...
+2026-03-24T00:24:43.8663524Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-03-24T00:24:43.8685109Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-03-24T00:24:43.9229821Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-03-24T00:24:43.9445575Z 4 added, 0 removed; done.
+2026-03-24T00:24:43.9465891Z Running hooks in /etc/ca-certificates/update.d...
+2026-03-24T00:24:43.9540128Z done.
+2026-03-24T00:24:43.9693472Z CA certificates copied and updated successfully.
+2026-03-24T00:24:44.1306437Z Starting periodic command scheduler: cron.
+2026-03-24T00:24:44.2603202Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-03-24T00:24:44.2651939Z Build Operation ID: 4cf5400affe5dd84
+2026-03-24T00:24:44.3987686Z Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2026-03-24T00:24:44.4069092Z Writing output script to '/opt/startup/startup.sh'
+2026-03-24T00:24:44.4529373Z Running #!/bin/sh
+2026-03-24T00:24:44.4530137Z 
+2026-03-24T00:24:44.4530203Z # Enter the source directory to make sure the script runs where the user expects
+2026-03-24T00:24:44.4530324Z cd "/home/site/wwwroot"
+2026-03-24T00:24:44.4530362Z 
+2026-03-24T00:24:44.4530401Z export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2026-03-24T00:24:44.4530439Z if [ -z "$PORT" ]; then
+2026-03-24T00:24:44.4530475Z 		export PORT=8080
+2026-03-24T00:24:44.4530510Z fi
+2026-03-24T00:24:44.4530546Z 
+2026-03-24T00:24:44.4530582Z echo Found tar.gz based node_modules.
+2026-03-24T00:24:44.4530633Z extractionCommand="tar -xzf node_modules.tar.gz -C /node_modules"
+2026-03-24T00:24:44.4530675Z echo "Removing existing modules directory from root..."
+2026-03-24T00:24:44.4530716Z rm -fr /node_modules
+2026-03-24T00:24:44.4530757Z mkdir -p /node_modules
+2026-03-24T00:24:44.4531359Z echo Extracting modules...
+2026-03-24T00:24:44.4531403Z $extractionCommand
+2026-03-24T00:24:44.4531949Z export NODE_PATH="/node_modules":$NODE_PATH
+2026-03-24T00:24:44.4532024Z export PATH=/node_modules/.bin:$PATH
+2026-03-24T00:24:44.4532063Z if [ -d node_modules ]; then
+2026-03-24T00:24:44.4532096Z     mv -f node_modules _del_node_modules || true
+2026-03-24T00:24:44.4532130Z fi
+2026-03-24T00:24:44.4532161Z 
+2026-03-24T00:24:44.4532197Z if [ -d /node_modules ]; then
+2026-03-24T00:24:44.4532241Z     ln -sfn /node_modules ./node_modules 
+2026-03-24T00:24:44.4532274Z fi
+2026-03-24T00:24:44.4532306Z 
+2026-03-24T00:24:44.4532337Z echo "Done."
+2026-03-24T00:24:44.4559751Z npm start
+2026-03-24T00:24:44.4621743Z Found tar.gz based node_modules.
+2026-03-24T00:24:44.4639668Z Removing existing modules directory from root...
+2026-03-24T00:24:44.4896387Z Extracting modules...
+2026-03-24T00:24:48.3917289Z Done.
+2026-03-24T00:24:49.1448809Z npm info using npm@10.9.2
+2026-03-24T00:24:49.1464647Z npm info using node@v20.20.0
+2026-03-24T00:24:50.3224909Z 
+2026-03-24T00:24:50.3225546Z > azure-agent-test@1.0.0 start
+2026-03-24T00:24:50.3225597Z > node server.js
+2026-03-24T00:24:50.3225633Z 
+2026-03-24T00:24:55.7294055Z 
+2026-03-24T00:24:55.7294524Z ================================
+2026-03-24T00:24:55.7299105Z Papales listo en el puerto 8080
+2026-03-24T00:24:55.7299223Z ================================
+2026-03-24T00:24:55.7299263Z 
+2026-03-24T00:26:51.3965363Z    _____                               
+2026-03-24T00:26:51.3976516Z   /  _  \ __________ _________   ____  
+2026-03-24T00:26:51.3976634Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-03-24T00:26:51.3976675Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-03-24T00:26:51.3976730Z \____|__  /_____ \____/ |__|    \___  >
+2026-03-24T00:26:51.3976772Z         \/      \/                  \/ 
+2026-03-24T00:26:51.3977955Z A P P   S E R V I C E   O N   L I N U X
+2026-03-24T00:26:51.3978024Z 
+2026-03-24T00:26:51.3978069Z Documentation    : http://aka.ms/webapp-linux
+2026-03-24T00:26:51.3978109Z NodeJS quickstart: https://aka.ms/node-qs
+2026-03-24T00:26:51.3978169Z NodeJS Version   : v20.20.0
+2026-03-24T00:26:51.3978526Z Instance Name    : 10-30-0-217
+2026-03-24T00:26:51.3978571Z Instance Id      : 0061b616d320ed37e71e1e49dec1721b2227976d47125ac0763ebf8a4ea0edff
+2026-03-24T00:26:51.3978602Z 
+2026-03-24T00:26:51.3978636Z Note: Any data outside '/home' is not persisted
+2026-03-24T00:26:57.3452564Z Starting OpenBSD Secure Shell server: sshd.
+2026-03-24T00:26:57.3566535Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-03-24T00:26:57.7659555Z Updating certificates in /etc/ssl/certs...
+2026-03-24T00:28:21.7936161Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-03-24T00:28:21.7937722Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-03-24T00:28:22.1265496Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-03-24T00:28:22.4340792Z 4 added, 0 removed; done.
+2026-03-24T00:28:22.4448292Z Running hooks in /etc/ca-certificates/update.d...
+2026-03-24T00:28:22.4560280Z done.
+2026-03-24T00:28:22.4788879Z CA certificates copied and updated successfully.
+2026-03-24T00:28:22.9097620Z Starting periodic command scheduler: cron.
+2026-03-24T00:28:25.4146679Z Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2026-03-24T00:28:25.4147179Z Could not find operation ID in manifest. Generating an operation id...
+2026-03-24T00:28:25.4147238Z Build Operation ID: c322d534-ce54-4212-86b8-8458f70c16b7
+2026-03-24T00:28:27.6178985Z Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2026-03-24T00:28:27.6255049Z Writing output script to '/opt/startup/startup.sh'
+2026-03-24T00:28:27.8626750Z Running #!/bin/sh
+2026-03-24T00:28:27.8628310Z 
+2026-03-24T00:28:27.8628447Z # Enter the source directory to make sure the script runs where the user expects
+2026-03-24T00:28:27.8628510Z cd "/home/site/wwwroot"
+2026-03-24T00:28:27.8628544Z 
+2026-03-24T00:28:27.8628580Z export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2026-03-24T00:28:27.8628615Z if [ -z "$PORT" ]; then
+2026-03-24T00:28:27.8628650Z 		export PORT=8080
+2026-03-24T00:28:27.8628687Z fi
+2026-03-24T00:28:27.8628721Z 
+2026-03-24T00:28:27.8644851Z npm start
+2026-03-24T00:28:32.4977453Z npm info using npm@10.9.2
+2026-03-24T00:28:32.4993416Z npm info using node@v20.20.0
+2026-03-24T00:28:35.9551683Z 
+2026-03-24T00:28:35.9552300Z > azure-agent-test@1.0.0 start
+2026-03-24T00:28:35.9552356Z > node server.js
+2026-03-24T00:28:35.9552412Z 
+2026-03-24T00:28:37.3239435Z node:internal/modules/esm/resolve:873
+2026-03-24T00:28:37.3240254Z   throw new ERR_MODULE_NOT_FOUND(packageName, fileURLToPath(base), null);
+2026-03-24T00:28:37.3240302Z         ^
+2026-03-24T00:28:37.3240340Z 
+2026-03-24T00:28:37.3240379Z Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'dotenv' imported from /home/site/wwwroot/server.js
+2026-03-24T00:28:37.3240415Z     at packageResolve (node:internal/modules/esm/resolve:873:9)
+2026-03-24T00:28:37.3240451Z     at moduleResolve (node:internal/modules/esm/resolve:946:18)
+2026-03-24T00:28:37.3240509Z     at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+2026-03-24T00:28:37.3240551Z     at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:708:12)
+2026-03-24T00:28:37.3240593Z     at #cachedDefaultResolve (node:internal/modules/esm/loader:657:25)
+2026-03-24T00:28:37.3240628Z     at ModuleLoader.resolve (node:internal/modules/esm/loader:640:38)
+2026-03-24T00:28:37.3240663Z     at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:264:38)
+2026-03-24T00:28:37.3240699Z     at ModuleJob._link (node:internal/modules/esm/module_job:168:49) {
+2026-03-24T00:28:37.3240739Z   code: 'ERR_MODULE_NOT_FOUND'
+2026-03-24T00:28:37.3240770Z }
+2026-03-24T00:28:37.3253864Z 
+2026-03-24T00:28:37.3254055Z Node.js v20.20.0
+2026-03-24T00:28:37.3466896Z npm http fetch GET 200 https://registry.npmjs.org/npm 854ms
+2026-03-24T00:28:37.3584924Z npm notice
+2026-03-24T00:28:37.3585241Z npm notice New major version of npm available! 10.9.2 -> 11.12.0
+2026-03-24T00:28:37.3585356Z npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.12.0
+2026-03-24T00:28:37.3585399Z npm notice To update run: npm install -g npm@11.12.0
+2026-03-24T00:28:37.3585435Z npm notice
+2026-03-24T00:29:34.0451724Z    _____                               
+2026-03-24T00:29:34.0452168Z   /  _  \ __________ _________   ____  
+2026-03-24T00:29:34.0452208Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-03-24T00:29:34.0452235Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-03-24T00:29:34.0452261Z \____|__  /_____ \____/ |__|    \___  >
+2026-03-24T00:29:34.0452289Z         \/      \/                  \/ 
+2026-03-24T00:29:34.0452314Z A P P   S E R V I C E   O N   L I N U X
+2026-03-24T00:29:34.0452340Z 
+2026-03-24T00:29:34.0452367Z Documentation    : http://aka.ms/webapp-linux
+2026-03-24T00:29:34.0452396Z NodeJS quickstart: https://aka.ms/node-qs
+2026-03-24T00:29:34.0452425Z NodeJS Version   : v20.20.0
+2026-03-24T00:29:34.0452452Z Instance Name    : 10-30-0-217
+2026-03-24T00:29:34.0452503Z Instance Id      : 0061b616d320ed37e71e1e49dec1721b2227976d47125ac0763ebf8a4ea0edff
+2026-03-24T00:29:34.0452530Z 
+2026-03-24T00:29:34.0452559Z Note: Any data outside '/home' is not persisted
+2026-03-24T00:29:35.4936442Z Starting OpenBSD Secure Shell server: sshd.
+2026-03-24T00:29:35.5364932Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-03-24T00:29:36.1284465Z Updating certificates in /etc/ssl/certs...
+2026-03-24T00:29:43.5425127Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-03-24T00:29:43.5434447Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-03-24T00:29:43.6408158Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-03-24T00:29:43.6632918Z 4 added, 0 removed; done.
+2026-03-24T00:29:43.6633584Z Running hooks in /etc/ca-certificates/update.d...
+2026-03-24T00:29:43.6667111Z done.
+2026-03-24T00:29:43.6781583Z CA certificates copied and updated successfully.
+2026-03-24T00:29:43.9582900Z Starting periodic command scheduler: cron.
+2026-03-24T00:29:44.4425071Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-03-24T00:29:44.4472522Z Build Operation ID: b5ae4982b8f30bf7
+2026-03-24T00:29:44.5386090Z Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2026-03-24T00:29:44.5414254Z Writing output script to '/opt/startup/startup.sh'
+2026-03-24T00:29:44.5542769Z Running #!/bin/sh
+2026-03-24T00:29:44.5543154Z 
+2026-03-24T00:29:44.5543200Z # Enter the source directory to make sure the script runs where the user expects
+2026-03-24T00:29:44.5543231Z cd "/home/site/wwwroot"
+2026-03-24T00:29:44.5543257Z 
+2026-03-24T00:29:44.5543286Z export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2026-03-24T00:29:44.5543313Z if [ -z "$PORT" ]; then
+2026-03-24T00:29:44.5543341Z 		export PORT=8080
+2026-03-24T00:29:44.5543366Z fi
+2026-03-24T00:29:44.5543391Z 
+2026-03-24T00:29:44.5543418Z echo Found tar.gz based node_modules.
+2026-03-24T00:29:44.5543448Z extractionCommand="tar -xzf node_modules.tar.gz -C /node_modules"
+2026-03-24T00:29:44.5543495Z echo "Removing existing modules directory from root..."
+2026-03-24T00:29:44.5543525Z rm -fr /node_modules
+2026-03-24T00:29:44.5543552Z mkdir -p /node_modules
+2026-03-24T00:29:44.5543579Z echo Extracting modules...
+2026-03-24T00:29:44.5543606Z $extractionCommand
+2026-03-24T00:29:44.5543653Z export NODE_PATH="/node_modules":$NODE_PATH
+2026-03-24T00:29:44.5543681Z export PATH=/node_modules/.bin:$PATH
+2026-03-24T00:29:44.5543709Z if [ -d node_modules ]; then
+2026-03-24T00:29:44.5543739Z     mv -f node_modules _del_node_modules || true
+2026-03-24T00:29:44.5543766Z fi
+2026-03-24T00:29:44.5543792Z 
+2026-03-24T00:29:44.5543831Z if [ -d /node_modules ]; then
+2026-03-24T00:29:44.5544560Z     ln -sfn /node_modules ./node_modules 
+2026-03-24T00:29:44.5544598Z fi
+2026-03-24T00:29:44.5544623Z 
+2026-03-24T00:29:44.5544648Z echo "Done."
+2026-03-24T00:29:44.5575402Z npm start
+2026-03-24T00:29:44.5579400Z Found tar.gz based node_modules.
+2026-03-24T00:29:44.5583847Z Removing existing modules directory from root...
+2026-03-24T00:29:44.5709702Z Extracting modules...
+2026-03-24T00:29:47.0707263Z Done.
+2026-03-24T00:29:48.2198831Z npm info using npm@10.9.2
+2026-03-24T00:29:48.2199424Z npm info using node@v20.20.0
+2026-03-24T00:29:49.0744976Z 
+2026-03-24T00:29:49.0745595Z > azure-agent-test@1.0.0 start
+2026-03-24T00:29:49.0745632Z > node server.js
+2026-03-24T00:29:49.0745656Z 
+2026-03-24T00:29:54.2100963Z file:///node_modules/@azure-rest/core-client/dist/esm/clientHelpers.js:25
+2026-03-24T00:29:54.2101494Z             throw new Error(`Missing API Key Header Name`);
+2026-03-24T00:29:54.2101532Z                   ^
+2026-03-24T00:29:54.2101557Z 
+2026-03-24T00:29:54.2101582Z Error: Missing API Key Header Name
+2026-03-24T00:29:54.2101610Z     at addCredentialPipelinePolicy (file:///node_modules/@azure-rest/core-client/dist/esm/clientHelpers.js:25:19)
+2026-03-24T00:29:54.2101637Z     at createDefaultPipeline (file:///node_modules/@azure-rest/core-client/dist/esm/clientHelpers.js:37:5)
+2026-03-24T00:29:54.2101665Z     at getClient (file:///node_modules/@azure-rest/core-client/dist/esm/getClient.js:30:22)
+2026-03-24T00:29:54.2101695Z     at createAIProject (file:///node_modules/@azure/ai-projects/dist/esm/api/aiProjectContext.js:18:25)
+2026-03-24T00:29:54.2101787Z     at new AIProjectClient (file:///node_modules/@azure/ai-projects/dist/esm/aiProjectClient.js:27:34)
+2026-03-24T00:29:54.2101812Z     at file:///home/site/wwwroot/server.js:54:23
+2026-03-24T00:29:54.2101838Z     at ModuleJob.run (node:internal/modules/esm/module_job:325:25)
+2026-03-24T00:29:54.2101862Z     at async ModuleLoader.import (node:internal/modules/esm/loader:606:24)
+2026-03-24T00:29:54.2101888Z     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+2026-03-24T00:29:54.2101910Z 
+2026-03-24T00:29:54.2101934Z Node.js v20.20.0
+2026-03-24T00:29:54.2263067Z npm http fetch GET 200 https://registry.npmjs.org/npm 252ms
+2026-03-24T00:29:54.2412829Z npm notice
+2026-03-24T00:29:54.2413782Z npm notice New major version of npm available! 10.9.2 -> 11.12.0
+2026-03-24T00:29:54.2413888Z npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.12.0
+2026-03-24T00:29:54.2413921Z npm notice To update run: npm install -g npm@11.12.0
+2026-03-24T00:29:54.2413948Z npm notice
+2026-03-24T00:39:51.4335493Z    _____                               
+2026-03-24T00:39:51.4336397Z   /  _  \ __________ _________   ____  
+2026-03-24T00:39:51.4336440Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-03-24T00:39:51.4336541Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-03-24T00:39:51.4336569Z \____|__  /_____ \____/ |__|    \___  >
+2026-03-24T00:39:51.4336598Z         \/      \/                  \/ 
+2026-03-24T00:39:51.4336624Z A P P   S E R V I C E   O N   L I N U X
+2026-03-24T00:39:51.4336651Z 
+2026-03-24T00:39:51.4336681Z Documentation    : http://aka.ms/webapp-linux
+2026-03-24T00:39:51.4336709Z NodeJS quickstart: https://aka.ms/node-qs
+2026-03-24T00:39:51.4336736Z NodeJS Version   : v20.20.0
+2026-03-24T00:39:51.4336763Z Instance Name    : 10-30-0-217
+2026-03-24T00:39:51.4336795Z Instance Id      : 0061b616d320ed37e71e1e49dec1721b2227976d47125ac0763ebf8a4ea0edff
+2026-03-24T00:39:51.4336820Z 
+2026-03-24T00:39:51.4336862Z Note: Any data outside '/home' is not persisted
+2026-03-24T00:39:52.3441153Z Starting OpenBSD Secure Shell server: sshd.
+2026-03-24T00:39:52.3619246Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-03-24T00:39:52.4001878Z Updating certificates in /etc/ssl/certs...
+2026-03-24T00:39:57.8443134Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-03-24T00:39:57.8447160Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-03-24T00:39:57.8999780Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-03-24T00:39:57.9167502Z 4 added, 0 removed; done.
+2026-03-24T00:39:57.9172114Z Running hooks in /etc/ca-certificates/update.d...
+2026-03-24T00:39:57.9219346Z done.
+2026-03-24T00:39:57.9283844Z CA certificates copied and updated successfully.
+2026-03-24T00:39:58.0685869Z Starting periodic command scheduler: cron.
+2026-03-24T00:39:58.1997567Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-03-24T00:39:58.2073747Z Build Operation ID: b5ae4982b8f30bf7
+2026-03-24T00:39:58.3459626Z Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2026-03-24T00:39:58.3558977Z Writing output script to '/opt/startup/startup.sh'
+2026-03-24T00:39:58.3990754Z Running #!/bin/sh
+2026-03-24T00:39:58.3991441Z 
+2026-03-24T00:39:58.3991483Z # Enter the source directory to make sure the script runs where the user expects
+2026-03-24T00:39:58.3991514Z cd "/home/site/wwwroot"
+2026-03-24T00:39:58.3991540Z 
+2026-03-24T00:39:58.3991632Z export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2026-03-24T00:39:58.3991661Z if [ -z "$PORT" ]; then
+2026-03-24T00:39:58.3991688Z 		export PORT=8080
+2026-03-24T00:39:58.3991715Z fi
+2026-03-24T00:39:58.3991740Z 
+2026-03-24T00:39:58.3991767Z echo Found tar.gz based node_modules.
+2026-03-24T00:39:58.3991796Z extractionCommand="tar -xzf node_modules.tar.gz -C /node_modules"
+2026-03-24T00:39:58.3991825Z echo "Removing existing modules directory from root..."
+2026-03-24T00:39:58.3991853Z rm -fr /node_modules
+2026-03-24T00:39:58.3991879Z mkdir -p /node_modules
+2026-03-24T00:39:58.3991906Z echo Extracting modules...
+2026-03-24T00:39:58.3991932Z $extractionCommand
+2026-03-24T00:39:58.3991968Z export NODE_PATH="/node_modules":$NODE_PATH
+2026-03-24T00:39:58.3991996Z export PATH=/node_modules/.bin:$PATH
+2026-03-24T00:39:58.3992025Z if [ -d node_modules ]; then
+2026-03-24T00:39:58.3992054Z     mv -f node_modules _del_node_modules || true
+2026-03-24T00:39:58.3992080Z fi
+2026-03-24T00:39:58.3992105Z 
+2026-03-24T00:39:58.3992133Z if [ -d /node_modules ]; then
+2026-03-24T00:39:58.3992164Z     ln -sfn /node_modules ./node_modules 
+2026-03-24T00:39:58.3992192Z fi
+2026-03-24T00:39:58.3992219Z 
+2026-03-24T00:39:58.3992247Z echo "Done."
+2026-03-24T00:39:58.4014003Z npm start
+2026-03-24T00:39:58.4046177Z Found tar.gz based node_modules.
+2026-03-24T00:39:58.4047298Z Removing existing modules directory from root...
+2026-03-24T00:39:58.4202169Z Extracting modules...
+2026-03-24T00:40:02.2962685Z Done.
+2026-03-24T00:40:02.9703492Z npm info using npm@10.9.2
+2026-03-24T00:40:02.9709063Z npm info using node@v20.20.0
+2026-03-24T00:40:03.8233041Z 
+2026-03-24T00:40:03.8233395Z > azure-agent-test@1.0.0 start
+2026-03-24T00:40:03.8233441Z > node server.js
+2026-03-24T00:40:03.8233473Z 
+2026-03-24T00:40:05.4946480Z file:///node_modules/@azure-rest/core-client/dist/esm/clientHelpers.js:25
+2026-03-24T00:40:05.4947047Z             throw new Error(`Missing API Key Header Name`);
+2026-03-24T00:40:05.4947089Z                   ^
+2026-03-24T00:40:05.4947113Z 
+2026-03-24T00:40:05.4947205Z Error: Missing API Key Header Name
+2026-03-24T00:40:05.4949141Z     at addCredentialPipelinePolicy (file:///node_modules/@azure-rest/core-client/dist/esm/clientHelpers.js:25:19)
+2026-03-24T00:40:05.4949182Z     at createDefaultPipeline (file:///node_modules/@azure-rest/core-client/dist/esm/clientHelpers.js:37:5)
+2026-03-24T00:40:05.4949216Z     at getClient (file:///node_modules/@azure-rest/core-client/dist/esm/getClient.js:30:22)
+2026-03-24T00:40:05.4949253Z     at createAIProject (file:///node_modules/@azure/ai-projects/dist/esm/api/aiProjectContext.js:18:25)
+2026-03-24T00:40:05.4949286Z     at new AIProjectClient (file:///node_modules/@azure/ai-projects/dist/esm/aiProjectClient.js:27:34)
+2026-03-24T00:40:05.4949321Z     at file:///home/site/wwwroot/server.js:54:23
+2026-03-24T00:40:05.4949353Z     at ModuleJob.run (node:internal/modules/esm/module_job:325:25)
+2026-03-24T00:40:05.4950382Z     at async ModuleLoader.import (node:internal/modules/esm/loader:606:24)
+2026-03-24T00:40:05.4950424Z     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+2026-03-24T00:40:05.4950475Z 
+2026-03-24T00:40:05.4950504Z Node.js v20.20.0
+2026-03-24T00:40:05.5065515Z npm http fetch GET 200 https://registry.npmjs.org/npm 692ms
+2026-03-24T00:40:05.5131476Z npm notice
+2026-03-24T00:40:05.5131779Z npm notice New major version of npm available! 10.9.2 -> 11.12.0
+2026-03-24T00:40:05.5131819Z npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.12.0
+2026-03-24T00:40:05.5131846Z npm notice To update run: npm install -g npm@11.12.0
+2026-03-24T00:40:05.5131873Z npm notice
+2026-03-24T00:58:33.6139912Z    _____                               
+2026-03-24T00:58:33.6140476Z   /  _  \ __________ _________   ____  
+2026-03-24T00:58:33.6140519Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-03-24T00:58:33.6140546Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-03-24T00:58:33.6140572Z \____|__  /_____ \____/ |__|    \___  >
+2026-03-24T00:58:33.6140597Z         \/      \/                  \/ 
+2026-03-24T00:58:33.6140623Z A P P   S E R V I C E   O N   L I N U X
+2026-03-24T00:58:33.6140647Z 
+2026-03-24T00:58:33.6140675Z Documentation    : http://aka.ms/webapp-linux
+2026-03-24T00:58:33.6140704Z NodeJS quickstart: https://aka.ms/node-qs
+2026-03-24T00:58:33.6140794Z NodeJS Version   : v20.20.0
+2026-03-24T00:58:33.6140824Z Instance Name    : 10-30-0-217
+2026-03-24T00:58:33.6140854Z Instance Id      : 0061b616d320ed37e71e1e49dec1721b2227976d47125ac0763ebf8a4ea0edff
+2026-03-24T00:58:33.6140880Z 
+2026-03-24T00:58:33.6140907Z Note: Any data outside '/home' is not persisted
+2026-03-24T00:58:35.0910327Z Starting OpenBSD Secure Shell server: sshd.
+2026-03-24T00:58:35.1115746Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-03-24T00:58:35.1545479Z Updating certificates in /etc/ssl/certs...
+2026-03-24T00:58:41.7372920Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-03-24T00:58:41.7377891Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-03-24T00:58:41.7904936Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-03-24T00:58:41.8065930Z 4 added, 0 removed; done.
+2026-03-24T00:58:41.8071910Z Running hooks in /etc/ca-certificates/update.d...
+2026-03-24T00:58:41.8100218Z done.
+2026-03-24T00:58:41.8178704Z CA certificates copied and updated successfully.
+2026-03-24T00:58:42.5852031Z Starting periodic command scheduler: cron.
+2026-03-24T00:58:42.6707474Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-03-24T00:58:42.6754744Z Build Operation ID: b5ae4982b8f30bf7
+2026-03-24T00:58:42.8881009Z Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2026-03-24T00:58:42.9053478Z Writing output script to '/opt/startup/startup.sh'
+2026-03-24T00:58:42.9318170Z Running #!/bin/sh
+2026-03-24T00:58:42.9318526Z 
+2026-03-24T00:58:42.9318563Z # Enter the source directory to make sure the script runs where the user expects
+2026-03-24T00:58:42.9318589Z cd "/home/site/wwwroot"
+2026-03-24T00:58:42.9318611Z 
+2026-03-24T00:58:42.9318636Z export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2026-03-24T00:58:42.9318659Z if [ -z "$PORT" ]; then
+2026-03-24T00:58:42.9318683Z 		export PORT=8080
+2026-03-24T00:58:42.9318704Z fi
+2026-03-24T00:58:42.9318726Z 
+2026-03-24T00:58:42.9318750Z echo Found tar.gz based node_modules.
+2026-03-24T00:58:42.9318833Z extractionCommand="tar -xzf node_modules.tar.gz -C /node_modules"
+2026-03-24T00:58:42.9318859Z echo "Removing existing modules directory from root..."
+2026-03-24T00:58:42.9318881Z rm -fr /node_modules
+2026-03-24T00:58:42.9318904Z mkdir -p /node_modules
+2026-03-24T00:58:42.9318928Z echo Extracting modules...
+2026-03-24T00:58:42.9318952Z $extractionCommand
+2026-03-24T00:58:42.9318976Z export NODE_PATH="/node_modules":$NODE_PATH
+2026-03-24T00:58:42.9319000Z export PATH=/node_modules/.bin:$PATH
+2026-03-24T00:58:42.9319023Z if [ -d node_modules ]; then
+2026-03-24T00:58:42.9319047Z     mv -f node_modules _del_node_modules || true
+2026-03-24T00:58:42.9319070Z fi
+2026-03-24T00:58:42.9319091Z 
+2026-03-24T00:58:42.9319125Z if [ -d /node_modules ]; then
+2026-03-24T00:58:42.9319150Z     ln -sfn /node_modules ./node_modules 
+2026-03-24T00:58:42.9319173Z fi
+2026-03-24T00:58:42.9319195Z 
+2026-03-24T00:58:42.9319218Z echo "Done."
+2026-03-24T00:58:42.9319243Z npm start
+2026-03-24T00:58:42.9394750Z Found tar.gz based node_modules.
+2026-03-24T00:58:42.9400076Z Removing existing modules directory from root...
+2026-03-24T00:58:42.9663338Z Extracting modules...
+2026-03-24T00:58:47.0892478Z Done.
+2026-03-24T00:58:48.2238838Z npm info using npm@10.9.2
+2026-03-24T00:58:48.2242476Z npm info using node@v20.20.0
+2026-03-24T00:58:49.1256728Z 
+2026-03-24T00:58:49.1257176Z > azure-agent-test@1.0.0 start
+2026-03-24T00:58:49.1257222Z > node server.js
+2026-03-24T00:58:49.1257251Z 
+2026-03-24T00:58:51.0690905Z file:///node_modules/@azure-rest/core-client/dist/esm/clientHelpers.js:25
+2026-03-24T00:58:51.0691348Z             throw new Error(`Missing API Key Header Name`);
+2026-03-24T00:58:51.0691383Z                   ^
+2026-03-24T00:58:51.0691410Z 
+2026-03-24T00:58:51.0691439Z Error: Missing API Key Header Name
+2026-03-24T00:58:51.0691469Z     at addCredentialPipelinePolicy (file:///node_modules/@azure-rest/core-client/dist/esm/clientHelpers.js:25:19)
+2026-03-24T00:58:51.0691501Z     at createDefaultPipeline (file:///node_modules/@azure-rest/core-client/dist/esm/clientHelpers.js:37:5)
+2026-03-24T00:58:51.0691530Z     at getClient (file:///node_modules/@azure-rest/core-client/dist/esm/getClient.js:30:22)
+2026-03-24T00:58:51.0691627Z     at createAIProject (file:///node_modules/@azure/ai-projects/dist/esm/api/aiProjectContext.js:18:25)
+2026-03-24T00:58:51.0691660Z     at new AIProjectClient (file:///node_modules/@azure/ai-projects/dist/esm/aiProjectClient.js:27:34)
+2026-03-24T00:58:51.0691687Z     at file:///home/site/wwwroot/server.js:54:23
+2026-03-24T00:58:51.0691717Z     at ModuleJob.run (node:internal/modules/esm/module_job:325:25)
+2026-03-24T00:58:51.0691743Z     at async ModuleLoader.import (node:internal/modules/esm/loader:606:24)
+2026-03-24T00:58:51.0691772Z     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+2026-03-24T00:58:51.0691797Z 
+2026-03-24T00:58:51.0691823Z Node.js v20.20.0
+2026-03-24T00:58:51.0904871Z npm http fetch GET 200 https://registry.npmjs.org/npm 431ms
+2026-03-24T00:58:51.1116646Z npm notice
+2026-03-24T00:58:51.1123293Z npm notice New major version of npm available! 10.9.2 -> 11.12.0
+2026-03-24T00:58:51.1123358Z npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.12.0
+2026-03-24T00:58:51.1123385Z npm notice To update run: npm install -g npm@11.12.0
+2026-03-24T00:58:51.1123415Z npm notice
+2026-03-24T01:16:32.8487937Z    _____                               
+2026-03-24T01:16:32.8489915Z   /  _  \ __________ _________   ____  
+2026-03-24T01:16:32.8490015Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-03-24T01:16:32.8490056Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-03-24T01:16:32.8490093Z \____|__  /_____ \____/ |__|    \___  >
+2026-03-24T01:16:32.8490141Z         \/      \/                  \/ 
+2026-03-24T01:16:32.8490225Z A P P   S E R V I C E   O N   L I N U X
+2026-03-24T01:16:32.8490262Z 
+2026-03-24T01:16:32.8490307Z Documentation    : http://aka.ms/webapp-linux
+2026-03-24T01:16:32.8490354Z NodeJS quickstart: https://aka.ms/node-qs
+2026-03-24T01:16:32.8490395Z NodeJS Version   : v20.20.0
+2026-03-24T01:16:32.8490434Z Instance Name    : 10-30-0-217
+2026-03-24T01:16:32.8490497Z Instance Id      : 0061b616d320ed37e71e1e49dec1721b2227976d47125ac0763ebf8a4ea0edff
+2026-03-24T01:16:32.8490536Z 
+2026-03-24T01:16:32.8490579Z Note: Any data outside '/home' is not persisted
+2026-03-24T01:16:33.8305981Z Starting OpenBSD Secure Shell server: sshd.
+2026-03-24T01:16:33.8379442Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-03-24T01:16:33.8705982Z Updating certificates in /etc/ssl/certs...
+2026-03-24T01:16:39.4877176Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-03-24T01:16:39.4882792Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-03-24T01:16:39.5391564Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-03-24T01:16:39.5543345Z 4 added, 0 removed; done.
+2026-03-24T01:16:39.5548375Z Running hooks in /etc/ca-certificates/update.d...
+2026-03-24T01:16:39.5587295Z done.
+2026-03-24T01:16:39.5707973Z CA certificates copied and updated successfully.
+2026-03-24T01:16:39.6308639Z Starting periodic command scheduler: cron.
+2026-03-24T01:16:39.6850151Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-03-24T01:16:39.6875515Z Build Operation ID: 73aadb61a0828961
+2026-03-24T01:16:39.7721816Z Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2026-03-24T01:16:39.7749676Z Writing output script to '/opt/startup/startup.sh'
+2026-03-24T01:16:39.7913856Z Running #!/bin/sh
+2026-03-24T01:16:39.7914848Z 
+2026-03-24T01:16:39.7914908Z # Enter the source directory to make sure the script runs where the user expects
+2026-03-24T01:16:39.7915012Z cd "/home/site/wwwroot"
+2026-03-24T01:16:39.7915050Z 
+2026-03-24T01:16:39.7915085Z export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2026-03-24T01:16:39.7915116Z if [ -z "$PORT" ]; then
+2026-03-24T01:16:39.7915146Z 		export PORT=8080
+2026-03-24T01:16:39.7915181Z fi
+2026-03-24T01:16:39.7915216Z 
+2026-03-24T01:16:39.7915266Z echo Found tar.gz based node_modules.
+2026-03-24T01:16:39.7915308Z extractionCommand="tar -xzf node_modules.tar.gz -C /node_modules"
+2026-03-24T01:16:39.7915348Z echo "Removing existing modules directory from root..."
+2026-03-24T01:16:39.7915383Z rm -fr /node_modules
+2026-03-24T01:16:39.7915420Z mkdir -p /node_modules
+2026-03-24T01:16:39.7915452Z echo Extracting modules...
+2026-03-24T01:16:39.7915482Z $extractionCommand
+2026-03-24T01:16:39.7915540Z export NODE_PATH="/node_modules":$NODE_PATH
+2026-03-24T01:16:39.7915574Z export PATH=/node_modules/.bin:$PATH
+2026-03-24T01:16:39.7915606Z if [ -d node_modules ]; then
+2026-03-24T01:16:39.7915636Z     mv -f node_modules _del_node_modules || true
+2026-03-24T01:16:39.7915667Z fi
+2026-03-24T01:16:39.7915696Z 
+2026-03-24T01:16:39.7915724Z if [ -d /node_modules ]; then
+2026-03-24T01:16:39.7915764Z     ln -sfn /node_modules ./node_modules 
+2026-03-24T01:16:39.7915794Z fi
+2026-03-24T01:16:39.7915823Z 
+2026-03-24T01:16:39.7915852Z echo "Done."
+2026-03-24T01:16:39.7916744Z npm start
+2026-03-24T01:16:39.7944504Z Found tar.gz based node_modules.
+2026-03-24T01:16:39.7944724Z Removing existing modules directory from root...
+2026-03-24T01:16:39.8029733Z Extracting modules...
+2026-03-24T01:16:42.3623276Z Done.
+2026-03-24T01:16:42.9942814Z npm info using npm@10.9.2
+2026-03-24T01:16:42.9948390Z npm info using node@v20.20.0
+2026-03-24T01:16:43.7890684Z 
+2026-03-24T01:16:43.7891186Z > azure-agent-test@1.0.0 start
+2026-03-24T01:16:43.7891248Z > node server.js
+2026-03-24T01:16:43.7891285Z 
+2026-03-24T01:16:44.9560194Z file:///node_modules/@azure-rest/core-client/dist/esm/clientHelpers.js:25
+2026-03-24T01:16:44.9560886Z             throw new Error(`Missing API Key Header Name`);
+2026-03-24T01:16:44.9560944Z                   ^
+2026-03-24T01:16:44.9560984Z 
+2026-03-24T01:16:44.9561020Z Error: Missing API Key Header Name
+2026-03-24T01:16:44.9561058Z     at addCredentialPipelinePolicy (file:///node_modules/@azure-rest/core-client/dist/esm/clientHelpers.js:25:19)
+2026-03-24T01:16:44.9561155Z     at createDefaultPipeline (file:///node_modules/@azure-rest/core-client/dist/esm/clientHelpers.js:37:5)
+2026-03-24T01:16:44.9561192Z     at getClient (file:///node_modules/@azure-rest/core-client/dist/esm/getClient.js:30:22)
+2026-03-24T01:16:44.9561226Z     at createAIProject (file:///node_modules/@azure/ai-projects/dist/esm/api/aiProjectContext.js:18:25)
+2026-03-24T01:16:44.9561262Z     at new AIProjectClient (file:///node_modules/@azure/ai-projects/dist/esm/aiProjectClient.js:27:34)
+2026-03-24T01:16:44.9561293Z     at file:///home/site/wwwroot/server.js:54:23
+2026-03-24T01:16:44.9561327Z     at ModuleJob.run (node:internal/modules/esm/module_job:325:25)
+2026-03-24T01:16:44.9561370Z     at async ModuleLoader.import (node:internal/modules/esm/loader:606:24)
+2026-03-24T01:16:44.9561406Z     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+2026-03-24T01:16:44.9561436Z 
+2026-03-24T01:16:44.9561466Z Node.js v20.20.0
+2026-03-24T01:16:44.9668433Z npm http fetch GET 200 https://registry.npmjs.org/npm 230ms
+2026-03-24T01:16:44.9729500Z npm notice
+2026-03-24T01:16:44.9729800Z npm notice New major version of npm available! 10.9.2 -> 11.12.0
+2026-03-24T01:16:44.9729862Z npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.12.0
+2026-03-24T01:16:44.9729907Z npm notice To update run: npm install -g npm@11.12.0
+2026-03-24T01:16:44.9729950Z npm notice
+2026-03-24T01:26:59.4933453Z    _____                               
+2026-03-24T01:26:59.4933817Z   /  _  \ __________ _________   ____  
+2026-03-24T01:26:59.4933858Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-03-24T01:26:59.4933965Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-03-24T01:26:59.4933999Z \____|__  /_____ \____/ |__|    \___  >
+2026-03-24T01:26:59.4934032Z         \/      \/                  \/ 
+2026-03-24T01:26:59.4934062Z A P P   S E R V I C E   O N   L I N U X
+2026-03-24T01:26:59.4934091Z 
+2026-03-24T01:26:59.4934121Z Documentation    : http://aka.ms/webapp-linux
+2026-03-24T01:26:59.4934149Z NodeJS quickstart: https://aka.ms/node-qs
+2026-03-24T01:26:59.4934176Z NodeJS Version   : v20.20.0
+2026-03-24T01:26:59.4934204Z Instance Name    : 10-30-0-217
+2026-03-24T01:26:59.4934237Z Instance Id      : 0061b616d320ed37e71e1e49dec1721b2227976d47125ac0763ebf8a4ea0edff
+2026-03-24T01:26:59.4934262Z 
+2026-03-24T01:26:59.4934289Z Note: Any data outside '/home' is not persisted
+2026-03-24T01:27:00.5874781Z Starting OpenBSD Secure Shell server: sshd.
+2026-03-24T01:27:00.5981938Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-03-24T01:27:00.6294272Z Updating certificates in /etc/ssl/certs...
+2026-03-24T01:27:25.0813764Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-03-24T01:27:25.1002340Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-03-24T01:27:26.6200887Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-03-24T01:27:26.7649127Z 4 added, 0 removed; done.
+2026-03-24T01:27:26.7649885Z Running hooks in /etc/ca-certificates/update.d...
+2026-03-24T01:27:26.9004082Z done.
+2026-03-24T01:27:27.1633911Z CA certificates copied and updated successfully.
+2026-03-24T01:27:27.8875104Z Starting periodic command scheduler: cron.
+2026-03-24T01:27:28.9030610Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-03-24T01:27:28.9438061Z Build Operation ID: 73aadb61a0828961
+2026-03-24T01:27:29.7422684Z Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2026-03-24T01:27:29.7631092Z Writing output script to '/opt/startup/startup.sh'
+2026-03-24T01:27:29.9145572Z Running #!/bin/sh
+2026-03-24T01:27:29.9146005Z 
+2026-03-24T01:27:29.9146047Z # Enter the source directory to make sure the script runs where the user expects
+2026-03-24T01:27:29.9146075Z cd "/home/site/wwwroot"
+2026-03-24T01:27:29.9146100Z 
+2026-03-24T01:27:29.9146128Z export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2026-03-24T01:27:29.9146154Z if [ -z "$PORT" ]; then
+2026-03-24T01:27:29.9146180Z 		export PORT=8080
+2026-03-24T01:27:29.9146205Z fi
+2026-03-24T01:27:29.9146229Z 
+2026-03-24T01:27:29.9146320Z echo Found tar.gz based node_modules.
+2026-03-24T01:27:29.9146349Z extractionCommand="tar -xzf node_modules.tar.gz -C /node_modules"
+2026-03-24T01:27:29.9146376Z echo "Removing existing modules directory from root..."
+2026-03-24T01:27:29.9146406Z rm -fr /node_modules
+2026-03-24T01:27:29.9146431Z mkdir -p /node_modules
+2026-03-24T01:27:29.9146456Z echo Extracting modules...
+2026-03-24T01:27:29.9146481Z $extractionCommand
+2026-03-24T01:27:29.9146508Z export NODE_PATH="/node_modules":$NODE_PATH
+2026-03-24T01:27:29.9146533Z export PATH=/node_modules/.bin:$PATH
+2026-03-24T01:27:29.9146559Z if [ -d node_modules ]; then
+2026-03-24T01:27:29.9146586Z     mv -f node_modules _del_node_modules || true
+2026-03-24T01:27:29.9146611Z fi
+2026-03-24T01:27:29.9146647Z 
+2026-03-24T01:27:29.9146674Z if [ -d /node_modules ]; then
+2026-03-24T01:27:29.9146699Z     ln -sfn /node_modules ./node_modules 
+2026-03-24T01:27:29.9146724Z fi
+2026-03-24T01:27:29.9146748Z 
+2026-03-24T01:27:29.9146774Z echo "Done."
+2026-03-24T01:27:29.9146798Z npm start
+2026-03-24T01:27:29.9675426Z Found tar.gz based node_modules.
+2026-03-24T01:27:29.9705456Z Removing existing modules directory from root...
+2026-03-24T01:27:30.0015688Z Extracting modules...
+2026-03-24T01:27:54.7587369Z Done.
+2026-03-24T01:27:59.0461583Z npm info using npm@10.9.2
+2026-03-24T01:27:59.1188176Z npm info using node@v20.20.0
+2026-03-24T01:28:06.0377476Z 
+2026-03-24T01:28:06.0378115Z > azure-agent-test@1.0.0 start
+2026-03-24T01:28:06.0378153Z > node server.js
+2026-03-24T01:28:06.0378178Z 
+2026-03-24T01:28:13.3463712Z file:///node_modules/@azure-rest/core-client/dist/esm/clientHelpers.js:25
+2026-03-24T01:28:13.3464875Z             throw new Error(`Missing API Key Header Name`);
+2026-03-24T01:28:13.3464913Z                   ^
+2026-03-24T01:28:13.3464940Z 
+2026-03-24T01:28:13.3464968Z Error: Missing API Key Header Name
+2026-03-24T01:28:13.3465000Z     at addCredentialPipelinePolicy (file:///node_modules/@azure-rest/core-client/dist/esm/clientHelpers.js:25:19)
+2026-03-24T01:28:13.3465027Z     at createDefaultPipeline (file:///node_modules/@azure-rest/core-client/dist/esm/clientHelpers.js:37:5)
+2026-03-24T01:28:13.3465061Z     at getClient (file:///node_modules/@azure-rest/core-client/dist/esm/getClient.js:30:22)
+2026-03-24T01:28:13.3465086Z     at createAIProject (file:///node_modules/@azure/ai-projects/dist/esm/api/aiProjectContext.js:18:25)
+2026-03-24T01:28:13.3465112Z     at new AIProjectClient (file:///node_modules/@azure/ai-projects/dist/esm/aiProjectClient.js:27:34)
+2026-03-24T01:28:13.3465137Z     at file:///home/site/wwwroot/server.js:54:23
+2026-03-24T01:28:13.3465256Z     at ModuleJob.run (node:internal/modules/esm/module_job:325:25)
+2026-03-24T01:28:13.3465285Z     at async ModuleLoader.import (node:internal/modules/esm/loader:606:24)
+2026-03-24T01:28:13.3465312Z     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+2026-03-24T01:28:13.3465335Z 
+2026-03-24T01:28:13.3465359Z Node.js v20.20.0
+2026-03-24T01:28:13.4025507Z npm http fetch GET 200 https://registry.npmjs.org/npm 1583ms
+2026-03-24T01:28:13.4387969Z npm notice
+2026-03-24T01:28:13.4388643Z npm notice New major version of npm available! 10.9.2 -> 11.12.0
+2026-03-24T01:28:13.4388698Z npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.12.0
+2026-03-24T01:28:13.4388737Z npm notice To update run: npm install -g npm@11.12.0
+2026-03-24T01:28:13.4389052Z npm notice

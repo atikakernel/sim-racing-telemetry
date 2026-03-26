@@ -1,0 +1,1144 @@
+2026-03-24T14:26:11.5446677Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T14:26:15.0280794Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T14:26:28.5331488Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T14:26:28.5408105Z Container start method called.
+2026-03-24T14:26:28.5411387Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.7:13209/appsvc/node:20-lts_20260115.4.tuxprod for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T14:26:28.5417171Z Establishing network.
+2026-03-24T14:26:28.5423878Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T14:27:24.4558033Z Container is starting.
+2026-03-24T14:27:24.4567940Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T14:27:24.4569942Z Establishing user namespace if not established already.
+2026-03-24T14:27:24.4571472Z Establishing network if not established already.
+2026-03-24T14:27:24.4572485Z Mounting volumes.
+2026-03-24T14:27:24.5084827Z Nested mountpoint 
+2026-03-24T14:27:24.6185800Z Nested mountpoint volatile/logs
+2026-03-24T14:27:24.6983238Z Nested mountpoint 
+2026-03-24T14:27:25.0087646Z Nested mountpoint 
+2026-03-24T14:27:25.0289162Z Nested mountpoint 
+2026-03-24T14:27:25.3319024Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for papales-ai-agent. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T14:27:25.3329932Z Creating container.
+2026-03-24T14:27:25.3401282Z Creating pipes for streaming container io.
+2026-03-24T14:27:25.3406306Z Creating stdout named pipe at /podr/container/pipe/691bdd0ebdfe_papales-ai-agent/stdout_227882125b8349d18c48583bb0092368.
+2026-03-24T14:27:25.3494196Z Successfully created stdout named pipe at: /podr/container/pipe/691bdd0ebdfe_papales-ai-agent/stdout_227882125b8349d18c48583bb0092368.
+2026-03-24T14:27:25.3501809Z Opening named pipe /podr/container/pipe/691bdd0ebdfe_papales-ai-agent/stdout_227882125b8349d18c48583bb0092368 for reading in non-blocking mode.
+2026-03-24T14:27:25.3508386Z Successfully opened named pipe: /podr/container/pipe/691bdd0ebdfe_papales-ai-agent/stdout_227882125b8349d18c48583bb0092368.
+2026-03-24T14:27:25.3513932Z Successfully removed non-blocking flag from /podr/container/pipe/691bdd0ebdfe_papales-ai-agent/stdout_227882125b8349d18c48583bb0092368.
+2026-03-24T14:27:25.3525471Z Creating stderr named pipe at /podr/container/pipe/691bdd0ebdfe_papales-ai-agent/stderr_1924d3d370a84e1c895435c215354694.
+2026-03-24T14:27:25.3577771Z Successfully created stderr named pipe at: /podr/container/pipe/691bdd0ebdfe_papales-ai-agent/stderr_1924d3d370a84e1c895435c215354694.
+2026-03-24T14:27:25.3607090Z Opening named pipe /podr/container/pipe/691bdd0ebdfe_papales-ai-agent/stderr_1924d3d370a84e1c895435c215354694 for reading in non-blocking mode.
+2026-03-24T14:27:25.3614631Z Successfully opened named pipe: /podr/container/pipe/691bdd0ebdfe_papales-ai-agent/stderr_1924d3d370a84e1c895435c215354694.
+2026-03-24T14:27:25.3618633Z Successfully removed non-blocking flag from /podr/container/pipe/691bdd0ebdfe_papales-ai-agent/stderr_1924d3d370a84e1c895435c215354694.
+2026-03-24T14:27:25.3626232Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T14:27:25.9021005Z Starting container: 691bdd0ebdfe_papales-ai-agent.
+2026-03-24T14:27:25.9989009Z Starting watchers and probes.
+2026-03-24T14:27:26.0389371Z Starting metrics collection.
+2026-03-24T14:27:26.0400089Z Container is running.
+2026-03-24T14:27:26.0405425Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T14:27:26.2515357Z Container start method finished after 57700 ms.
+2026-03-24T14:27:26.2608129Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T14:27:26.2787755Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T14:28:40.4285446Z Site startup probe succeeded after 74.098158 seconds.
+2026-03-24T14:28:40.6472060Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 74.098158 seconds., DetailsLevel: INFO
+2026-03-24T14:28:40.7678427Z Site is running with deployment version: 7cc90afa-3ee3-401b-9453-34a496f98cd0
+2026-03-24T14:28:40.7694809Z Site started.
+2026-03-24T14:28:40.7706911Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 03/24/2026 14:28:40 (UTC), DetailsLevel: INFO
+2026-03-24T14:28:41.2691026Z Site is running with patch version NODE 20.20.0
+2026-03-24T15:18:49.0995145Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T15:18:52.3208825Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T15:19:05.8347504Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T15:19:05.8359397Z Container start method called.
+2026-03-24T15:19:05.9237481Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.6:13209/appsvc/node:20-lts_20260115.4.tuxprod for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T15:19:05.9339302Z Establishing network.
+2026-03-24T15:19:05.9351974Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T15:20:07.5342540Z Container is starting.
+2026-03-24T15:20:07.5437463Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T15:20:07.5512659Z Establishing user namespace if not established already.
+2026-03-24T15:20:07.5520685Z Establishing network if not established already.
+2026-03-24T15:20:07.5525819Z Mounting volumes.
+2026-03-24T15:20:07.5530613Z Nested mountpoint 
+2026-03-24T15:20:07.6408090Z Nested mountpoint volatile/logs
+2026-03-24T15:20:07.6912317Z Nested mountpoint 
+2026-03-24T15:20:07.7022249Z Nested mountpoint 
+2026-03-24T15:20:07.7131327Z Nested mountpoint 
+2026-03-24T15:20:08.2919227Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for papales-ai-agent. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T15:20:08.2921884Z Creating container.
+2026-03-24T15:20:08.2938214Z Creating pipes for streaming container io.
+2026-03-24T15:20:08.3115631Z Creating stdout named pipe at /podr/container/pipe/28543e6f33d7_papales-ai-agent/stdout_3e58c4b449d545fd9ffb9cdd7634317e.
+2026-03-24T15:20:08.3122602Z Successfully created stdout named pipe at: /podr/container/pipe/28543e6f33d7_papales-ai-agent/stdout_3e58c4b449d545fd9ffb9cdd7634317e.
+2026-03-24T15:20:08.3123773Z Opening named pipe /podr/container/pipe/28543e6f33d7_papales-ai-agent/stdout_3e58c4b449d545fd9ffb9cdd7634317e for reading in non-blocking mode.
+2026-03-24T15:20:08.3125175Z Successfully opened named pipe: /podr/container/pipe/28543e6f33d7_papales-ai-agent/stdout_3e58c4b449d545fd9ffb9cdd7634317e.
+2026-03-24T15:20:08.3331032Z Successfully removed non-blocking flag from /podr/container/pipe/28543e6f33d7_papales-ai-agent/stdout_3e58c4b449d545fd9ffb9cdd7634317e.
+2026-03-24T15:20:08.3508153Z Creating stderr named pipe at /podr/container/pipe/28543e6f33d7_papales-ai-agent/stderr_09169448ad164311a08648292dcbe4e5.
+2026-03-24T15:20:08.3519036Z Successfully created stderr named pipe at: /podr/container/pipe/28543e6f33d7_papales-ai-agent/stderr_09169448ad164311a08648292dcbe4e5.
+2026-03-24T15:20:08.3610634Z Opening named pipe /podr/container/pipe/28543e6f33d7_papales-ai-agent/stderr_09169448ad164311a08648292dcbe4e5 for reading in non-blocking mode.
+2026-03-24T15:20:08.3694872Z Successfully opened named pipe: /podr/container/pipe/28543e6f33d7_papales-ai-agent/stderr_09169448ad164311a08648292dcbe4e5.
+2026-03-24T15:20:08.3703620Z Successfully removed non-blocking flag from /podr/container/pipe/28543e6f33d7_papales-ai-agent/stderr_09169448ad164311a08648292dcbe4e5.
+2026-03-24T15:20:08.3708807Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T15:20:08.9475794Z Starting container: 28543e6f33d7_papales-ai-agent.
+2026-03-24T15:20:09.0243362Z Starting watchers and probes.
+2026-03-24T15:20:09.0252812Z Starting metrics collection.
+2026-03-24T15:20:09.0346881Z Container is running.
+2026-03-24T15:20:09.0349991Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T15:20:09.1699455Z Container start method finished after 63333 ms.
+2026-03-24T15:20:09.1702045Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T15:20:09.1702555Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T15:21:03.2504658Z Site startup probe succeeded after 54.0605796 seconds.
+2026-03-24T15:21:03.4568213Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 54.0605796 seconds., DetailsLevel: INFO
+2026-03-24T15:21:03.5172289Z Site is running with deployment version: b398e51c-da25-4b54-a1ff-865d944a6dac
+2026-03-24T15:21:03.5269954Z Site started.
+2026-03-24T15:21:03.5272590Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 03/24/2026 15:21:03 (UTC), DetailsLevel: INFO
+2026-03-24T15:21:03.5418635Z Site is running with patch version NODE 20.20.0
+2026-03-24T15:21:23.8326039Z State: Stopping, Action: StoppingSite, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 03/24/2026 14:28:40 (UTC), DetailsLevel: INFO
+2026-03-24T15:21:23.8643391Z State: Stopping, Action: StoppingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 03/24/2026 14:28:40 (UTC), DetailsLevel: INFO
+2026-03-24T15:21:23.8832284Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T15:21:23.9899055Z Stop and delete container. Retry count = 0
+2026-03-24T15:21:23.9926309Z Stopping container: 691bdd0ebdfe_papales-ai-agent.
+2026-03-24T15:21:29.1793864Z Deleting container: 691bdd0ebdfe_papales-ai-agent. Retry count = 0
+2026-03-24T15:21:31.5433230Z Container spec TerminationMessagePolicy  path 
+2026-03-24T15:21:31.5717231Z Container is terminated. Total time elapsed: 7679 ms.
+2026-03-24T15:21:31.6226174Z Site: papales-ai-agent stopped.
+2026-03-24T15:26:06.0520540Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T15:26:08.9800101Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T15:26:19.9235790Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T15:26:19.9240305Z Container start method called.
+2026-03-24T15:26:19.9244674Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.7:13209/appsvc/node:20-lts_20260115.4.tuxprod for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T15:26:19.9316459Z Establishing network.
+2026-03-24T15:26:19.9318367Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T15:27:04.2490627Z Container is starting.
+2026-03-24T15:27:04.2500950Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T15:27:04.2505754Z Establishing user namespace if not established already.
+2026-03-24T15:27:04.2594445Z Establishing network if not established already.
+2026-03-24T15:27:04.2670043Z Mounting volumes.
+2026-03-24T15:27:04.2691279Z Nested mountpoint 
+2026-03-24T15:27:04.2984139Z Nested mountpoint volatile/logs
+2026-03-24T15:27:04.4081319Z Nested mountpoint 
+2026-03-24T15:27:04.4497031Z Nested mountpoint 
+2026-03-24T15:27:04.5079168Z Nested mountpoint 
+2026-03-24T15:27:05.2617922Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for papales-ai-agent. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T15:27:05.2629013Z Creating container.
+2026-03-24T15:27:05.2630101Z Creating pipes for streaming container io.
+2026-03-24T15:27:05.2630945Z Creating stdout named pipe at /podr/container/pipe/b2a99130d028_papales-ai-agent/stdout_8d93f1b4309e4ea49a03656bebb5cab8.
+2026-03-24T15:27:05.2632872Z Successfully created stdout named pipe at: /podr/container/pipe/b2a99130d028_papales-ai-agent/stdout_8d93f1b4309e4ea49a03656bebb5cab8.
+2026-03-24T15:27:05.2633657Z Opening named pipe /podr/container/pipe/b2a99130d028_papales-ai-agent/stdout_8d93f1b4309e4ea49a03656bebb5cab8 for reading in non-blocking mode.
+2026-03-24T15:27:05.2634553Z Successfully opened named pipe: /podr/container/pipe/b2a99130d028_papales-ai-agent/stdout_8d93f1b4309e4ea49a03656bebb5cab8.
+2026-03-24T15:27:05.3622100Z Successfully removed non-blocking flag from /podr/container/pipe/b2a99130d028_papales-ai-agent/stdout_8d93f1b4309e4ea49a03656bebb5cab8.
+2026-03-24T15:27:05.3625187Z Creating stderr named pipe at /podr/container/pipe/b2a99130d028_papales-ai-agent/stderr_bba34ac3ac214d4f8bfc23c9748f3225.
+2026-03-24T15:27:05.3626949Z Successfully created stderr named pipe at: /podr/container/pipe/b2a99130d028_papales-ai-agent/stderr_bba34ac3ac214d4f8bfc23c9748f3225.
+2026-03-24T15:27:05.3627748Z Opening named pipe /podr/container/pipe/b2a99130d028_papales-ai-agent/stderr_bba34ac3ac214d4f8bfc23c9748f3225 for reading in non-blocking mode.
+2026-03-24T15:27:05.3628662Z Successfully opened named pipe: /podr/container/pipe/b2a99130d028_papales-ai-agent/stderr_bba34ac3ac214d4f8bfc23c9748f3225.
+2026-03-24T15:27:05.3629357Z Successfully removed non-blocking flag from /podr/container/pipe/b2a99130d028_papales-ai-agent/stderr_bba34ac3ac214d4f8bfc23c9748f3225.
+2026-03-24T15:27:05.3630486Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T15:27:06.0704939Z Starting container: b2a99130d028_papales-ai-agent.
+2026-03-24T15:27:06.1999494Z Starting watchers and probes.
+2026-03-24T15:27:06.2101796Z Starting metrics collection.
+2026-03-24T15:27:06.2109880Z Container is running.
+2026-03-24T15:27:06.2204691Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T15:27:06.4597260Z Container start method finished after 46535 ms.
+2026-03-24T15:27:06.4599017Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T15:27:06.4599260Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T15:28:36.6013860Z Site startup probe succeeded after 90.0817398 seconds.
+2026-03-24T15:28:36.7618785Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 90.0817398 seconds., DetailsLevel: INFO
+2026-03-24T15:28:36.8259273Z Site is running with deployment version: 8f2b0ced-113c-432e-9e42-6bade2dc74ac
+2026-03-24T15:28:36.8303930Z Site started.
+2026-03-24T15:28:36.8325589Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 03/24/2026 15:28:36 (UTC), DetailsLevel: INFO
+2026-03-24T15:28:36.8489790Z Site is running with patch version NODE 20.20.0
+2026-03-24T15:28:56.9298195Z State: Stopping, Action: StoppingSite, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 03/24/2026 15:21:03 (UTC), DetailsLevel: INFO
+2026-03-24T15:28:56.9318156Z State: Stopping, Action: StoppingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 03/24/2026 15:21:03 (UTC), DetailsLevel: INFO
+2026-03-24T15:28:56.9325406Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T15:28:56.9827981Z Stop and delete container. Retry count = 0
+2026-03-24T15:28:56.9831660Z Stopping container: 28543e6f33d7_papales-ai-agent.
+2026-03-24T15:29:02.0945706Z Deleting container: 28543e6f33d7_papales-ai-agent. Retry count = 0
+2026-03-24T15:29:03.7262716Z Container spec TerminationMessagePolicy  path 
+2026-03-24T15:29:03.7273573Z Container is terminated. Total time elapsed: 6794 ms.
+2026-03-24T15:29:03.7374072Z Site: papales-ai-agent stopped.
+2026-03-24T16:06:50.8044804Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T16:06:55.5940622Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T16:07:08.9634193Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T16:07:08.9640376Z Container start method called.
+2026-03-24T16:07:08.9705356Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.7:13209/appsvc/node:20-lts_20260115.4.tuxprod for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T16:07:08.9712845Z Establishing network.
+2026-03-24T16:07:08.9715527Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T16:08:04.3336156Z Container is starting.
+2026-03-24T16:08:04.3731807Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T16:08:04.3810989Z Establishing user namespace if not established already.
+2026-03-24T16:08:04.3818157Z Establishing network if not established already.
+2026-03-24T16:08:04.3826977Z Mounting volumes.
+2026-03-24T16:08:04.4014597Z Nested mountpoint 
+2026-03-24T16:08:04.4626438Z Nested mountpoint volatile/logs
+2026-03-24T16:08:04.5328003Z Nested mountpoint 
+2026-03-24T16:08:04.6129078Z Nested mountpoint 
+2026-03-24T16:08:04.7325552Z Nested mountpoint 
+2026-03-24T16:08:05.8150756Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for papales-ai-agent. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T16:08:05.8153487Z Creating container.
+2026-03-24T16:08:05.8172255Z Creating pipes for streaming container io.
+2026-03-24T16:08:05.8173771Z Creating stdout named pipe at /podr/container/pipe/c88e32f5f4de_papales-ai-agent/stdout_de6816cea0864caebe82dfdb97550d5f.
+2026-03-24T16:08:05.8250359Z Successfully created stdout named pipe at: /podr/container/pipe/c88e32f5f4de_papales-ai-agent/stdout_de6816cea0864caebe82dfdb97550d5f.
+2026-03-24T16:08:05.8774713Z Opening named pipe /podr/container/pipe/c88e32f5f4de_papales-ai-agent/stdout_de6816cea0864caebe82dfdb97550d5f for reading in non-blocking mode.
+2026-03-24T16:08:05.8778590Z Successfully opened named pipe: /podr/container/pipe/c88e32f5f4de_papales-ai-agent/stdout_de6816cea0864caebe82dfdb97550d5f.
+2026-03-24T16:08:05.8779853Z Successfully removed non-blocking flag from /podr/container/pipe/c88e32f5f4de_papales-ai-agent/stdout_de6816cea0864caebe82dfdb97550d5f.
+2026-03-24T16:08:05.8952827Z Creating stderr named pipe at /podr/container/pipe/c88e32f5f4de_papales-ai-agent/stderr_44d9efd86eb0420f99bb7170aa3a91f4.
+2026-03-24T16:08:05.8954864Z Successfully created stderr named pipe at: /podr/container/pipe/c88e32f5f4de_papales-ai-agent/stderr_44d9efd86eb0420f99bb7170aa3a91f4.
+2026-03-24T16:08:05.8955701Z Opening named pipe /podr/container/pipe/c88e32f5f4de_papales-ai-agent/stderr_44d9efd86eb0420f99bb7170aa3a91f4 for reading in non-blocking mode.
+2026-03-24T16:08:05.8956602Z Successfully opened named pipe: /podr/container/pipe/c88e32f5f4de_papales-ai-agent/stderr_44d9efd86eb0420f99bb7170aa3a91f4.
+2026-03-24T16:08:05.8957292Z Successfully removed non-blocking flag from /podr/container/pipe/c88e32f5f4de_papales-ai-agent/stderr_44d9efd86eb0420f99bb7170aa3a91f4.
+2026-03-24T16:08:05.8980180Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T16:08:08.0415129Z Starting container: c88e32f5f4de_papales-ai-agent.
+2026-03-24T16:08:08.2524556Z Starting watchers and probes.
+2026-03-24T16:08:08.2534521Z Starting metrics collection.
+2026-03-24T16:08:08.2926783Z Container is running.
+2026-03-24T16:08:08.2928074Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T16:08:08.9433985Z Container start method finished after 59979 ms.
+2026-03-24T16:08:08.9519463Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T16:08:08.9519811Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T16:09:38.5084947Z Container has finished running with exit code: 1.
+2026-03-24T16:09:38.5109706Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T16:09:38.6111976Z Stop and delete container. Retry count = 0
+2026-03-24T16:09:38.6270925Z Stopping container: c88e32f5f4de_papales-ai-agent.
+2026-03-24T16:09:38.9401052Z Deleting container: c88e32f5f4de_papales-ai-agent. Retry count = 0
+2026-03-24T16:09:39.9080137Z Container spec TerminationMessagePolicy  path 
+2026-03-24T16:09:39.9374900Z Container is terminated. Total time elapsed: 1407 ms.
+2026-03-24T16:09:39.9483016Z Site container: papales-ai-agent terminated during site startup.
+2026-03-24T16:09:39.9994224Z State: Stopping, Action: CancellingStartup, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site container: papales-ai-agent terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T16:09:40.3292643Z Site startup probe failed after 91.1642727 seconds.
+2026-03-24T16:09:40.8627814Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site container: papales-ai-agent terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T16:09:40.9229364Z Failed to start site. Revert by stopping site.
+2026-03-24T16:09:40.9701580Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site container: papales-ai-agent terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T16:09:40.9893830Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site container: papales-ai-agent terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T16:09:40.9905898Z Site: papales-ai-agent stopped.
+2026-03-24T16:10:06.8479728Z State: Stopping, Action: StoppingSite, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 03/24/2026 15:28:36 (UTC), DetailsLevel: INFO
+2026-03-24T16:10:06.8668317Z State: Stopping, Action: StoppingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 03/24/2026 15:28:36 (UTC), DetailsLevel: INFO
+2026-03-24T16:10:06.8670725Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T16:10:06.9265814Z Stop and delete container. Retry count = 0
+2026-03-24T16:10:06.9267301Z Stopping container: b2a99130d028_papales-ai-agent.
+2026-03-24T16:10:13.2273740Z Deleting container: b2a99130d028_papales-ai-agent. Retry count = 0
+2026-03-24T16:10:16.8187006Z Container spec TerminationMessagePolicy  path 
+2026-03-24T16:10:16.8188739Z Container is terminated. Total time elapsed: 9951 ms.
+2026-03-24T16:10:16.8190364Z Site: papales-ai-agent stopped.
+2026-03-24T16:09:41.0284804Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site container: papales-ai-agent terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T16:09:45.0846123Z Site container: papales-ai-agent_managedIdentity terminated during site startup.
+2026-03-24T16:09:45.0850853Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site container: papales-ai-agent terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T16:09:45.3572499Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site container: papales-ai-agent terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T16:09:46.3304096Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 16:09:46 (UTC), DetailsLevel: ERR
+2026-03-24T16:09:46.3995598Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 16:09:46 (UTC), DetailsLevel: ERR
+2026-03-24T16:11:07.4866662Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 16:09:46 (UTC), DetailsLevel: ERR
+2026-03-24T16:11:10.4420671Z State: Starting, Action: StartingMsiContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 16:09:46 (UTC), DetailsLevel: ERR
+2026-03-24T16:11:22.9107039Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 16:09:46 (UTC), DetailsLevel: ERR
+2026-03-24T16:11:22.9112847Z Container start method called.
+2026-03-24T16:11:22.9113747Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Pulling image mcr.microsoft.com/appsvc/node:20-lts_20260115.4.tuxprod for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T16:11:22.9114701Z Establishing network.
+2026-03-24T16:11:22.9115891Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T16:12:11.9725181Z Container is starting.
+2026-03-24T16:12:11.9802368Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Mounting volumes for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T16:12:11.9805700Z Establishing user namespace if not established already.
+2026-03-24T16:12:11.9806923Z Establishing network if not established already.
+2026-03-24T16:12:11.9808033Z Mounting volumes.
+2026-03-24T16:12:11.9809882Z Nested mountpoint 
+2026-03-24T16:12:12.0102519Z Nested mountpoint volatile/logs
+2026-03-24T16:12:12.0512858Z Nested mountpoint 
+2026-03-24T16:12:12.0519411Z Nested mountpoint 
+2026-03-24T16:12:12.1795451Z Nested mountpoint 
+2026-03-24T16:12:13.5274470Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for papales-ai-agent. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T16:12:13.5452521Z Creating container.
+2026-03-24T16:12:13.5454020Z Creating pipes for streaming container io.
+2026-03-24T16:12:13.5454816Z Creating stdout named pipe at /podr/container/pipe/fc7e1cb4884f_papales-ai-agent/stdout_575e24549eda481a849c732fcbd1ba3a.
+2026-03-24T16:12:13.5456960Z Successfully created stdout named pipe at: /podr/container/pipe/fc7e1cb4884f_papales-ai-agent/stdout_575e24549eda481a849c732fcbd1ba3a.
+2026-03-24T16:12:13.5457708Z Opening named pipe /podr/container/pipe/fc7e1cb4884f_papales-ai-agent/stdout_575e24549eda481a849c732fcbd1ba3a for reading in non-blocking mode.
+2026-03-24T16:12:13.5458776Z Successfully opened named pipe: /podr/container/pipe/fc7e1cb4884f_papales-ai-agent/stdout_575e24549eda481a849c732fcbd1ba3a.
+2026-03-24T16:12:13.5459530Z Successfully removed non-blocking flag from /podr/container/pipe/fc7e1cb4884f_papales-ai-agent/stdout_575e24549eda481a849c732fcbd1ba3a.
+2026-03-24T16:12:13.5766423Z Creating stderr named pipe at /podr/container/pipe/fc7e1cb4884f_papales-ai-agent/stderr_87f2be2acd224e70b13c6b0a07f01fe0.
+2026-03-24T16:12:13.5848520Z Successfully created stderr named pipe at: /podr/container/pipe/fc7e1cb4884f_papales-ai-agent/stderr_87f2be2acd224e70b13c6b0a07f01fe0.
+2026-03-24T16:12:13.5944234Z Opening named pipe /podr/container/pipe/fc7e1cb4884f_papales-ai-agent/stderr_87f2be2acd224e70b13c6b0a07f01fe0 for reading in non-blocking mode.
+2026-03-24T16:12:13.5957445Z Successfully opened named pipe: /podr/container/pipe/fc7e1cb4884f_papales-ai-agent/stderr_87f2be2acd224e70b13c6b0a07f01fe0.
+2026-03-24T16:12:13.5960452Z Successfully removed non-blocking flag from /podr/container/pipe/fc7e1cb4884f_papales-ai-agent/stderr_87f2be2acd224e70b13c6b0a07f01fe0.
+2026-03-24T16:12:13.6045354Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T16:12:14.7196663Z Starting container: fc7e1cb4884f_papales-ai-agent.
+2026-03-24T16:12:15.1417047Z Starting watchers and probes.
+2026-03-24T16:12:15.1507673Z Starting metrics collection.
+2026-03-24T16:12:15.1511419Z Container is running.
+2026-03-24T16:12:15.1512400Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T16:12:15.7455667Z Container start method finished after 52826 ms.
+2026-03-24T16:12:15.8333027Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T16:12:15.8338367Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T16:13:54.0437294Z Site startup probe succeeded after 98.1627853 seconds.
+2026-03-24T16:13:54.3718526Z State: Starting, Action: WarmUpProbeSucceeded, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site startup probe succeeded after 98.1627853 seconds., DetailsLevel: INFO
+2026-03-24T16:13:54.5188361Z Site is running with deployment version: dba40e59-b96e-4390-9e2b-415fd1a72a70
+2026-03-24T16:13:54.5204229Z Site started.
+2026-03-24T16:13:54.5208674Z State: Started, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 16:13:54 (UTC), DetailsLevel: INFO
+2026-03-24T16:13:54.6444896Z Site is running with patch version NODE 20.20.0
+2026-03-24T16:22:21.2985703Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T16:22:27.8419013Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T16:22:48.3848134Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T16:22:48.4010175Z Container start method called.
+2026-03-24T16:22:48.4399416Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.7:13209/appsvc/node:20-lts_20260115.4.tuxprod for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T16:22:48.4402722Z Establishing network.
+2026-03-24T16:22:48.4404974Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T16:23:54.5712878Z Container is starting.
+2026-03-24T16:23:54.5716654Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T16:23:54.5720404Z Establishing user namespace if not established already.
+2026-03-24T16:23:54.5728101Z Establishing network if not established already.
+2026-03-24T16:23:54.5811214Z Mounting volumes.
+2026-03-24T16:23:54.5822170Z Nested mountpoint 
+2026-03-24T16:23:54.7014094Z Nested mountpoint volatile/logs
+2026-03-24T16:23:54.7303241Z Nested mountpoint 
+2026-03-24T16:23:54.9000961Z Nested mountpoint 
+2026-03-24T16:23:55.0123563Z Nested mountpoint 
+2026-03-24T16:23:56.3391430Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for papales-ai-agent. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T16:23:56.3397776Z Creating container.
+2026-03-24T16:23:56.3409773Z Creating pipes for streaming container io.
+2026-03-24T16:23:56.3412836Z Creating stdout named pipe at /podr/container/pipe/11e0d3d59f45_papales-ai-agent/stdout_e7043271d02940f3b91c7da81c7f0308.
+2026-03-24T16:23:56.3604480Z Successfully created stdout named pipe at: /podr/container/pipe/11e0d3d59f45_papales-ai-agent/stdout_e7043271d02940f3b91c7da81c7f0308.
+2026-03-24T16:23:56.3605997Z Opening named pipe /podr/container/pipe/11e0d3d59f45_papales-ai-agent/stdout_e7043271d02940f3b91c7da81c7f0308 for reading in non-blocking mode.
+2026-03-24T16:23:56.3607400Z Successfully opened named pipe: /podr/container/pipe/11e0d3d59f45_papales-ai-agent/stdout_e7043271d02940f3b91c7da81c7f0308.
+2026-03-24T16:23:56.3615941Z Successfully removed non-blocking flag from /podr/container/pipe/11e0d3d59f45_papales-ai-agent/stdout_e7043271d02940f3b91c7da81c7f0308.
+2026-03-24T16:23:56.3696960Z Creating stderr named pipe at /podr/container/pipe/11e0d3d59f45_papales-ai-agent/stderr_18902fd8d0844d3a8f9fd9a1ef524714.
+2026-03-24T16:23:56.3700483Z Successfully created stderr named pipe at: /podr/container/pipe/11e0d3d59f45_papales-ai-agent/stderr_18902fd8d0844d3a8f9fd9a1ef524714.
+2026-03-24T16:23:56.3717524Z Opening named pipe /podr/container/pipe/11e0d3d59f45_papales-ai-agent/stderr_18902fd8d0844d3a8f9fd9a1ef524714 for reading in non-blocking mode.
+2026-03-24T16:23:56.3913393Z Successfully opened named pipe: /podr/container/pipe/11e0d3d59f45_papales-ai-agent/stderr_18902fd8d0844d3a8f9fd9a1ef524714.
+2026-03-24T16:23:56.3915290Z Successfully removed non-blocking flag from /podr/container/pipe/11e0d3d59f45_papales-ai-agent/stderr_18902fd8d0844d3a8f9fd9a1ef524714.
+2026-03-24T16:23:56.3916686Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T16:23:58.5120901Z Starting container: 11e0d3d59f45_papales-ai-agent.
+2026-03-24T16:23:58.7495121Z Starting watchers and probes.
+2026-03-24T16:23:58.7498473Z Starting metrics collection.
+2026-03-24T16:23:58.7499812Z Container is running.
+2026-03-24T16:23:58.7500574Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T16:23:59.1409163Z Container start method finished after 70739 ms.
+2026-03-24T16:23:59.1983357Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T16:23:59.1984962Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T16:24:56.3064332Z Site startup probe succeeded after 57.0657424 seconds.
+2026-03-24T16:24:56.6668511Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 57.0657424 seconds., DetailsLevel: INFO
+2026-03-24T16:24:56.7783706Z Site is running with deployment version: dba40e59-b96e-4390-9e2b-415fd1a72a70
+2026-03-24T16:24:56.7800322Z Site started.
+2026-03-24T16:24:56.7857426Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 03/24/2026 16:24:56 (UTC), DetailsLevel: INFO
+2026-03-24T16:24:56.7864225Z Site is running with patch version NODE 20.20.0
+2026-03-24T16:25:16.8590626Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 16:13:54 (UTC), DetailsLevel: INFO
+2026-03-24T16:25:16.8664208Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 16:13:54 (UTC), DetailsLevel: INFO
+2026-03-24T16:25:16.8666347Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T16:25:16.9390142Z Stop and delete container. Retry count = 0
+2026-03-24T16:25:16.9497175Z Stopping container: fc7e1cb4884f_papales-ai-agent.
+2026-03-24T16:25:22.2303592Z Deleting container: fc7e1cb4884f_papales-ai-agent. Retry count = 0
+2026-03-24T16:25:23.6653894Z Container spec TerminationMessagePolicy  path 
+2026-03-24T16:25:23.6663994Z Container is terminated. Total time elapsed: 6799 ms.
+2026-03-24T16:25:23.6667713Z Site: papales-ai-agent stopped.
+2026-03-24T17:12:10.2312273Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T17:12:19.2276315Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T17:12:49.2881596Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T17:12:49.2894730Z Container start method called.
+2026-03-24T17:12:49.2903505Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.7:13209/appsvc/node:20-lts_20260115.4.tuxprod for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T17:12:49.2907171Z Establishing network.
+2026-03-24T17:12:49.2983584Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T17:14:10.7151949Z Container is starting.
+2026-03-24T17:14:10.7650355Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T17:14:10.7663693Z Establishing user namespace if not established already.
+2026-03-24T17:14:10.7664677Z Establishing network if not established already.
+2026-03-24T17:14:10.7745189Z Mounting volumes.
+2026-03-24T17:14:10.8142513Z Nested mountpoint 
+2026-03-24T17:14:11.0167365Z Nested mountpoint volatile/logs
+2026-03-24T17:14:11.9712318Z Nested mountpoint 
+2026-03-24T17:14:12.5144818Z Nested mountpoint 
+2026-03-24T17:14:12.7458347Z Nested mountpoint 
+2026-03-24T17:14:17.7598362Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for papales-ai-agent. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T17:14:17.7684860Z Creating container.
+2026-03-24T17:14:17.7788455Z Creating pipes for streaming container io.
+2026-03-24T17:14:17.7789476Z Creating stdout named pipe at /podr/container/pipe/16721337239e_papales-ai-agent/stdout_98cc223bd3ab43368e51c8e6af80feef.
+2026-03-24T17:14:17.7904281Z Successfully created stdout named pipe at: /podr/container/pipe/16721337239e_papales-ai-agent/stdout_98cc223bd3ab43368e51c8e6af80feef.
+2026-03-24T17:14:17.7908261Z Opening named pipe /podr/container/pipe/16721337239e_papales-ai-agent/stdout_98cc223bd3ab43368e51c8e6af80feef for reading in non-blocking mode.
+2026-03-24T17:14:17.7999022Z Successfully opened named pipe: /podr/container/pipe/16721337239e_papales-ai-agent/stdout_98cc223bd3ab43368e51c8e6af80feef.
+2026-03-24T17:14:17.8000398Z Successfully removed non-blocking flag from /podr/container/pipe/16721337239e_papales-ai-agent/stdout_98cc223bd3ab43368e51c8e6af80feef.
+2026-03-24T17:14:17.8006497Z Creating stderr named pipe at /podr/container/pipe/16721337239e_papales-ai-agent/stderr_d7ef97949d2d461d82e1a28d848e6924.
+2026-03-24T17:14:17.8290408Z Successfully created stderr named pipe at: /podr/container/pipe/16721337239e_papales-ai-agent/stderr_d7ef97949d2d461d82e1a28d848e6924.
+2026-03-24T17:14:17.8291583Z Opening named pipe /podr/container/pipe/16721337239e_papales-ai-agent/stderr_d7ef97949d2d461d82e1a28d848e6924 for reading in non-blocking mode.
+2026-03-24T17:14:17.8292804Z Successfully opened named pipe: /podr/container/pipe/16721337239e_papales-ai-agent/stderr_d7ef97949d2d461d82e1a28d848e6924.
+2026-03-24T17:14:17.8293738Z Successfully removed non-blocking flag from /podr/container/pipe/16721337239e_papales-ai-agent/stderr_d7ef97949d2d461d82e1a28d848e6924.
+2026-03-24T17:14:17.8595569Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T17:14:20.1061782Z Starting container: 16721337239e_papales-ai-agent.
+2026-03-24T17:14:20.2836917Z Starting watchers and probes.
+2026-03-24T17:14:20.2943692Z Starting metrics collection.
+2026-03-24T17:14:20.3144318Z Container is running.
+2026-03-24T17:14:20.3146014Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T17:14:20.9142709Z Container start method finished after 91624 ms.
+2026-03-24T17:14:20.9967317Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T17:14:21.0148801Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T17:15:51.5422326Z Site startup probe succeeded after 90.4114488 seconds.
+2026-03-24T17:15:52.0025444Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 90.4114488 seconds., DetailsLevel: INFO
+2026-03-24T17:15:52.5685844Z Site is running with deployment version: dba40e59-b96e-4390-9e2b-415fd1a72a70
+2026-03-24T17:15:52.5813287Z Site started.
+2026-03-24T17:15:52.5889511Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 03/24/2026 17:15:52 (UTC), DetailsLevel: INFO
+2026-03-24T17:15:52.6007720Z Site is running with patch version NODE 20.20.0
+2026-03-24T17:16:13.0045566Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 16:24:56 (UTC), DetailsLevel: INFO
+2026-03-24T17:16:13.1810587Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 16:24:56 (UTC), DetailsLevel: INFO
+2026-03-24T17:16:13.2005726Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T17:16:14.2833683Z Stop and delete container. Retry count = 0
+2026-03-24T17:16:14.3537715Z Stopping container: 11e0d3d59f45_papales-ai-agent.
+2026-03-24T17:16:20.4174650Z Deleting container: 11e0d3d59f45_papales-ai-agent. Retry count = 0
+2026-03-24T17:16:24.7374191Z Container spec TerminationMessagePolicy  path 
+2026-03-24T17:16:24.7684901Z Container is terminated. Total time elapsed: 11566 ms.
+2026-03-24T17:16:24.7848981Z Site: papales-ai-agent stopped.
+2026-03-24T17:32:54.6610291Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T17:33:01.9131907Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T17:33:23.5061798Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T17:33:23.5076227Z Container start method called.
+2026-03-24T17:33:23.5357890Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.7:13209/appsvc/node:20-lts_20260115.4.tuxprod for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T17:33:23.5374903Z Establishing network.
+2026-03-24T17:33:23.5377651Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T17:34:13.8246073Z Container is starting.
+2026-03-24T17:34:13.8250514Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T17:34:13.8252236Z Establishing user namespace if not established already.
+2026-03-24T17:34:13.8254936Z Establishing network if not established already.
+2026-03-24T17:34:13.8261128Z Mounting volumes.
+2026-03-24T17:34:13.8262553Z Nested mountpoint 
+2026-03-24T17:34:13.8719788Z Nested mountpoint volatile/logs
+2026-03-24T17:34:13.9279224Z Nested mountpoint 
+2026-03-24T17:34:14.0087523Z Nested mountpoint 
+2026-03-24T17:34:14.0768216Z Nested mountpoint 
+2026-03-24T17:34:14.6757456Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for papales-ai-agent. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T17:34:14.6837598Z Creating container.
+2026-03-24T17:34:14.6849483Z Creating pipes for streaming container io.
+2026-03-24T17:34:14.6852568Z Creating stdout named pipe at /podr/container/pipe/ed6dc92b8cb5_papales-ai-agent/stdout_a1a4cbd127aa456bbc5c4ffa391eba3f.
+2026-03-24T17:34:14.6860748Z Successfully created stdout named pipe at: /podr/container/pipe/ed6dc92b8cb5_papales-ai-agent/stdout_a1a4cbd127aa456bbc5c4ffa391eba3f.
+2026-03-24T17:34:14.6861553Z Opening named pipe /podr/container/pipe/ed6dc92b8cb5_papales-ai-agent/stdout_a1a4cbd127aa456bbc5c4ffa391eba3f for reading in non-blocking mode.
+2026-03-24T17:34:14.6862525Z Successfully opened named pipe: /podr/container/pipe/ed6dc92b8cb5_papales-ai-agent/stdout_a1a4cbd127aa456bbc5c4ffa391eba3f.
+2026-03-24T17:34:14.6863232Z Successfully removed non-blocking flag from /podr/container/pipe/ed6dc92b8cb5_papales-ai-agent/stdout_a1a4cbd127aa456bbc5c4ffa391eba3f.
+2026-03-24T17:34:14.6944999Z Creating stderr named pipe at /podr/container/pipe/ed6dc92b8cb5_papales-ai-agent/stderr_38e12ebab2b74a7bb713b3bd69175914.
+2026-03-24T17:34:14.6951225Z Successfully created stderr named pipe at: /podr/container/pipe/ed6dc92b8cb5_papales-ai-agent/stderr_38e12ebab2b74a7bb713b3bd69175914.
+2026-03-24T17:34:14.6952145Z Opening named pipe /podr/container/pipe/ed6dc92b8cb5_papales-ai-agent/stderr_38e12ebab2b74a7bb713b3bd69175914 for reading in non-blocking mode.
+2026-03-24T17:34:14.6953123Z Successfully opened named pipe: /podr/container/pipe/ed6dc92b8cb5_papales-ai-agent/stderr_38e12ebab2b74a7bb713b3bd69175914.
+2026-03-24T17:34:14.6953867Z Successfully removed non-blocking flag from /podr/container/pipe/ed6dc92b8cb5_papales-ai-agent/stderr_38e12ebab2b74a7bb713b3bd69175914.
+2026-03-24T17:34:14.6957210Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T17:34:15.2081464Z Starting container: ed6dc92b8cb5_papales-ai-agent.
+2026-03-24T17:34:15.2754590Z Starting watchers and probes.
+2026-03-24T17:34:15.2831884Z Starting metrics collection.
+2026-03-24T17:34:15.2839203Z Container is running.
+2026-03-24T17:34:15.2921020Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T17:34:15.5258982Z Container start method finished after 51962 ms.
+2026-03-24T17:34:15.5261255Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T17:34:15.5261453Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T17:35:01.7474953Z Site startup probe succeeded after 46.1714356 seconds.
+2026-03-24T17:35:02.3760008Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 46.1714356 seconds., DetailsLevel: INFO
+2026-03-24T17:35:02.4598406Z Site is running with deployment version: dba40e59-b96e-4390-9e2b-415fd1a72a70
+2026-03-24T17:35:02.4607006Z Site started.
+2026-03-24T17:35:02.4652787Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 03/24/2026 17:35:02 (UTC), DetailsLevel: INFO
+2026-03-24T17:35:02.4672434Z Site is running with patch version NODE 20.20.0
+2026-03-24T17:35:22.4985656Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 17:15:52 (UTC), DetailsLevel: INFO
+2026-03-24T17:35:22.5002343Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 17:15:52 (UTC), DetailsLevel: INFO
+2026-03-24T17:35:22.5006308Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T17:35:22.5503681Z Stop and delete container. Retry count = 0
+2026-03-24T17:35:22.5611961Z Stopping container: 16721337239e_papales-ai-agent.
+2026-03-24T17:35:27.7277015Z Deleting container: 16721337239e_papales-ai-agent. Retry count = 0
+2026-03-24T17:35:29.2482526Z Container spec TerminationMessagePolicy  path 
+2026-03-24T17:35:29.2485019Z Container is terminated. Total time elapsed: 6747 ms.
+2026-03-24T17:35:29.2496776Z Site: papales-ai-agent stopped.
+2026-03-24T17:48:27.4521525Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T17:48:32.3490760Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T17:48:46.5476481Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T17:48:46.5478488Z Container start method called.
+2026-03-24T17:48:46.5478901Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.6:13209/appsvc/node:20-lts_20260115.4.tuxprod for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T17:48:46.5479795Z Establishing network.
+2026-03-24T17:48:46.5480710Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T17:49:33.2995242Z Container is starting.
+2026-03-24T17:49:33.3005726Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T17:49:33.3100869Z Establishing user namespace if not established already.
+2026-03-24T17:49:33.3103106Z Establishing network if not established already.
+2026-03-24T17:49:33.3104307Z Mounting volumes.
+2026-03-24T17:49:33.3105795Z Nested mountpoint 
+2026-03-24T17:49:33.4076272Z Nested mountpoint volatile/logs
+2026-03-24T17:49:33.4195301Z Nested mountpoint 
+2026-03-24T17:49:33.5096878Z Nested mountpoint 
+2026-03-24T17:49:33.5380974Z Nested mountpoint 
+2026-03-24T17:49:34.1220654Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for papales-ai-agent. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T17:49:34.1221686Z Creating container.
+2026-03-24T17:49:34.1222523Z Creating pipes for streaming container io.
+2026-03-24T17:49:34.1223325Z Creating stdout named pipe at /podr/container/pipe/672c4298efd7_papales-ai-agent/stdout_0561f677415741e4930a5ccd28cb0bd5.
+2026-03-24T17:49:34.1225246Z Successfully created stdout named pipe at: /podr/container/pipe/672c4298efd7_papales-ai-agent/stdout_0561f677415741e4930a5ccd28cb0bd5.
+2026-03-24T17:49:34.1225946Z Opening named pipe /podr/container/pipe/672c4298efd7_papales-ai-agent/stdout_0561f677415741e4930a5ccd28cb0bd5 for reading in non-blocking mode.
+2026-03-24T17:49:34.1226852Z Successfully opened named pipe: /podr/container/pipe/672c4298efd7_papales-ai-agent/stdout_0561f677415741e4930a5ccd28cb0bd5.
+2026-03-24T17:49:34.1227555Z Successfully removed non-blocking flag from /podr/container/pipe/672c4298efd7_papales-ai-agent/stdout_0561f677415741e4930a5ccd28cb0bd5.
+2026-03-24T17:49:34.1228940Z Creating stderr named pipe at /podr/container/pipe/672c4298efd7_papales-ai-agent/stderr_a25c4bc780234d8f9ad30a5dd0abd726.
+2026-03-24T17:49:34.1230087Z Successfully created stderr named pipe at: /podr/container/pipe/672c4298efd7_papales-ai-agent/stderr_a25c4bc780234d8f9ad30a5dd0abd726.
+2026-03-24T17:49:34.1230753Z Opening named pipe /podr/container/pipe/672c4298efd7_papales-ai-agent/stderr_a25c4bc780234d8f9ad30a5dd0abd726 for reading in non-blocking mode.
+2026-03-24T17:49:34.1231597Z Successfully opened named pipe: /podr/container/pipe/672c4298efd7_papales-ai-agent/stderr_a25c4bc780234d8f9ad30a5dd0abd726.
+2026-03-24T17:49:34.1232284Z Successfully removed non-blocking flag from /podr/container/pipe/672c4298efd7_papales-ai-agent/stderr_a25c4bc780234d8f9ad30a5dd0abd726.
+2026-03-24T17:49:34.1322565Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T17:49:34.6955783Z Starting container: 672c4298efd7_papales-ai-agent.
+2026-03-24T17:49:34.7941952Z Starting watchers and probes.
+2026-03-24T17:49:34.8049778Z Starting metrics collection.
+2026-03-24T17:49:34.8052343Z Container is running.
+2026-03-24T17:49:34.8057507Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T17:49:35.0711631Z Container start method finished after 48501 ms.
+2026-03-24T17:49:35.1323959Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T17:49:35.1324424Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T17:50:22.1734126Z Container has finished running with exit code: 1.
+2026-03-24T17:50:22.1820864Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T17:50:22.1923275Z Stop and delete container. Retry count = 0
+2026-03-24T17:50:22.1928614Z Stopping container: 672c4298efd7_papales-ai-agent.
+2026-03-24T17:50:22.3120242Z Deleting container: 672c4298efd7_papales-ai-agent. Retry count = 0
+2026-03-24T17:50:23.5485930Z Container spec TerminationMessagePolicy  path 
+2026-03-24T17:50:23.5607636Z Container is terminated. Total time elapsed: 1376 ms.
+2026-03-24T17:50:23.5614416Z Site container: papales-ai-agent terminated during site startup.
+2026-03-24T17:50:23.5626650Z State: Stopping, Action: CancellingStartup, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site container: papales-ai-agent terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T17:50:23.7411165Z Site startup probe failed after 48.5283746 seconds.
+2026-03-24T17:50:24.0301637Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:50:24, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site container: papales-ai-agent terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T17:50:24.0490639Z Failed to start site. Revert by stopping site.
+2026-03-24T17:50:24.0618931Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:50:24, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site container: papales-ai-agent terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T17:50:24.0696344Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:50:24, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site container: papales-ai-agent terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T17:50:24.0699959Z Site: papales-ai-agent stopped.
+2026-03-24T17:50:46.6217943Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 17:35:02 (UTC), DetailsLevel: INFO
+2026-03-24T17:50:46.6545510Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 16:09:40, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 17:35:02 (UTC), DetailsLevel: INFO
+2026-03-24T17:50:46.6551679Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T17:50:46.6865590Z Stop and delete container. Retry count = 0
+2026-03-24T17:50:46.6931718Z Stopping container: ed6dc92b8cb5_papales-ai-agent.
+2026-03-24T17:50:51.8184960Z Deleting container: ed6dc92b8cb5_papales-ai-agent. Retry count = 0
+2026-03-24T17:50:53.2308489Z Container spec TerminationMessagePolicy  path 
+2026-03-24T17:50:53.2312905Z Container is terminated. Total time elapsed: 6575 ms.
+2026-03-24T17:50:53.2314053Z Site: papales-ai-agent stopped.
+2026-03-24T17:50:24.0899733Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:50:24, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site container: papales-ai-agent terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T17:50:25.2368806Z Site container: papales-ai-agent_managedIdentity terminated during site startup.
+2026-03-24T17:50:25.2381768Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:50:24, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site container: papales-ai-agent terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T17:50:25.3490515Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:50:24, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site container: papales-ai-agent terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T17:50:26.3824651Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:50:24, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 17:50:26 (UTC), DetailsLevel: ERR
+2026-03-24T17:50:26.4412496Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:50:24, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 17:50:26 (UTC), DetailsLevel: ERR
+2026-03-24T17:54:54.9381562Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:50:24, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 17:50:26 (UTC), DetailsLevel: ERR
+2026-03-24T17:54:57.6964815Z State: Starting, Action: StartingMsiContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:50:24, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 17:50:26 (UTC), DetailsLevel: ERR
+2026-03-24T17:55:08.9097828Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:50:24, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 17:50:26 (UTC), DetailsLevel: ERR
+2026-03-24T17:55:08.9100120Z Container start method called.
+2026-03-24T17:55:08.9104020Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:50:24, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Pulling image mcr.microsoft.com/appsvc/node:20-lts_20260115.4.tuxprod for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T17:55:08.9105620Z Establishing network.
+2026-03-24T17:55:08.9112433Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T17:55:51.7768039Z Container is starting.
+2026-03-24T17:55:51.7774562Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:50:24, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Mounting volumes for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T17:55:51.7778717Z Establishing user namespace if not established already.
+2026-03-24T17:55:51.7845428Z Establishing network if not established already.
+2026-03-24T17:55:51.7851399Z Mounting volumes.
+2026-03-24T17:55:51.7857089Z Nested mountpoint 
+2026-03-24T17:55:51.8452050Z Nested mountpoint volatile/logs
+2026-03-24T17:55:51.8569629Z Nested mountpoint 
+2026-03-24T17:55:51.8950560Z Nested mountpoint 
+2026-03-24T17:55:51.9339103Z Nested mountpoint 
+2026-03-24T17:55:52.5215805Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:50:24, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for papales-ai-agent. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T17:55:52.5250845Z Creating container.
+2026-03-24T17:55:52.5255828Z Creating pipes for streaming container io.
+2026-03-24T17:55:52.5260829Z Creating stdout named pipe at /podr/container/pipe/fe2213e85990_papales-ai-agent/stdout_60bcbd4b9621416393089e3b4bcbc3aa.
+2026-03-24T17:55:52.5266791Z Successfully created stdout named pipe at: /podr/container/pipe/fe2213e85990_papales-ai-agent/stdout_60bcbd4b9621416393089e3b4bcbc3aa.
+2026-03-24T17:55:52.5270864Z Opening named pipe /podr/container/pipe/fe2213e85990_papales-ai-agent/stdout_60bcbd4b9621416393089e3b4bcbc3aa for reading in non-blocking mode.
+2026-03-24T17:55:52.5283010Z Successfully opened named pipe: /podr/container/pipe/fe2213e85990_papales-ai-agent/stdout_60bcbd4b9621416393089e3b4bcbc3aa.
+2026-03-24T17:55:52.5357634Z Successfully removed non-blocking flag from /podr/container/pipe/fe2213e85990_papales-ai-agent/stdout_60bcbd4b9621416393089e3b4bcbc3aa.
+2026-03-24T17:55:52.5375583Z Creating stderr named pipe at /podr/container/pipe/fe2213e85990_papales-ai-agent/stderr_3a852348e2e74c89a04989f533c8aeda.
+2026-03-24T17:55:52.5382845Z Successfully created stderr named pipe at: /podr/container/pipe/fe2213e85990_papales-ai-agent/stderr_3a852348e2e74c89a04989f533c8aeda.
+2026-03-24T17:55:52.5455601Z Opening named pipe /podr/container/pipe/fe2213e85990_papales-ai-agent/stderr_3a852348e2e74c89a04989f533c8aeda for reading in non-blocking mode.
+2026-03-24T17:55:52.5460274Z Successfully opened named pipe: /podr/container/pipe/fe2213e85990_papales-ai-agent/stderr_3a852348e2e74c89a04989f533c8aeda.
+2026-03-24T17:55:52.5462430Z Successfully removed non-blocking flag from /podr/container/pipe/fe2213e85990_papales-ai-agent/stderr_3a852348e2e74c89a04989f533c8aeda.
+2026-03-24T17:55:52.5466346Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T17:55:53.2321951Z Starting container: fe2213e85990_papales-ai-agent.
+2026-03-24T17:55:53.3327988Z Starting watchers and probes.
+2026-03-24T17:55:53.3529931Z Starting metrics collection.
+2026-03-24T17:55:53.3622448Z Container is running.
+2026-03-24T17:55:53.3623670Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:50:24, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T17:55:53.4903863Z Container start method finished after 44570 ms.
+2026-03-24T17:55:53.5004184Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:50:24, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T17:55:53.5009830Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:50:24, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T17:56:46.6552281Z Container has finished running with exit code: 1.
+2026-03-24T17:56:46.6567895Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T17:56:46.6657953Z Stop and delete container. Retry count = 0
+2026-03-24T17:56:46.6666384Z Stopping container: fe2213e85990_papales-ai-agent.
+2026-03-24T17:56:46.7958110Z Deleting container: fe2213e85990_papales-ai-agent. Retry count = 0
+2026-03-24T17:56:47.3021707Z Container spec TerminationMessagePolicy  path 
+2026-03-24T17:56:47.3112344Z Container is terminated. Total time elapsed: 654 ms.
+2026-03-24T17:56:47.3113993Z Site container: papales-ai-agent terminated during site startup.
+2026-03-24T17:56:47.3707033Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:50:24, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site container: papales-ai-agent terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T17:56:47.5157585Z Site startup probe failed after 53.9944976 seconds.
+2026-03-24T17:56:48.2190082Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site container: papales-ai-agent terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T17:56:48.2353979Z Failed to start site. Revert by stopping site.
+2026-03-24T17:56:48.2360674Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site container: papales-ai-agent terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T17:56:48.2463665Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site container: papales-ai-agent terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-03-24T17:56:48.2463904Z Site: papales-ai-agent stopped.
+2026-03-24T18:12:28.8011434Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 17:56:51 (UTC), DetailsLevel: WARN
+2026-03-24T18:12:33.2707141Z State: Starting, Action: StartingMsiContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 17:56:51 (UTC), DetailsLevel: WARN
+2026-03-24T18:12:55.9080195Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site stopped at 03/24/2026 17:56:51 (UTC), DetailsLevel: WARN
+2026-03-24T18:12:55.9090128Z Container start method called.
+2026-03-24T18:12:55.9094991Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/appsvc/node:20-lts_20260115.4.tuxprod for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T18:12:55.9096507Z Establishing network.
+2026-03-24T18:12:55.9369180Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T18:13:47.5288930Z Container is starting.
+2026-03-24T18:13:47.5367959Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Mounting volumes for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T18:13:47.5386695Z Establishing user namespace if not established already.
+2026-03-24T18:13:47.5389092Z Establishing network if not established already.
+2026-03-24T18:13:47.5390314Z Mounting volumes.
+2026-03-24T18:13:47.5477608Z Nested mountpoint 
+2026-03-24T18:13:47.6830812Z Nested mountpoint volatile/logs
+2026-03-24T18:13:47.6938359Z Nested mountpoint 
+2026-03-24T18:13:47.7409215Z Nested mountpoint 
+2026-03-24T18:13:47.9405980Z Nested mountpoint 
+2026-03-24T18:13:48.4610621Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for papales-ai-agent. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T18:13:48.4702196Z Creating container.
+2026-03-24T18:13:48.4714214Z Creating pipes for streaming container io.
+2026-03-24T18:13:48.4715528Z Creating stdout named pipe at /podr/container/pipe/39f0bf91d502_papales-ai-agent/stdout_f33dc0677bab4676ac52207b2c83deb7.
+2026-03-24T18:13:48.4800289Z Successfully created stdout named pipe at: /podr/container/pipe/39f0bf91d502_papales-ai-agent/stdout_f33dc0677bab4676ac52207b2c83deb7.
+2026-03-24T18:13:48.4801480Z Opening named pipe /podr/container/pipe/39f0bf91d502_papales-ai-agent/stdout_f33dc0677bab4676ac52207b2c83deb7 for reading in non-blocking mode.
+2026-03-24T18:13:48.4809083Z Successfully opened named pipe: /podr/container/pipe/39f0bf91d502_papales-ai-agent/stdout_f33dc0677bab4676ac52207b2c83deb7.
+2026-03-24T18:13:48.4810174Z Successfully removed non-blocking flag from /podr/container/pipe/39f0bf91d502_papales-ai-agent/stdout_f33dc0677bab4676ac52207b2c83deb7.
+2026-03-24T18:13:48.4814088Z Creating stderr named pipe at /podr/container/pipe/39f0bf91d502_papales-ai-agent/stderr_75e4c114cf95465d9abee341257d568a.
+2026-03-24T18:13:48.4815543Z Successfully created stderr named pipe at: /podr/container/pipe/39f0bf91d502_papales-ai-agent/stderr_75e4c114cf95465d9abee341257d568a.
+2026-03-24T18:13:48.4816252Z Opening named pipe /podr/container/pipe/39f0bf91d502_papales-ai-agent/stderr_75e4c114cf95465d9abee341257d568a for reading in non-blocking mode.
+2026-03-24T18:13:48.4817171Z Successfully opened named pipe: /podr/container/pipe/39f0bf91d502_papales-ai-agent/stderr_75e4c114cf95465d9abee341257d568a.
+2026-03-24T18:13:48.4817877Z Successfully removed non-blocking flag from /podr/container/pipe/39f0bf91d502_papales-ai-agent/stderr_75e4c114cf95465d9abee341257d568a.
+2026-03-24T18:13:48.4818955Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T18:13:49.3854989Z Starting container: 39f0bf91d502_papales-ai-agent.
+2026-03-24T18:13:49.5235294Z Starting watchers and probes.
+2026-03-24T18:13:49.5587612Z Starting metrics collection.
+2026-03-24T18:13:49.5589360Z Container is running.
+2026-03-24T18:13:49.5590159Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T18:13:49.8387205Z Container start method finished after 53929 ms.
+2026-03-24T18:13:49.8395854Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T18:13:49.8396431Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T18:15:11.0767923Z Site startup probe succeeded after 81.1589848 seconds.
+2026-03-24T18:15:11.3483567Z State: Starting, Action: WarmUpProbeSucceeded, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site startup probe succeeded after 81.1589848 seconds., DetailsLevel: INFO
+2026-03-24T18:15:11.5109021Z Site is running with deployment version: 280b7da8-cac1-40ff-bfe6-201877838f76
+2026-03-24T18:15:11.5210270Z Site started.
+2026-03-24T18:15:11.5219603Z State: Started, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 18:15:11 (UTC), DetailsLevel: INFO
+2026-03-24T18:15:11.6100841Z Site is running with patch version NODE 20.20.0
+2026-03-24T18:24:56.4550661Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T18:25:02.1281271Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T18:25:15.7992624Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T18:25:15.7996359Z Container start method called.
+2026-03-24T18:25:15.7998742Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.7:13209/appsvc/node:20-lts_20260115.4.tuxprod for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T18:25:15.8000571Z Establishing network.
+2026-03-24T18:25:15.8003092Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T18:26:02.0494338Z Container is starting.
+2026-03-24T18:26:02.0676064Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T18:26:02.0690268Z Establishing user namespace if not established already.
+2026-03-24T18:26:02.0796605Z Establishing network if not established already.
+2026-03-24T18:26:02.1098491Z Mounting volumes.
+2026-03-24T18:26:02.1103229Z Nested mountpoint 
+2026-03-24T18:26:02.2126895Z Nested mountpoint volatile/logs
+2026-03-24T18:26:02.3055272Z Nested mountpoint 
+2026-03-24T18:26:02.5669415Z Nested mountpoint 
+2026-03-24T18:26:02.7109490Z Nested mountpoint 
+2026-03-24T18:26:03.3981533Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for papales-ai-agent. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T18:26:03.3983359Z Creating container.
+2026-03-24T18:26:03.3987172Z Creating pipes for streaming container io.
+2026-03-24T18:26:03.3988413Z Creating stdout named pipe at /podr/container/pipe/41f74768657a_papales-ai-agent/stdout_fd8bcad73bb34a23978d000479ba4327.
+2026-03-24T18:26:03.3990799Z Successfully created stdout named pipe at: /podr/container/pipe/41f74768657a_papales-ai-agent/stdout_fd8bcad73bb34a23978d000479ba4327.
+2026-03-24T18:26:03.3991992Z Opening named pipe /podr/container/pipe/41f74768657a_papales-ai-agent/stdout_fd8bcad73bb34a23978d000479ba4327 for reading in non-blocking mode.
+2026-03-24T18:26:03.3993402Z Successfully opened named pipe: /podr/container/pipe/41f74768657a_papales-ai-agent/stdout_fd8bcad73bb34a23978d000479ba4327.
+2026-03-24T18:26:03.3996766Z Successfully removed non-blocking flag from /podr/container/pipe/41f74768657a_papales-ai-agent/stdout_fd8bcad73bb34a23978d000479ba4327.
+2026-03-24T18:26:03.4479107Z Creating stderr named pipe at /podr/container/pipe/41f74768657a_papales-ai-agent/stderr_4e09bfaf482b4daeac2150f8df0a9423.
+2026-03-24T18:26:03.4484436Z Successfully created stderr named pipe at: /podr/container/pipe/41f74768657a_papales-ai-agent/stderr_4e09bfaf482b4daeac2150f8df0a9423.
+2026-03-24T18:26:03.4490597Z Opening named pipe /podr/container/pipe/41f74768657a_papales-ai-agent/stderr_4e09bfaf482b4daeac2150f8df0a9423 for reading in non-blocking mode.
+2026-03-24T18:26:03.4492442Z Successfully opened named pipe: /podr/container/pipe/41f74768657a_papales-ai-agent/stderr_4e09bfaf482b4daeac2150f8df0a9423.
+2026-03-24T18:26:03.4590745Z Successfully removed non-blocking flag from /podr/container/pipe/41f74768657a_papales-ai-agent/stderr_4e09bfaf482b4daeac2150f8df0a9423.
+2026-03-24T18:26:03.4676295Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T18:26:04.9871172Z Starting container: 41f74768657a_papales-ai-agent.
+2026-03-24T18:26:05.0887181Z Starting watchers and probes.
+2026-03-24T18:26:05.1223108Z Starting metrics collection.
+2026-03-24T18:26:05.1237064Z Container is running.
+2026-03-24T18:26:05.1240998Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T18:26:05.7866118Z Container start method finished after 49985 ms.
+2026-03-24T18:26:05.8050841Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T18:26:05.8055598Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T18:27:04.9021815Z Site startup probe succeeded after 59.075625 seconds.
+2026-03-24T18:27:05.0793428Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 59.075625 seconds., DetailsLevel: INFO
+2026-03-24T18:27:05.1654683Z Site is running with deployment version: d1678336-b948-4561-a2f1-1fa14fc4ac76
+2026-03-24T18:27:05.1667269Z Site started.
+2026-03-24T18:27:05.1670728Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 03/24/2026 18:27:05 (UTC), DetailsLevel: INFO
+2026-03-24T18:27:05.1776840Z Site is running with patch version NODE 20.20.0
+2026-03-24T18:27:25.3319993Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 18:15:11 (UTC), DetailsLevel: INFO
+2026-03-24T18:27:25.3903001Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 18:15:11 (UTC), DetailsLevel: INFO
+2026-03-24T18:27:25.3915789Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T18:27:25.7441922Z Stop and delete container. Retry count = 0
+2026-03-24T18:27:25.7535359Z Stopping container: 39f0bf91d502_papales-ai-agent.
+2026-03-24T18:27:30.7006348Z Deleting container: 39f0bf91d502_papales-ai-agent. Retry count = 0
+2026-03-24T18:27:32.6151396Z Container spec TerminationMessagePolicy  path 
+2026-03-24T18:27:32.6755456Z Container is terminated. Total time elapsed: 7264 ms.
+2026-03-24T18:27:32.6940068Z Site: papales-ai-agent stopped.
+2026-03-24T18:30:36.4816918Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T18:30:39.6074030Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T18:30:51.5849022Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T18:30:51.6024784Z Container start method called.
+2026-03-24T18:30:51.6027657Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.6:13209/appsvc/node:20-lts_20260115.4.tuxprod for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T18:30:51.6032800Z Establishing network.
+2026-03-24T18:30:51.6036397Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T18:31:37.2425414Z Container is starting.
+2026-03-24T18:31:37.2431893Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T18:31:37.2510250Z Establishing user namespace if not established already.
+2026-03-24T18:31:37.2524283Z Establishing network if not established already.
+2026-03-24T18:31:37.2528884Z Mounting volumes.
+2026-03-24T18:31:37.2601248Z Nested mountpoint 
+2026-03-24T18:31:37.2710349Z Nested mountpoint volatile/logs
+2026-03-24T18:31:37.3655662Z Nested mountpoint 
+2026-03-24T18:31:37.4069260Z Nested mountpoint 
+2026-03-24T18:31:37.4650921Z Nested mountpoint 
+2026-03-24T18:31:37.9513707Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for papales-ai-agent. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T18:31:37.9514627Z Creating container.
+2026-03-24T18:31:37.9523069Z Creating pipes for streaming container io.
+2026-03-24T18:31:37.9524111Z Creating stdout named pipe at /podr/container/pipe/374345ad2d97_papales-ai-agent/stdout_8992aedf936f47e88d050b655696eb2c.
+2026-03-24T18:31:37.9525817Z Successfully created stdout named pipe at: /podr/container/pipe/374345ad2d97_papales-ai-agent/stdout_8992aedf936f47e88d050b655696eb2c.
+2026-03-24T18:31:37.9526537Z Opening named pipe /podr/container/pipe/374345ad2d97_papales-ai-agent/stdout_8992aedf936f47e88d050b655696eb2c for reading in non-blocking mode.
+2026-03-24T18:31:37.9527505Z Successfully opened named pipe: /podr/container/pipe/374345ad2d97_papales-ai-agent/stdout_8992aedf936f47e88d050b655696eb2c.
+2026-03-24T18:31:37.9528212Z Successfully removed non-blocking flag from /podr/container/pipe/374345ad2d97_papales-ai-agent/stdout_8992aedf936f47e88d050b655696eb2c.
+2026-03-24T18:31:37.9902599Z Creating stderr named pipe at /podr/container/pipe/374345ad2d97_papales-ai-agent/stderr_1e1f785c9b704a8e91a05816768a59ce.
+2026-03-24T18:31:37.9912041Z Successfully created stderr named pipe at: /podr/container/pipe/374345ad2d97_papales-ai-agent/stderr_1e1f785c9b704a8e91a05816768a59ce.
+2026-03-24T18:31:37.9912966Z Opening named pipe /podr/container/pipe/374345ad2d97_papales-ai-agent/stderr_1e1f785c9b704a8e91a05816768a59ce for reading in non-blocking mode.
+2026-03-24T18:31:37.9914296Z Successfully opened named pipe: /podr/container/pipe/374345ad2d97_papales-ai-agent/stderr_1e1f785c9b704a8e91a05816768a59ce.
+2026-03-24T18:31:37.9915069Z Successfully removed non-blocking flag from /podr/container/pipe/374345ad2d97_papales-ai-agent/stderr_1e1f785c9b704a8e91a05816768a59ce.
+2026-03-24T18:31:37.9992262Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T18:31:38.9853159Z Starting container: 374345ad2d97_papales-ai-agent.
+2026-03-24T18:31:39.1234527Z Starting watchers and probes.
+2026-03-24T18:31:39.1240890Z Starting metrics collection.
+2026-03-24T18:31:39.1335215Z Container is running.
+2026-03-24T18:31:39.1341754Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T18:31:39.5288904Z Container start method finished after 47926 ms.
+2026-03-24T18:31:39.5490378Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T18:31:39.5490665Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T18:33:08.7905866Z Site startup probe succeeded after 89.1925236 seconds.
+2026-03-24T18:33:09.2193859Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 89.1925236 seconds., DetailsLevel: INFO
+2026-03-24T18:33:09.4023398Z Site is running with deployment version: b3a8d73c-4eab-4947-bb74-d2a38671d092
+2026-03-24T18:33:09.4309306Z Site started.
+2026-03-24T18:33:09.4310715Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 03/24/2026 18:33:09 (UTC), DetailsLevel: INFO
+2026-03-24T18:33:09.4416271Z Site is running with patch version NODE 20.20.0
+2026-03-24T18:33:29.7944990Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 18:27:05 (UTC), DetailsLevel: INFO
+2026-03-24T18:33:29.8166488Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 18:27:05 (UTC), DetailsLevel: INFO
+2026-03-24T18:33:29.8458479Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T18:33:30.2921646Z Stop and delete container. Retry count = 0
+2026-03-24T18:33:30.2923354Z Stopping container: 41f74768657a_papales-ai-agent.
+2026-03-24T18:33:35.4285657Z Deleting container: 41f74768657a_papales-ai-agent. Retry count = 0
+2026-03-24T18:33:36.7467430Z Container spec TerminationMessagePolicy  path 
+2026-03-24T18:33:36.7484246Z Container is terminated. Total time elapsed: 6892 ms.
+2026-03-24T18:33:36.7491449Z Site: papales-ai-agent stopped.
+2026-03-24T18:35:11.5615902Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T18:35:16.7792791Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T18:35:35.6578213Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T18:35:35.6595247Z Container start method called.
+2026-03-24T18:35:35.7591978Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.7:13209/appsvc/node:20-lts_20260115.4.tuxprod for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T18:35:35.7683420Z Establishing network.
+2026-03-24T18:35:35.7885469Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T18:36:23.5997507Z Container is starting.
+2026-03-24T18:36:23.6213413Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T18:36:23.6486376Z Establishing user namespace if not established already.
+2026-03-24T18:36:23.6502669Z Establishing network if not established already.
+2026-03-24T18:36:23.6509962Z Mounting volumes.
+2026-03-24T18:36:23.6516153Z Nested mountpoint 
+2026-03-24T18:36:23.7303590Z Nested mountpoint volatile/logs
+2026-03-24T18:36:23.7488997Z Nested mountpoint 
+2026-03-24T18:36:23.8317544Z Nested mountpoint 
+2026-03-24T18:36:23.8614512Z Nested mountpoint 
+2026-03-24T18:36:24.4504663Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for papales-ai-agent. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T18:36:24.4507713Z Creating container.
+2026-03-24T18:36:24.4508698Z Creating pipes for streaming container io.
+2026-03-24T18:36:24.4509461Z Creating stdout named pipe at /podr/container/pipe/be5eda661ef2_papales-ai-agent/stdout_b1ac58e87bf346cb925ffe130d7dd45f.
+2026-03-24T18:36:24.4511458Z Successfully created stdout named pipe at: /podr/container/pipe/be5eda661ef2_papales-ai-agent/stdout_b1ac58e87bf346cb925ffe130d7dd45f.
+2026-03-24T18:36:24.4512191Z Opening named pipe /podr/container/pipe/be5eda661ef2_papales-ai-agent/stdout_b1ac58e87bf346cb925ffe130d7dd45f for reading in non-blocking mode.
+2026-03-24T18:36:24.4513094Z Successfully opened named pipe: /podr/container/pipe/be5eda661ef2_papales-ai-agent/stdout_b1ac58e87bf346cb925ffe130d7dd45f.
+2026-03-24T18:36:24.4513849Z Successfully removed non-blocking flag from /podr/container/pipe/be5eda661ef2_papales-ai-agent/stdout_b1ac58e87bf346cb925ffe130d7dd45f.
+2026-03-24T18:36:24.4519155Z Creating stderr named pipe at /podr/container/pipe/be5eda661ef2_papales-ai-agent/stderr_5afd3fd0b94848fd932f6d6ff8fc4b17.
+2026-03-24T18:36:24.4531058Z Successfully created stderr named pipe at: /podr/container/pipe/be5eda661ef2_papales-ai-agent/stderr_5afd3fd0b94848fd932f6d6ff8fc4b17.
+2026-03-24T18:36:24.4531924Z Opening named pipe /podr/container/pipe/be5eda661ef2_papales-ai-agent/stderr_5afd3fd0b94848fd932f6d6ff8fc4b17 for reading in non-blocking mode.
+2026-03-24T18:36:24.4532911Z Successfully opened named pipe: /podr/container/pipe/be5eda661ef2_papales-ai-agent/stderr_5afd3fd0b94848fd932f6d6ff8fc4b17.
+2026-03-24T18:36:24.4533704Z Successfully removed non-blocking flag from /podr/container/pipe/be5eda661ef2_papales-ai-agent/stderr_5afd3fd0b94848fd932f6d6ff8fc4b17.
+2026-03-24T18:36:24.4625072Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T18:36:25.3139194Z Starting container: be5eda661ef2_papales-ai-agent.
+2026-03-24T18:36:25.4720875Z Starting watchers and probes.
+2026-03-24T18:36:25.4729097Z Starting metrics collection.
+2026-03-24T18:36:25.5141881Z Container is running.
+2026-03-24T18:36:25.5146711Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T18:36:25.7619451Z Container start method finished after 50102 ms.
+2026-03-24T18:36:25.7697151Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T18:36:25.8809814Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T18:38:00.2142180Z Site startup probe succeeded after 94.2345684 seconds.
+2026-03-24T18:38:00.9871640Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 94.2345684 seconds., DetailsLevel: INFO
+2026-03-24T18:38:01.1382772Z Site is running with deployment version: b3a8d73c-4eab-4947-bb74-d2a38671d092
+2026-03-24T18:38:01.1760742Z Site started.
+2026-03-24T18:38:01.1771657Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 03/24/2026 18:38:01 (UTC), DetailsLevel: INFO
+2026-03-24T18:38:01.1969537Z Site is running with patch version NODE 20.20.0
+2026-03-24T18:38:21.5908843Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 18:33:09 (UTC), DetailsLevel: INFO
+2026-03-24T18:38:21.7277596Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 18:33:09 (UTC), DetailsLevel: INFO
+2026-03-24T18:38:21.7461166Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T18:38:22.4545715Z Stop and delete container. Retry count = 0
+2026-03-24T18:38:22.4637989Z Stopping container: 374345ad2d97_papales-ai-agent.
+2026-03-24T18:38:27.3506486Z Deleting container: 374345ad2d97_papales-ai-agent. Retry count = 0
+2026-03-24T18:38:30.4528704Z Container spec TerminationMessagePolicy  path 
+2026-03-24T18:38:30.4547407Z Container is terminated. Total time elapsed: 8686 ms.
+2026-03-24T18:38:30.4610583Z Site: papales-ai-agent stopped.
+2026-03-24T18:40:36.3907893Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T18:40:39.9493627Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T18:40:53.6780115Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T18:40:53.6852899Z Container start method called.
+2026-03-24T18:40:53.6854662Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.6:13209/appsvc/node:20-lts_20260115.4.tuxprod for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T18:40:53.6857146Z Establishing network.
+2026-03-24T18:40:53.6858306Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T18:41:38.4984436Z Container is starting.
+2026-03-24T18:41:38.5058095Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T18:41:38.5061262Z Establishing user namespace if not established already.
+2026-03-24T18:41:38.5065232Z Establishing network if not established already.
+2026-03-24T18:41:38.5072807Z Mounting volumes.
+2026-03-24T18:41:38.5096041Z Nested mountpoint 
+2026-03-24T18:41:38.5198374Z Nested mountpoint volatile/logs
+2026-03-24T18:41:38.5860764Z Nested mountpoint 
+2026-03-24T18:41:38.6852364Z Nested mountpoint 
+2026-03-24T18:41:38.6955580Z Nested mountpoint 
+2026-03-24T18:41:39.1781852Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for papales-ai-agent. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T18:41:39.1786040Z Creating container.
+2026-03-24T18:41:39.1790984Z Creating pipes for streaming container io.
+2026-03-24T18:41:39.1882895Z Creating stdout named pipe at /podr/container/pipe/6dc41fd80c54_papales-ai-agent/stdout_bfe2b07485aa4939a535237f8b1bb54c.
+2026-03-24T18:41:39.1887879Z Successfully created stdout named pipe at: /podr/container/pipe/6dc41fd80c54_papales-ai-agent/stdout_bfe2b07485aa4939a535237f8b1bb54c.
+2026-03-24T18:41:39.1889571Z Opening named pipe /podr/container/pipe/6dc41fd80c54_papales-ai-agent/stdout_bfe2b07485aa4939a535237f8b1bb54c for reading in non-blocking mode.
+2026-03-24T18:41:39.1890969Z Successfully opened named pipe: /podr/container/pipe/6dc41fd80c54_papales-ai-agent/stdout_bfe2b07485aa4939a535237f8b1bb54c.
+2026-03-24T18:41:39.1975346Z Successfully removed non-blocking flag from /podr/container/pipe/6dc41fd80c54_papales-ai-agent/stdout_bfe2b07485aa4939a535237f8b1bb54c.
+2026-03-24T18:41:39.2165887Z Creating stderr named pipe at /podr/container/pipe/6dc41fd80c54_papales-ai-agent/stderr_a22c1a37bc374d92b3e86b82453da94f.
+2026-03-24T18:41:39.2169327Z Successfully created stderr named pipe at: /podr/container/pipe/6dc41fd80c54_papales-ai-agent/stderr_a22c1a37bc374d92b3e86b82453da94f.
+2026-03-24T18:41:39.2170168Z Opening named pipe /podr/container/pipe/6dc41fd80c54_papales-ai-agent/stderr_a22c1a37bc374d92b3e86b82453da94f for reading in non-blocking mode.
+2026-03-24T18:41:39.2171077Z Successfully opened named pipe: /podr/container/pipe/6dc41fd80c54_papales-ai-agent/stderr_a22c1a37bc374d92b3e86b82453da94f.
+2026-03-24T18:41:39.2171836Z Successfully removed non-blocking flag from /podr/container/pipe/6dc41fd80c54_papales-ai-agent/stderr_a22c1a37bc374d92b3e86b82453da94f.
+2026-03-24T18:41:39.2173051Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T18:41:39.8993872Z Starting container: 6dc41fd80c54_papales-ai-agent.
+2026-03-24T18:41:39.9798576Z Starting watchers and probes.
+2026-03-24T18:41:40.0044698Z Starting metrics collection.
+2026-03-24T18:41:40.0061523Z Container is running.
+2026-03-24T18:41:40.0153661Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T18:41:40.3566277Z Container start method finished after 46670 ms.
+2026-03-24T18:41:40.3855052Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T18:41:40.3855395Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T18:43:35.6588859Z Site startup probe succeeded after 115.2438039 seconds.
+2026-03-24T18:43:36.0499172Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 115.2438039 seconds., DetailsLevel: INFO
+2026-03-24T18:43:36.1912366Z Site is running with deployment version: e251ceb4-0fb4-4c3e-8004-bb1815d7b94a
+2026-03-24T18:43:36.2003133Z Site started.
+2026-03-24T18:43:36.2025246Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 03/24/2026 18:43:36 (UTC), DetailsLevel: INFO
+2026-03-24T18:43:36.2191596Z Site is running with patch version NODE 20.20.0
+2026-03-24T18:43:56.4531362Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 18:38:01 (UTC), DetailsLevel: INFO
+2026-03-24T18:43:56.5727719Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 18:38:01 (UTC), DetailsLevel: INFO
+2026-03-24T18:43:56.5928921Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T18:43:56.9116979Z Stop and delete container. Retry count = 0
+2026-03-24T18:43:56.9129715Z Stopping container: be5eda661ef2_papales-ai-agent.
+2026-03-24T18:44:02.4344902Z Deleting container: be5eda661ef2_papales-ai-agent. Retry count = 0
+2026-03-24T18:44:09.1246972Z Container spec TerminationMessagePolicy  path 
+2026-03-24T18:44:09.1258560Z Container is terminated. Total time elapsed: 12513 ms.
+2026-03-24T18:44:09.1271166Z Site: papales-ai-agent stopped.
+2026-03-24T19:04:44.6185734Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T19:04:48.7605180Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T19:05:04.9557958Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T19:05:04.9608896Z Container start method called.
+2026-03-24T19:05:04.9615436Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.7:13209/appsvc/node:20-lts_20260115.4.tuxprod for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T19:05:04.9621532Z Establishing network.
+2026-03-24T19:05:04.9627925Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T19:05:49.9573855Z Container is starting.
+2026-03-24T19:05:49.9695672Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T19:05:49.9703111Z Establishing user namespace if not established already.
+2026-03-24T19:05:49.9711406Z Establishing network if not established already.
+2026-03-24T19:05:49.9757545Z Mounting volumes.
+2026-03-24T19:05:49.9767191Z Nested mountpoint 
+2026-03-24T19:05:50.0571801Z Nested mountpoint volatile/logs
+2026-03-24T19:05:50.0865432Z Nested mountpoint 
+2026-03-24T19:05:50.1769923Z Nested mountpoint 
+2026-03-24T19:05:50.2259090Z Nested mountpoint 
+2026-03-24T19:05:50.8188838Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for papales-ai-agent. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T19:05:50.8191847Z Creating container.
+2026-03-24T19:05:50.8193134Z Creating pipes for streaming container io.
+2026-03-24T19:05:50.8194309Z Creating stdout named pipe at /podr/container/pipe/83be09323373_papales-ai-agent/stdout_b26480b6a7ee4ea9bf64c082a8a736e1.
+2026-03-24T19:05:50.9103580Z Successfully created stdout named pipe at: /podr/container/pipe/83be09323373_papales-ai-agent/stdout_b26480b6a7ee4ea9bf64c082a8a736e1.
+2026-03-24T19:05:50.9111606Z Opening named pipe /podr/container/pipe/83be09323373_papales-ai-agent/stdout_b26480b6a7ee4ea9bf64c082a8a736e1 for reading in non-blocking mode.
+2026-03-24T19:05:50.9113539Z Successfully opened named pipe: /podr/container/pipe/83be09323373_papales-ai-agent/stdout_b26480b6a7ee4ea9bf64c082a8a736e1.
+2026-03-24T19:05:50.9121095Z Successfully removed non-blocking flag from /podr/container/pipe/83be09323373_papales-ai-agent/stdout_b26480b6a7ee4ea9bf64c082a8a736e1.
+2026-03-24T19:05:50.9186288Z Creating stderr named pipe at /podr/container/pipe/83be09323373_papales-ai-agent/stderr_481e5b87d73049e9ad17b1ec911a0aab.
+2026-03-24T19:05:50.9196909Z Successfully created stderr named pipe at: /podr/container/pipe/83be09323373_papales-ai-agent/stderr_481e5b87d73049e9ad17b1ec911a0aab.
+2026-03-24T19:05:50.9198244Z Opening named pipe /podr/container/pipe/83be09323373_papales-ai-agent/stderr_481e5b87d73049e9ad17b1ec911a0aab for reading in non-blocking mode.
+2026-03-24T19:05:50.9199558Z Successfully opened named pipe: /podr/container/pipe/83be09323373_papales-ai-agent/stderr_481e5b87d73049e9ad17b1ec911a0aab.
+2026-03-24T19:05:50.9200586Z Successfully removed non-blocking flag from /podr/container/pipe/83be09323373_papales-ai-agent/stderr_481e5b87d73049e9ad17b1ec911a0aab.
+2026-03-24T19:05:50.9205375Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T19:05:51.7812928Z Starting container: 83be09323373_papales-ai-agent.
+2026-03-24T19:05:51.8663315Z Starting watchers and probes.
+2026-03-24T19:05:51.9066877Z Starting metrics collection.
+2026-03-24T19:05:51.9069958Z Container is running.
+2026-03-24T19:05:51.9074701Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T19:05:52.2454208Z Container start method finished after 47284 ms.
+2026-03-24T19:05:52.2455828Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T19:05:52.2456032Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T19:06:46.4250140Z Site startup probe succeeded after 54.0902192 seconds.
+2026-03-24T19:06:46.7965314Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 54.0902192 seconds., DetailsLevel: INFO
+2026-03-24T19:06:47.0380254Z Site is running with deployment version: 8c69695c-1256-4b69-bb6b-3de2ea707ca6
+2026-03-24T19:06:47.0390729Z Site started.
+2026-03-24T19:06:47.0392443Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 03/24/2026 19:06:47 (UTC), DetailsLevel: INFO
+2026-03-24T19:06:47.0776113Z Site is running with patch version NODE 20.20.0
+2026-03-24T19:07:07.3208994Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 18:43:36 (UTC), DetailsLevel: INFO
+2026-03-24T19:07:07.3256072Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 18:43:36 (UTC), DetailsLevel: INFO
+2026-03-24T19:07:07.3267781Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T19:07:07.3737661Z Stop and delete container. Retry count = 0
+2026-03-24T19:07:07.3748708Z Stopping container: 6dc41fd80c54_papales-ai-agent.
+2026-03-24T19:07:13.3040416Z Deleting container: 6dc41fd80c54_papales-ai-agent. Retry count = 0
+2026-03-24T19:07:19.1412671Z Container spec TerminationMessagePolicy  path 
+2026-03-24T19:07:19.1700724Z Container is terminated. Total time elapsed: 11833 ms.
+2026-03-24T19:07:19.2113340Z Site: papales-ai-agent stopped.
+2026-03-24T19:09:45.3961298Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T19:09:48.8171455Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T19:10:00.8880320Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T19:10:00.8884061Z Container start method called.
+2026-03-24T19:10:00.8884594Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.6:13209/appsvc/node:20-lts_20260115.4.tuxprod for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T19:10:00.8885488Z Establishing network.
+2026-03-24T19:10:00.8886483Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T19:10:48.4649657Z Container is starting.
+2026-03-24T19:10:48.4662625Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T19:10:48.4667885Z Establishing user namespace if not established already.
+2026-03-24T19:10:48.4678582Z Establishing network if not established already.
+2026-03-24T19:10:48.4757310Z Mounting volumes.
+2026-03-24T19:10:48.4766074Z Nested mountpoint 
+2026-03-24T19:10:48.5380177Z Nested mountpoint volatile/logs
+2026-03-24T19:10:48.5752908Z Nested mountpoint 
+2026-03-24T19:10:48.6073420Z Nested mountpoint 
+2026-03-24T19:10:48.6972329Z Nested mountpoint 
+2026-03-24T19:10:49.1882335Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for papales-ai-agent. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T19:10:49.1959234Z Creating container.
+2026-03-24T19:10:49.1962427Z Creating pipes for streaming container io.
+2026-03-24T19:10:49.1963952Z Creating stdout named pipe at /podr/container/pipe/eac6536c55bb_papales-ai-agent/stdout_8126f554221f49059d1d4eb73df6393c.
+2026-03-24T19:10:49.1973276Z Successfully created stdout named pipe at: /podr/container/pipe/eac6536c55bb_papales-ai-agent/stdout_8126f554221f49059d1d4eb73df6393c.
+2026-03-24T19:10:49.1975284Z Opening named pipe /podr/container/pipe/eac6536c55bb_papales-ai-agent/stdout_8126f554221f49059d1d4eb73df6393c for reading in non-blocking mode.
+2026-03-24T19:10:49.1976347Z Successfully opened named pipe: /podr/container/pipe/eac6536c55bb_papales-ai-agent/stdout_8126f554221f49059d1d4eb73df6393c.
+2026-03-24T19:10:49.1977123Z Successfully removed non-blocking flag from /podr/container/pipe/eac6536c55bb_papales-ai-agent/stdout_8126f554221f49059d1d4eb73df6393c.
+2026-03-24T19:10:49.1978248Z Creating stderr named pipe at /podr/container/pipe/eac6536c55bb_papales-ai-agent/stderr_a77a797281b44815b828b6ec2bc22e22.
+2026-03-24T19:10:49.2366165Z Successfully created stderr named pipe at: /podr/container/pipe/eac6536c55bb_papales-ai-agent/stderr_a77a797281b44815b828b6ec2bc22e22.
+2026-03-24T19:10:49.2377544Z Opening named pipe /podr/container/pipe/eac6536c55bb_papales-ai-agent/stderr_a77a797281b44815b828b6ec2bc22e22 for reading in non-blocking mode.
+2026-03-24T19:10:49.2465351Z Successfully opened named pipe: /podr/container/pipe/eac6536c55bb_papales-ai-agent/stderr_a77a797281b44815b828b6ec2bc22e22.
+2026-03-24T19:10:49.2468552Z Successfully removed non-blocking flag from /podr/container/pipe/eac6536c55bb_papales-ai-agent/stderr_a77a797281b44815b828b6ec2bc22e22.
+2026-03-24T19:10:49.2760561Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T19:10:49.8881353Z Starting container: eac6536c55bb_papales-ai-agent.
+2026-03-24T19:10:50.1747724Z Starting watchers and probes.
+2026-03-24T19:10:50.1753660Z Starting metrics collection.
+2026-03-24T19:10:50.1755246Z Container is running.
+2026-03-24T19:10:50.1756428Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T19:10:50.6159349Z Container start method finished after 49727 ms.
+2026-03-24T19:10:50.6161192Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T19:10:50.8146970Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T19:11:35.9951206Z Site startup probe succeeded after 45.0707243 seconds.
+2026-03-24T19:11:36.2832352Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 45.0707243 seconds., DetailsLevel: INFO
+2026-03-24T19:11:36.4093307Z Site is running with deployment version: 3d2e54d8-9af2-4814-bc13-f85c026e24d3
+2026-03-24T19:11:36.4142989Z Site started.
+2026-03-24T19:11:36.4197816Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 03/24/2026 19:11:36 (UTC), DetailsLevel: INFO
+2026-03-24T19:11:36.4216398Z Site is running with patch version NODE 20.20.0
+2026-03-24T19:11:56.5188560Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 19:06:47 (UTC), DetailsLevel: INFO
+2026-03-24T19:11:56.5203502Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 19:06:47 (UTC), DetailsLevel: INFO
+2026-03-24T19:11:56.5297124Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T19:11:56.5591931Z Stop and delete container. Retry count = 0
+2026-03-24T19:11:56.5684094Z Stopping container: 83be09323373_papales-ai-agent.
+2026-03-24T19:12:01.9081152Z Deleting container: 83be09323373_papales-ai-agent. Retry count = 0
+2026-03-24T19:12:05.4590936Z Container spec TerminationMessagePolicy  path 
+2026-03-24T19:12:05.4604176Z Container is terminated. Total time elapsed: 8929 ms.
+2026-03-24T19:12:05.4799081Z Site: papales-ai-agent stopped.
+2026-03-24T19:14:51.6980391Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T19:14:57.4622129Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T19:15:15.3232724Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T19:15:15.3307335Z Container start method called.
+2026-03-24T19:15:15.3317517Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.7:13209/appsvc/node:20-lts_20260115.4.tuxprod for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T19:15:15.3327279Z Establishing network.
+2026-03-24T19:15:15.3408489Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T19:16:03.8108833Z Container is starting.
+2026-03-24T19:16:03.8522689Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T19:16:03.8526322Z Establishing user namespace if not established already.
+2026-03-24T19:16:03.8527711Z Establishing network if not established already.
+2026-03-24T19:16:03.8529004Z Mounting volumes.
+2026-03-24T19:16:03.8609072Z Nested mountpoint 
+2026-03-24T19:16:03.8815609Z Nested mountpoint volatile/logs
+2026-03-24T19:16:03.9688999Z Nested mountpoint 
+2026-03-24T19:16:04.1728588Z Nested mountpoint 
+2026-03-24T19:16:04.2637945Z Nested mountpoint 
+2026-03-24T19:16:05.8895886Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for papales-ai-agent. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T19:16:05.9265002Z Creating container.
+2026-03-24T19:16:05.9269785Z Creating pipes for streaming container io.
+2026-03-24T19:16:05.9272738Z Creating stdout named pipe at /podr/container/pipe/c3894e32e490_papales-ai-agent/stdout_72dc631834434bb3b11472df79e0f79f.
+2026-03-24T19:16:05.9280336Z Successfully created stdout named pipe at: /podr/container/pipe/c3894e32e490_papales-ai-agent/stdout_72dc631834434bb3b11472df79e0f79f.
+2026-03-24T19:16:05.9284314Z Opening named pipe /podr/container/pipe/c3894e32e490_papales-ai-agent/stdout_72dc631834434bb3b11472df79e0f79f for reading in non-blocking mode.
+2026-03-24T19:16:05.9386242Z Successfully opened named pipe: /podr/container/pipe/c3894e32e490_papales-ai-agent/stdout_72dc631834434bb3b11472df79e0f79f.
+2026-03-24T19:16:05.9750914Z Successfully removed non-blocking flag from /podr/container/pipe/c3894e32e490_papales-ai-agent/stdout_72dc631834434bb3b11472df79e0f79f.
+2026-03-24T19:16:05.9754726Z Creating stderr named pipe at /podr/container/pipe/c3894e32e490_papales-ai-agent/stderr_4d41c0d72274455298d028faf9776510.
+2026-03-24T19:16:05.9756575Z Successfully created stderr named pipe at: /podr/container/pipe/c3894e32e490_papales-ai-agent/stderr_4d41c0d72274455298d028faf9776510.
+2026-03-24T19:16:05.9757363Z Opening named pipe /podr/container/pipe/c3894e32e490_papales-ai-agent/stderr_4d41c0d72274455298d028faf9776510 for reading in non-blocking mode.
+2026-03-24T19:16:05.9758291Z Successfully opened named pipe: /podr/container/pipe/c3894e32e490_papales-ai-agent/stderr_4d41c0d72274455298d028faf9776510.
+2026-03-24T19:16:05.9759012Z Successfully removed non-blocking flag from /podr/container/pipe/c3894e32e490_papales-ai-agent/stderr_4d41c0d72274455298d028faf9776510.
+2026-03-24T19:16:05.9760064Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T19:16:07.0603200Z Starting container: c3894e32e490_papales-ai-agent.
+2026-03-24T19:16:07.1389646Z Starting watchers and probes.
+2026-03-24T19:16:07.1489250Z Starting metrics collection.
+2026-03-24T19:16:07.1490775Z Container is running.
+2026-03-24T19:16:07.1491550Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T19:16:07.3741712Z Container start method finished after 52043 ms.
+2026-03-24T19:16:07.4786374Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T19:16:07.4786855Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T19:16:50.6798936Z Site startup probe succeeded after 43.1213636 seconds.
+2026-03-24T19:16:51.1113267Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 43.1213636 seconds., DetailsLevel: INFO
+2026-03-24T19:16:51.2207828Z Site is running with deployment version: 989351f3-74ff-4215-b29a-acc13d8172b9
+2026-03-24T19:16:51.2225951Z Site started.
+2026-03-24T19:16:51.2227604Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 03/24/2026 19:16:51 (UTC), DetailsLevel: INFO
+2026-03-24T19:16:51.2323738Z Site is running with patch version NODE 20.20.0
+2026-03-24T19:17:11.4153741Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 19:11:36 (UTC), DetailsLevel: INFO
+2026-03-24T19:17:11.4350599Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 19:11:36 (UTC), DetailsLevel: INFO
+2026-03-24T19:17:11.4354228Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T19:17:11.8096396Z Stop and delete container. Retry count = 0
+2026-03-24T19:17:11.8099880Z Stopping container: eac6536c55bb_papales-ai-agent.
+2026-03-24T19:17:17.2171247Z Deleting container: eac6536c55bb_papales-ai-agent. Retry count = 0
+2026-03-24T19:17:21.4994598Z Container spec TerminationMessagePolicy  path 
+2026-03-24T19:17:21.5022189Z Container is terminated. Total time elapsed: 10058 ms.
+2026-03-24T19:17:21.5796811Z Site: papales-ai-agent stopped.
+2026-03-24T19:25:26.0564311Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T19:25:31.0540115Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T19:25:42.5005384Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T19:25:42.5010288Z Container start method called.
+2026-03-24T19:25:42.5177375Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.6:13209/appsvc/node:20-lts_20260115.4.tuxprod for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T19:25:42.5182071Z Establishing network.
+2026-03-24T19:25:42.5183352Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T19:26:28.5457706Z Container is starting.
+2026-03-24T19:26:28.5546417Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T19:26:28.5551133Z Establishing user namespace if not established already.
+2026-03-24T19:26:28.5554128Z Establishing network if not established already.
+2026-03-24T19:26:28.5558336Z Mounting volumes.
+2026-03-24T19:26:28.5560393Z Nested mountpoint 
+2026-03-24T19:26:28.6527522Z Nested mountpoint volatile/logs
+2026-03-24T19:26:28.8112624Z Nested mountpoint 
+2026-03-24T19:26:28.8507057Z Nested mountpoint 
+2026-03-24T19:26:28.8699552Z Nested mountpoint 
+2026-03-24T19:26:29.5066626Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for papales-ai-agent. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T19:26:29.5067580Z Creating container.
+2026-03-24T19:26:29.5068290Z Creating pipes for streaming container io.
+2026-03-24T19:26:29.5069052Z Creating stdout named pipe at /podr/container/pipe/50a265a9fbbd_papales-ai-agent/stdout_dfb0bbd551444e278bf7e0ba31fd702d.
+2026-03-24T19:26:29.5070579Z Successfully created stdout named pipe at: /podr/container/pipe/50a265a9fbbd_papales-ai-agent/stdout_dfb0bbd551444e278bf7e0ba31fd702d.
+2026-03-24T19:26:29.5071256Z Opening named pipe /podr/container/pipe/50a265a9fbbd_papales-ai-agent/stdout_dfb0bbd551444e278bf7e0ba31fd702d for reading in non-blocking mode.
+2026-03-24T19:26:29.5072123Z Successfully opened named pipe: /podr/container/pipe/50a265a9fbbd_papales-ai-agent/stdout_dfb0bbd551444e278bf7e0ba31fd702d.
+2026-03-24T19:26:29.5072881Z Successfully removed non-blocking flag from /podr/container/pipe/50a265a9fbbd_papales-ai-agent/stdout_dfb0bbd551444e278bf7e0ba31fd702d.
+2026-03-24T19:26:29.5080914Z Creating stderr named pipe at /podr/container/pipe/50a265a9fbbd_papales-ai-agent/stderr_88d6eaecd8b447c988645fa6d51666cd.
+2026-03-24T19:26:29.5153461Z Successfully created stderr named pipe at: /podr/container/pipe/50a265a9fbbd_papales-ai-agent/stderr_88d6eaecd8b447c988645fa6d51666cd.
+2026-03-24T19:26:29.5521854Z Opening named pipe /podr/container/pipe/50a265a9fbbd_papales-ai-agent/stderr_88d6eaecd8b447c988645fa6d51666cd for reading in non-blocking mode.
+2026-03-24T19:26:29.5558831Z Successfully opened named pipe: /podr/container/pipe/50a265a9fbbd_papales-ai-agent/stderr_88d6eaecd8b447c988645fa6d51666cd.
+2026-03-24T19:26:29.5569392Z Successfully removed non-blocking flag from /podr/container/pipe/50a265a9fbbd_papales-ai-agent/stderr_88d6eaecd8b447c988645fa6d51666cd.
+2026-03-24T19:26:29.5579978Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T19:26:30.1668546Z Starting container: 50a265a9fbbd_papales-ai-agent.
+2026-03-24T19:26:30.2542397Z Starting watchers and probes.
+2026-03-24T19:26:30.2559404Z Starting metrics collection.
+2026-03-24T19:26:30.2560669Z Container is running.
+2026-03-24T19:26:30.2561648Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T19:26:30.5862611Z Container start method finished after 48084 ms.
+2026-03-24T19:26:30.5875336Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T19:26:30.6169411Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T19:27:46.9899056Z Site startup probe succeeded after 76.3315757 seconds.
+2026-03-24T19:27:47.8788667Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 76.3315757 seconds., DetailsLevel: INFO
+2026-03-24T19:27:48.0371525Z Site is running with deployment version: 47551d1d-fbaa-4543-94cc-e72f3acac903
+2026-03-24T19:27:48.0641071Z Site started.
+2026-03-24T19:27:48.0643053Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 03/24/2026 19:27:48 (UTC), DetailsLevel: INFO
+2026-03-24T19:27:48.0862983Z Site is running with patch version NODE 20.20.0
+2026-03-24T19:28:08.3554333Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 19:16:51 (UTC), DetailsLevel: INFO
+2026-03-24T19:28:08.3765034Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 19:16:51 (UTC), DetailsLevel: INFO
+2026-03-24T19:28:08.3785022Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T19:28:08.5341974Z Stop and delete container. Retry count = 0
+2026-03-24T19:28:08.5350870Z Stopping container: c3894e32e490_papales-ai-agent.
+2026-03-24T19:28:13.9227373Z Deleting container: c3894e32e490_papales-ai-agent. Retry count = 0
+2026-03-24T19:28:19.7053014Z Container spec TerminationMessagePolicy  path 
+2026-03-24T19:28:19.7238754Z Container is terminated. Total time elapsed: 11310 ms.
+2026-03-24T19:28:19.7338560Z Site: papales-ai-agent stopped.
+2026-03-24T19:38:05.4942083Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T19:38:11.9079679Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T19:38:34.1579186Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T19:38:34.1585281Z Container start method called.
+2026-03-24T19:38:34.1591405Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.7:13209/appsvc/node:20-lts_20260115.4.tuxprod for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T19:38:34.1598712Z Establishing network.
+2026-03-24T19:38:34.1604132Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T19:39:20.0116150Z Container is starting.
+2026-03-24T19:39:20.0125015Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T19:39:20.0127013Z Establishing user namespace if not established already.
+2026-03-24T19:39:20.0127841Z Establishing network if not established already.
+2026-03-24T19:39:20.0128698Z Mounting volumes.
+2026-03-24T19:39:20.0213602Z Nested mountpoint 
+2026-03-24T19:39:20.0719992Z Nested mountpoint volatile/logs
+2026-03-24T19:39:20.1107051Z Nested mountpoint 
+2026-03-24T19:39:20.2387780Z Nested mountpoint 
+2026-03-24T19:39:20.2610124Z Nested mountpoint 
+2026-03-24T19:39:20.8849870Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for papales-ai-agent. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T19:39:20.8850913Z Creating container.
+2026-03-24T19:39:20.8940964Z Creating pipes for streaming container io.
+2026-03-24T19:39:20.8946802Z Creating stdout named pipe at /podr/container/pipe/04467b7e0ec8_papales-ai-agent/stdout_842bf196970449aca5b9f1f609a04745.
+2026-03-24T19:39:20.8953043Z Successfully created stdout named pipe at: /podr/container/pipe/04467b7e0ec8_papales-ai-agent/stdout_842bf196970449aca5b9f1f609a04745.
+2026-03-24T19:39:20.8954418Z Opening named pipe /podr/container/pipe/04467b7e0ec8_papales-ai-agent/stdout_842bf196970449aca5b9f1f609a04745 for reading in non-blocking mode.
+2026-03-24T19:39:20.8955824Z Successfully opened named pipe: /podr/container/pipe/04467b7e0ec8_papales-ai-agent/stdout_842bf196970449aca5b9f1f609a04745.
+2026-03-24T19:39:20.8958553Z Successfully removed non-blocking flag from /podr/container/pipe/04467b7e0ec8_papales-ai-agent/stdout_842bf196970449aca5b9f1f609a04745.
+2026-03-24T19:39:20.8961160Z Creating stderr named pipe at /podr/container/pipe/04467b7e0ec8_papales-ai-agent/stderr_91c2c12e1d004240b0f75f8088d9a2f6.
+2026-03-24T19:39:20.8963361Z Successfully created stderr named pipe at: /podr/container/pipe/04467b7e0ec8_papales-ai-agent/stderr_91c2c12e1d004240b0f75f8088d9a2f6.
+2026-03-24T19:39:20.8964490Z Opening named pipe /podr/container/pipe/04467b7e0ec8_papales-ai-agent/stderr_91c2c12e1d004240b0f75f8088d9a2f6 for reading in non-blocking mode.
+2026-03-24T19:39:20.8965661Z Successfully opened named pipe: /podr/container/pipe/04467b7e0ec8_papales-ai-agent/stderr_91c2c12e1d004240b0f75f8088d9a2f6.
+2026-03-24T19:39:20.8966714Z Successfully removed non-blocking flag from /podr/container/pipe/04467b7e0ec8_papales-ai-agent/stderr_91c2c12e1d004240b0f75f8088d9a2f6.
+2026-03-24T19:39:20.9061958Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T19:39:21.5382154Z Starting container: 04467b7e0ec8_papales-ai-agent.
+2026-03-24T19:39:21.6545104Z Starting watchers and probes.
+2026-03-24T19:39:21.6751064Z Starting metrics collection.
+2026-03-24T19:39:21.6926229Z Container is running.
+2026-03-24T19:39:21.6927945Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T19:39:21.9232294Z Container start method finished after 47764 ms.
+2026-03-24T19:39:21.9235358Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T19:39:21.9236047Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T19:40:16.1199531Z Site startup probe succeeded after 54.0659454 seconds.
+2026-03-24T19:40:16.3701609Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 54.0659454 seconds., DetailsLevel: INFO
+2026-03-24T19:40:16.4418064Z Site is running with deployment version: 1e9fde41-3ae8-4403-bae6-6c9bf48cadd7
+2026-03-24T19:40:16.4420092Z Site started.
+2026-03-24T19:40:16.4420716Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 03/24/2026 19:40:16 (UTC), DetailsLevel: INFO
+2026-03-24T19:40:16.4494394Z Site is running with patch version NODE 20.20.0
+2026-03-24T19:40:36.5507960Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 19:27:48 (UTC), DetailsLevel: INFO
+2026-03-24T19:40:36.5605480Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 19:27:48 (UTC), DetailsLevel: INFO
+2026-03-24T19:40:36.5702283Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T19:40:36.6084677Z Stop and delete container. Retry count = 0
+2026-03-24T19:40:36.6090180Z Stopping container: 50a265a9fbbd_papales-ai-agent.
+2026-03-24T19:40:41.8302462Z Deleting container: 50a265a9fbbd_papales-ai-agent. Retry count = 0
+2026-03-24T19:40:44.2768115Z Container spec TerminationMessagePolicy  path 
+2026-03-24T19:40:44.2779248Z Container is terminated. Total time elapsed: 7706 ms.
+2026-03-24T19:40:44.2867944Z Site: papales-ai-agent stopped.
+2026-03-24T19:44:35.8196564Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T19:44:40.6374922Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T19:44:59.9547540Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T19:44:59.9639144Z Container start method called.
+2026-03-24T19:44:59.9641943Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.6:13209/appsvc/node:20-lts_20260115.4.tuxprod for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T19:44:59.9725817Z Establishing network.
+2026-03-24T19:44:59.9740608Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.
+2026-03-24T19:45:46.2297786Z Container is starting.
+2026-03-24T19:45:46.2306902Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T19:45:46.2314721Z Establishing user namespace if not established already.
+2026-03-24T19:45:46.2406821Z Establishing network if not established already.
+2026-03-24T19:45:46.2414638Z Mounting volumes.
+2026-03-24T19:45:46.2492780Z Nested mountpoint 
+2026-03-24T19:45:46.3007875Z Nested mountpoint volatile/logs
+2026-03-24T19:45:46.3394935Z Nested mountpoint 
+2026-03-24T19:45:46.3497915Z Nested mountpoint 
+2026-03-24T19:45:46.3693629Z Nested mountpoint 
+2026-03-24T19:45:47.0974235Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for papales-ai-agent. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-24T19:45:47.0988392Z Creating container.
+2026-03-24T19:45:47.0990596Z Creating pipes for streaming container io.
+2026-03-24T19:45:47.0998368Z Creating stdout named pipe at /podr/container/pipe/0b6ce7c40148_papales-ai-agent/stdout_5f370e87c1ee471d931d58da9124e7a5.
+2026-03-24T19:45:47.1093042Z Successfully created stdout named pipe at: /podr/container/pipe/0b6ce7c40148_papales-ai-agent/stdout_5f370e87c1ee471d931d58da9124e7a5.
+2026-03-24T19:45:47.1096021Z Opening named pipe /podr/container/pipe/0b6ce7c40148_papales-ai-agent/stdout_5f370e87c1ee471d931d58da9124e7a5 for reading in non-blocking mode.
+2026-03-24T19:45:47.1097802Z Successfully opened named pipe: /podr/container/pipe/0b6ce7c40148_papales-ai-agent/stdout_5f370e87c1ee471d931d58da9124e7a5.
+2026-03-24T19:45:47.1099762Z Successfully removed non-blocking flag from /podr/container/pipe/0b6ce7c40148_papales-ai-agent/stdout_5f370e87c1ee471d931d58da9124e7a5.
+2026-03-24T19:45:47.1102928Z Creating stderr named pipe at /podr/container/pipe/0b6ce7c40148_papales-ai-agent/stderr_d708929da80a4a68a116c8416a64784e.
+2026-03-24T19:45:47.1104409Z Successfully created stderr named pipe at: /podr/container/pipe/0b6ce7c40148_papales-ai-agent/stderr_d708929da80a4a68a116c8416a64784e.
+2026-03-24T19:45:47.1105157Z Opening named pipe /podr/container/pipe/0b6ce7c40148_papales-ai-agent/stderr_d708929da80a4a68a116c8416a64784e for reading in non-blocking mode.
+2026-03-24T19:45:47.1106032Z Successfully opened named pipe: /podr/container/pipe/0b6ce7c40148_papales-ai-agent/stderr_d708929da80a4a68a116c8416a64784e.
+2026-03-24T19:45:47.1295985Z Successfully removed non-blocking flag from /podr/container/pipe/0b6ce7c40148_papales-ai-agent/stderr_d708929da80a4a68a116c8416a64784e.
+2026-03-24T19:45:47.1304555Z Creating container with image: appsvc/node:20-lts_20260115.4.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/node:20-lts_20260115.4.tuxprod
+2026-03-24T19:45:47.8173033Z Starting container: 0b6ce7c40148_papales-ai-agent.
+2026-03-24T19:45:47.8953894Z Starting watchers and probes.
+2026-03-24T19:45:47.9153363Z Starting metrics collection.
+2026-03-24T19:45:47.9241071Z Container is running.
+2026-03-24T19:45:47.9344053Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T19:45:48.1334529Z Container start method finished after 48169 ms.
+2026-03-24T19:45:48.1744410Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container papales-ai-agent successfully created and is running., DetailsLevel: INFO
+2026-03-24T19:45:48.2260016Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-24T19:46:43.5933541Z Site startup probe succeeded after 55.3472864 seconds.
+2026-03-24T19:46:44.2199541Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 55.3472864 seconds., DetailsLevel: INFO
+2026-03-24T19:46:44.3079502Z Site is running with deployment version: 159e6097-7c5d-4086-a77d-f6b404ea0bfc
+2026-03-24T19:46:44.3094656Z Site started.
+2026-03-24T19:46:44.3178632Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 03/24/2026 19:46:44 (UTC), DetailsLevel: INFO
+2026-03-24T19:46:44.3207961Z Site is running with patch version NODE 20.20.0
+2026-03-24T19:47:04.4045455Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 19:40:16 (UTC), DetailsLevel: INFO
+2026-03-24T19:47:04.4191707Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 03/24/2026 17:56:48, LastErrorDetails: Container did not start within expected time limit of 600s. Please inspect your container logs for more details., Details: Site started at 03/24/2026 19:40:16 (UTC), DetailsLevel: INFO
+2026-03-24T19:47:04.4202849Z Container is terminating. Grace period: 5 seconds.
+2026-03-24T19:47:04.4663456Z Stop and delete container. Retry count = 0
+2026-03-24T19:47:04.4675861Z Stopping container: 04467b7e0ec8_papales-ai-agent.
+2026-03-24T19:47:09.7436887Z Deleting container: 04467b7e0ec8_papales-ai-agent. Retry count = 0
+2026-03-24T19:47:14.2392844Z Container spec TerminationMessagePolicy  path 
+2026-03-24T19:47:14.2397216Z Container is terminated. Total time elapsed: 9817 ms.
+2026-03-24T19:47:14.2503462Z Site: papales-ai-agent stopped.
+2026-03-24T19:49:02.9091409Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T19:49:06.2173921Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T19:49:25.0513808Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-24T19:49:25.0524444Z Container start method called.
+2026-03-24T19:49:25.0617228Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.7:13209/appsvc/node:20-lts_20260115.4.tuxprod for papales-ai-agent., DetailsLevel: INFO
+2026-03-24T19:49:25.0619861Z Establishing network.
+2026-03-24T19:49:25.0911937Z Pulling image: appsvc/node:20-lts_20260115.4.tuxprod.

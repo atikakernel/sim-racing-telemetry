@@ -1,0 +1,9 @@
+<step title="Incoming Request" date="2026-03-24T16:05:44.667" instance="f8c5d3" url="/api/deployments/latest" method="GET" type="request" pid="833,1,22" Accept="*/*" Host="papales-ai-agent.scm.azurewebsites.net" User-Agent="AZURECLI/2.84.0 (DEB)" Accept-Encoding="gzip, deflate" Authorization="Bas..." x-ms-client-request-id="4a011bf2-279b-11f1-a04a-00155d387932" X-ARR-LOG-ID="4a011bf2-279b-11f1-a04a-00155d387932" CLIENT-IP="186.154.169.251:59138" X-SITE-DEPLOYMENT-ID="papales-ai-agent" WAS-DEFAULT-HOSTNAME="papales-ai-agent.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/deployments/latest" X-Client-IP="186.154.169.251" X-Client-Port="59138" >
+  <step title="Cleanup Xml Logs" date="2026-03-24T16:05:44.686" /><!-- duration: 11ms -->
+  <step title="DeploymentService.GetResult" date="2026-03-24T16:05:44.714" >
+    <step title="DeploymentService.GetLatestDeployment" date="2026-03-24T16:05:44.722" >
+      <step title="DeploymentManager.GetResults" date="2026-03-24T16:05:44.733" /><!-- duration: 614ms -->
+    </step><!-- duration: 630ms -->
+  </step><!-- duration: 642ms -->
+  <step title="Outgoing response" date="2026-03-24T16:05:45.362" type="response" statusCode="202" statusText="Accepted" /><!-- duration: 13ms -->
+</step><!-- duration: 719ms -->

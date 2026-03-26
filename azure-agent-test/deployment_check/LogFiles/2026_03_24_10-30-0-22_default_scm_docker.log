@@ -1,0 +1,113 @@
+2026-03-24T14:06:31.1580782Z     __ __          __      __    _ __     
+2026-03-24T14:06:31.1582569Z    / //_/_  _ ____/ /_  __/ /   (_) /____ 
+2026-03-24T14:06:31.1582625Z   / ,< / / / / __  / / / / /   / / __/ _  
+2026-03-24T14:06:31.1582663Z  / /| / /_/ / /_/ / /_/ / /___/ / /_/  __/
+2026-03-24T14:06:31.1582706Z /_/ |_\__,_/\__,_/\__,_/_____/_/\__/\___/ 
+2026-03-24T14:06:31.1582789Z 
+2026-03-24T14:06:31.1582890Z                                           
+2026-03-24T14:06:31.1582926Z DEBUG CONSOLE | AZURE APP SERVICE ON LINUX
+2026-03-24T14:06:31.1582955Z 
+2026-03-24T14:06:31.1582992Z Documentation: http://aka.ms/webapp-linux
+2026-03-24T14:06:31.1583023Z Kudu Version : 20260204.5
+2026-03-24T14:06:31.1583056Z Commit       : f2123a3d94768058c9d9e002efc0a31e9c1580a3
+2026-03-24T14:06:31.1583089Z Instance Name: 10-30-0-22
+2026-03-24T14:06:31.1583127Z Instance Id  : 81c17eb2af25d32f16ff655bd3f60781780c744b881911e20f886cb3c80cc7cd
+2026-03-24T14:06:31.1583169Z 
+2026-03-24T14:06:32.3994581Z chown: changing ownership of '/temp': Operation not permitted
+2026-03-24T14:06:32.4045612Z chmod: changing permissions of '/temp': Operation not permitted
+2026-03-24T14:06:34.4942770Z Restarting OpenBSD Secure Shell server: sshd.
+2026-03-24T14:06:34.5368795Z node not running, starting node /opt/webssh/index.js
+2026-03-24T14:06:36.9298134Z Tue Mar 24 14:06:36 UTC 2026 running .net core
+2026-03-24T14:06:37.5865711Z Startup : 02.06.37.575710
+2026-03-24T14:06:37.6093702Z Configure Services : 02.06.37.609127
+2026-03-24T14:06:37.8482271Z Configure : 02.06.37.847963
+2026-03-24T14:06:38.0364250Z Setting Up Routes : 02.06.38.036234
+2026-03-24T14:06:38.0514232Z Exiting Configure : 02.06.38.051267
+2026-03-24T14:06:38.1927503Z Hosting environment: Production
+2026-03-24T14:06:38.1938540Z Content root path: /opt/Kudu
+2026-03-24T14:06:38.1938813Z Now listening on: http://0.0.0.0:8181
+2026-03-24T14:06:38.1938868Z Application started. Press Ctrl+C to shut down.
+2026-03-24T14:06:56.4154200Z Deploy Async
+2026-03-24T14:07:00.5572330Z Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+2026-03-24T14:07:00.5831490Z You can report issues at https://github.com/Microsoft/Oryx/issues
+2026-03-24T14:07:00.5936209Z 
+2026-03-24T14:07:00.6191246Z Oryx Version: 0.2.20260204.1+0fdbe200b286be083841ff7fa201c6c2316dc6b9, Commit: 0fdbe200b286be083841ff7fa201c6c2316dc6b9, ReleaseTagName: 20260204.1
+2026-03-24T14:07:00.6321758Z 
+2026-03-24T14:07:00.6417417Z Build Operation ID: 4867e11022dbc306
+2026-03-24T14:07:00.6522867Z Repository Commit : 7cc90afa-3ee3-401b-9453-34a496f98cd0
+2026-03-24T14:07:00.6609935Z OS Type           : bookworm
+2026-03-24T14:07:00.6720095Z Image Type        : githubactions
+2026-03-24T14:07:00.6881850Z 
+2026-03-24T14:07:00.6998590Z Primary SDK Storage URL: https://oryx-cdn.microsoft.io
+2026-03-24T14:07:00.7241658Z Backup SDK Storage URL: 
+2026-03-24T14:07:00.7401743Z Detecting platforms...
+2026-03-24T14:07:00.7535974Z External SDK provider is enabled.
+2026-03-24T14:07:00.7812964Z Requesting metadata for platform nodejs from external SDK provider
+2026-03-24T14:07:01.2319041Z Requesting metadata for platform nodejs from external SDK provider
+2026-03-24T14:07:01.6102694Z Successfully requested blob for platform nodejs, blobName defaultVersion.bookworm.txt, available at /var/OryxSdks/nodejs/defaultVersion.bookworm.txt
+2026-03-24T14:07:02.2021954Z Detected following platforms:
+2026-03-24T14:07:02.2283860Z   nodejs: 20.20.0
+2026-03-24T14:07:02.2620042Z Requesting metadata for platform nodejs from external SDK provider
+2026-03-24T14:07:04.1508370Z Successfully requested blob for platform nodejs, blobName nodejs-bookworm-20.20.0.tar.gz, available at /var/OryxSdks/nodejs/nodejs-bookworm-20.20.0.tar.gz
+2026-03-24T14:07:04.4004342Z Version '20.20.0' of platform 'nodejs' is not installed. Generating script to install it...
+2026-03-24T14:07:04.4206074Z Detected the following frameworks: Express
+2026-03-24T14:07:04.5457661Z 
+2026-03-24T14:07:04.6679246Z Using intermediate directory '/tmp/8de89ae9cda4c87'.
+2026-03-24T14:07:04.6788786Z 
+2026-03-24T14:07:04.6978530Z Copying files to the intermediate directory...
+2026-03-24T14:07:05.6340872Z Copying files to intermediate directory done in 1 sec(s).
+2026-03-24T14:07:05.6677746Z 
+2026-03-24T14:07:05.6803967Z Source directory     : /tmp/8de89ae9cda4c87
+2026-03-24T14:07:05.6922760Z Destination directory: /home/site/wwwroot
+2026-03-24T14:07:05.7062508Z 
+2026-03-24T14:07:05.7288468Z Installing platform...
+2026-03-24T14:07:05.7457794Z 
+2026-03-24T14:07:05.7605264Z Downloading and extracting 'nodejs' version '20.20.0' to '/tmp/oryx/platforms/nodejs/20.20.0'...
+2026-03-24T14:07:05.7763071Z Detected image debian flavor: bookworm.
+2026-03-24T14:07:05.7859298Z Skipping download of nodejs version 20.20.0 as it is available in external sdk provider cache...
+2026-03-24T14:07:05.7967656Z Extracting contents...
+2026-03-24T14:07:27.5944165Z .................
+2026-03-24T14:07:27.5944741Z Successfully extracted nodejs version 20.20.0 from external sdk provider cache...
+2026-03-24T14:07:27.8246787Z 
+2026-03-24T14:07:27.8672939Z Platform installation done in 22 sec(s).
+2026-03-24T14:07:28.8138149Z Running build script snippets...
+2026-03-24T14:07:28.9125600Z Removing existing manifest file
+2026-03-24T14:07:29.0310924Z Creating directory for command manifest file if it does not exist
+2026-03-24T14:07:29.1598148Z Creating a manifest file...
+2026-03-24T14:07:29.2589645Z Node Build Command Manifest file created.
+2026-03-24T14:07:29.3025249Z 
+2026-03-24T14:07:29.3768655Z Using Node version:
+2026-03-24T14:07:29.8170914Z v20.20.0
+2026-03-24T14:07:29.9137815Z 
+2026-03-24T14:07:29.9339540Z Using Npm version:
+2026-03-24T14:07:31.8300184Z 10.8.2
+2026-03-24T14:07:31.8976258Z 
+2026-03-24T14:07:31.9304079Z Running 'npm install'...
+2026-03-24T14:07:31.9579445Z 
+2026-03-24T14:08:24.6157792Z ...............................................
+2026-03-24T14:08:24.6158561Z 
+2026-03-24T14:08:24.9465081Z added 125 packages, and audited 126 packages in 51s
+2026-03-24T14:08:25.1499576Z 
+2026-03-24T14:08:25.1941266Z 39 packages are looking for funding
+2026-03-24T14:08:25.2027153Z   run `npm fund` for details
+2026-03-24T14:08:25.3137903Z 
+2026-03-24T14:08:25.3274181Z found 0 vulnerabilities
+2026-03-24T14:08:25.6764015Z 
+2026-03-24T14:08:25.7420290Z Zipping existing node_modules folder...
+2026-03-24T14:08:52.9587774Z .......................
+2026-03-24T14:08:52.9588191Z Done in 27 sec(s).
+2026-03-24T14:08:52.9953031Z Build script snippets done in 84 sec(s).
+2026-03-24T14:08:53.0151684Z Preparing output...
+2026-03-24T14:08:53.0320754Z Using standard output preparation...
+2026-03-24T14:08:53.0510335Z 
+2026-03-24T14:08:53.0657489Z Copying files to destination directory '/home/site/wwwroot'...
+2026-03-24T14:09:02.7607568Z .....
+2026-03-24T14:09:02.7608250Z Copying to destination directory done in 10 sec(s).
+2026-03-24T14:09:02.7881545Z Total time for destination directory preparation done in 10 sec(s).
+2026-03-24T14:09:02.8056489Z 
+2026-03-24T14:09:02.8282282Z Removing existing manifest file
+2026-03-24T14:09:02.8749214Z Creating a manifest file...
+2026-03-24T14:09:02.9126858Z Manifest file created.
+2026-03-24T14:09:02.9463223Z Copying .ostype to manifest output directory.
+2026-03-24T14:09:03.0035974Z 
+2026-03-24T14:09:03.0179493Z Total execution done in 119 sec(s).

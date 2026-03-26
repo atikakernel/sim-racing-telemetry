@@ -1,0 +1,17 @@
+<step title="Incoming Request" date="2026-03-24T22:29:26.593" instance="f8c5d3" url="/api/publish?async=true&amp;deployer=GITHUB_ONE_DEPLOY&amp;type=zip&amp;message=%7B%22type%22%3A%22deployment%22%2C%22sha%22%3A%228a2e9f35bd79e9bf0e79121a69c608645ec9da3b%22%2C%22repoName%22%3A%22atikakernel%2Fazure-agent-test%22%2C%22actor%22%3A%22atikakernel%22%2C%22slotName%22%3A%22production%22%2C%22commitMessage%22%3A%22UI%3A%20Add%20missing%20Chart.js%20script%20to%20index.html%22%7D" method="POST" type="request" pid="835,1,49" Host="papales-ai-agent.scm.azurewebsites.net" User-Agent="GITHUBACTIONS_DeployWebAppToAzure_34087b6a34d78f175d16b41cf6da910f9054f2cc4998df1182f51d42fc30e3fe_v3.0.7" Authorization="Bas..." Content-Type="application/octet-stream" Cookie="ARRAffinity=f8c5d35a462fcd87923beccccb19f9d3c0e35bc47dd6274950bc1dd66bc38d1e;Path=/;HttpOnly;Secure;Domain=papales-ai-agent.scm.azurewebsites.net; ARRAffinitySameSite=f8c5d35a462fcd87923beccccb19f9d3c0e35bc47dd6274950bc1dd66bc38d1e;Path=/;HttpOnly;SameSite=None;Secure;Domain=papales-ai-agent.scm.azurewebsites.net" Transfer-Encoding="chunked" X-ARR-LOG-ID="4c89b258-702e-4864-a88c-a3cc79f78482" CLIENT-IP="132.196.32.49:4096" X-SITE-DEPLOYMENT-ID="papales-ai-agent" WAS-DEFAULT-HOSTNAME="papales-ai-agent.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/publish?async=true&amp;deployer=GITHUB_ONE_DEPLOY&amp;type=zip&amp;message=%7B%22type%22%3A%22deployment%22%2C%22sha%22%3A%228a2e9f35bd79e9bf0e79121a69c608645ec9da3b%22%2C%22repoName%22%3A%22atikakernel%2Fazure-agent-test%22%2C%22actor%22%3A%22atikakernel%22%2C%22slotName%22%3A%22production%22%2C%22commitMessage%22%3A%22UI%3A%20Add%20missing%20Chart.js%20script%20to%20index.html%22%7D" X-Client-IP="132.196.32.49" X-Client-Port="4096" >
+  <step title="Cleanup Xml Logs" date="2026-03-24T22:29:26.687" >
+    <step title="Cleanup Infos" date="2026-03-24T22:29:26.748" totalFiles="538" totalCleanup="378" /><!-- duration: 21ms -->
+  </step><!-- duration: 93ms -->
+  <step title="OneDeploy" date="2026-03-24T22:29:26.860" >
+    <step title="Starting PushDeployAsync" date="2026-03-24T22:29:26.900" /><!-- duration: 39ms -->
+    <step title="Writing artifact to /tmp/zipdeploy/0b5e4a07-e53c-47e9-88a0-c75d21b2b8e1.zip" date="2026-03-24T22:29:26.991" >
+      <step title="Writing multipart request body to /tmp/zipdeploy/0b5e4a07-e53c-47e9-88a0-c75d21b2b8e1.zip" date="2026-03-24T22:29:27.009" /><!-- duration: 12ms -->
+    </step><!-- duration: 145ms -->
+    <step title="Start deployment in the background" date="2026-03-24T22:29:27.196" >
+      <step title="Acquiring Deployment Lock" date="2026-03-24T22:29:27.245" /><!-- duration: 18ms -->
+      <step title="Cannot Acquire Deployment Lock already held" date="2026-03-24T22:29:27.293" /><!-- duration: 21ms -->
+    </step><!-- duration: 260ms -->
+    <step title="There is a deployment currently in progress. Please try again when it completes." date="2026-03-24T22:29:27.493" /><!-- duration: 12ms -->
+  </step><!-- duration: 675ms -->
+  <step title="Outgoing response" date="2026-03-24T22:29:27.573" type="response" statusCode="409" statusText="Conflict" /><!-- duration: 13ms -->
+</step><!-- duration: 1029ms -->

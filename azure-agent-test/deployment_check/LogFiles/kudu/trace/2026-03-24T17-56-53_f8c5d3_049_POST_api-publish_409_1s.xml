@@ -1,0 +1,16 @@
+<step title="Incoming Request" date="2026-03-24T17:56:53.441" instance="f8c5d3" url="/api/publish?type=zip&amp;async=False" method="POST" type="request" pid="836,1,5" Accept="*/*" Host="papales-ai-agent.scm.azurewebsites.net" User-Agent="AZURECLI/2.84.0 (DEB)" Accept-Encoding="gzip, deflate" Authorization="Bas..." Cache-Control="no-cache" Content-Type="application/octet-stream" Cookie="ARRAffinity=f8c5d35a462fcd87923beccccb19f9d3c0e35bc47dd6274950bc1dd66bc38d1e; ARRAffinitySameSite=f8c5d35a462fcd87923beccccb19f9d3c0e35bc47dd6274950bc1dd66bc38d1e" Content-Length="20024" x-ms-client-request-id="cf02484e-27aa-11f1-a04a-00155d51574b" x-ms-artifact-checksum="2e1e4e54e28549db44999c26228f419b70b48d01ae73ea749584bbc9eb741937" X-ARR-LOG-ID="cf02484e-27aa-11f1-a04a-00155d51574b" CLIENT-IP="186.154.169.251:57482" X-SITE-DEPLOYMENT-ID="papales-ai-agent" WAS-DEFAULT-HOSTNAME="papales-ai-agent.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/publish?type=zip&amp;async=False" X-Client-IP="186.154.169.251" X-Client-Port="57482" >
+  <step title="Cleanup Xml Logs" date="2026-03-24T17:56:53.451" >
+    <step title="Cleanup Infos" date="2026-03-24T17:56:53.483" totalFiles="215" totalCleanup="55" /><!-- duration: 19ms -->
+  </step><!-- duration: 70ms -->
+  <step title="OneDeploy" date="2026-03-24T17:56:53.552" >
+    <step title="Starting PushDeployAsync" date="2026-03-24T17:56:53.589" /><!-- duration: 12ms -->
+    <step title="Writing artifact to /tmp/zipdeploy/89faed23-031c-431f-9d9e-6df86f042e2e.zip" date="2026-03-24T17:56:53.661" >
+      <step title="Writing multipart request body to /tmp/zipdeploy/89faed23-031c-431f-9d9e-6df86f042e2e.zip" date="2026-03-24T17:56:53.690" /><!-- duration: 30ms -->
+    </step><!-- duration: 140ms -->
+    <step title="Attempting to fetch target branch HEAD" date="2026-03-24T17:56:53.870" /><!-- duration: 19ms -->
+    <step title="Acquiring Deployment Lock" date="2026-03-24T17:56:53.977" /><!-- duration: 20ms -->
+    <step title="Cannot Acquire Deployment Lock already held" date="2026-03-24T17:56:54.029" /><!-- duration: 20ms -->
+    <step title="There is a deployment currently in progress. Please try again when it completes." date="2026-03-24T17:56:54.068" /><!-- duration: 11ms -->
+  </step><!-- duration: 559ms -->
+  <step title="Outgoing response" date="2026-03-24T17:56:54.148" type="response" statusCode="409" statusText="Conflict" /><!-- duration: 19ms -->
+</step><!-- duration: 756ms -->
