@@ -11,9 +11,9 @@ import datetime
 import time
 import json
 
-UDP_IP = "0.0.0.0"
-UDP_PORT = 5607 # Port for SHM JSON
-DB_PATH = "/home/diegokernel/proyectos/lakehouse/lakehouse_project/lakehouse.duckdb"
+UDP_IP = os.getenv("UDP_IP", "0.0.0.0")
+UDP_PORT = int(os.getenv("AMS2_UDP_PORT", "5607")) # Port for SHM JSON
+DB_PATH = os.getenv("DB_PATH", "/home/diegokernel/proyectos/lakehouse/lakehouse_project/lakehouse.duckdb")
 
 SCHEMA_COLUMNS = {
     'session_id': 'VARCHAR',
@@ -34,7 +34,7 @@ SCHEMA_COLUMNS = {
     'game_state': 'UINTEGER'
 }
 
-STINT_REPORT_PATH = "/home/diegokernel/proyectos/stint_report_ams2.json"
+STINT_REPORT_PATH = os.getenv("STINT_REPORT_PATH", "/home/diegokernel/proyectos/stint_report_ams2.json")
 
 def migrate_schema(con, table_name):
     try:

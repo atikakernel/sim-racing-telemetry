@@ -19,11 +19,11 @@ import duckdb
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
 from games.dr2.dr2_structs import parse_packet, DR2_PACKET_SIZE
 
-# Configuration
-UDP_IP = "0.0.0.0"
-UDP_PORT = 20777
-DB_PATH = "lakehouse/lakehouse_project/lakehouse.duckdb"
-STAGE_REPORT_PATH = "dr2_stage_report.json"
+# Configuration (overridable via env)
+UDP_IP = os.getenv("UDP_IP", "0.0.0.0")
+UDP_PORT = int(os.getenv("DR2_UDP_PORT", "20777"))
+DB_PATH = os.getenv("DB_PATH", "lakehouse/lakehouse_project/lakehouse.duckdb")
+STAGE_REPORT_PATH = os.getenv("STAGE_REPORT_PATH", "dr2_stage_report.json")
 
 # Schema definition (single source of truth)
 SCHEMA_COLUMNS = {

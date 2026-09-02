@@ -6,11 +6,11 @@ import os
 import datetime
 import numpy as np
 
-# Configuration
-UDP_IP = "0.0.0.0" 
-UDP_PORT = 9002
-DB_PATH = "lakehouse/lakehouse_project/lakehouse.duckdb"
-STINT_REPORT_PATH = "stint_report.json"
+# Configuration (overridable via env)
+UDP_IP = os.getenv("UDP_IP", "0.0.0.0")
+UDP_PORT = int(os.getenv("ACC_UDP_PORT", "9002"))
+DB_PATH = os.getenv("DB_PATH", "lakehouse/lakehouse_project/lakehouse.duckdb")
+STINT_REPORT_PATH = os.getenv("STINT_REPORT_PATH", "stint_report.json")
 
 # Full schema definition (single source of truth)
 SCHEMA_COLUMNS = {
@@ -292,6 +292,15 @@ def main():
                 print(f"Error processing: {e}")
                 
     except KeyboardInterrupt:
+        if buffer:
+            keys = buffer[0].keys()
+            values_list = [[r[k] for k in keys] for r in buffer]
+            placeholders = ', '.join(['?'] * len(keys))
+            con.executemany(
+                f"INSERT INTO gold_acc_laps ({', '.join(keys)}) VALUES ({placeholders})",
+                values_list,
+            )
+            print(f"   💾 Flushed {len(buffer)} pending rows on exit")
         con.close()
 
 def analyze_stint(data, track, car):

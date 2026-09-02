@@ -43,3 +43,10 @@ data/media/
 
 # ===== Profile README (separate repo) =====
 profile-readme/
+
+# ===== Azure deploy logs (scheduler noise, not source) =====
+azure-agent-test/deployment_logs*/
+azure-agent-test/**/LogFiles/
+azure-agent-test/**/*.log
+azure-agent-test/**/*.xml
+azure-agent-test/**/*.txt
