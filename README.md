@@ -82,6 +82,22 @@ This starts the telemetry recorder and Streamlit dashboard. Open `http://localho
 
 ---
 
+## 🏁 Lap Analysis CLI
+
+Summarize a recorded stint from a CSV of lap times (seconds or `M:SS.mmm`),
+with out/in laps slower than 1.5x the best lap automatically excluded:
+
+```bash
+python scripts/lap_report.py laps.csv          # uses the lap_time column
+python -m pytest tests/test_lap_analysis.py    # run the analysis tests
+```
+
+The reusable logic lives in `analysis/lap_analysis.py` (`analyze_laps`,
+`parse_lap_time`, `format_report`) and reports best/worst/average/median
+lap, dispersion, and a 0-100 consistency score.
+
+---
+
 ## 📄 License
 
 Personal project. All rights reserved.
